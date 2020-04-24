@@ -81,9 +81,11 @@ public class ICTMImporter {
 		}
 
 		exportOntology("ICTM", targetOWLModel, sourceOWLModel, sourceICTMTopClass);
-
+		
 		log.info("\n===== End export at " + new Date());
 	}
+
+
 
 	private static void exportOntology(String ontShortName, OWLModel targetOWLModel, OWLModel sourceOWLModel, 
 			RDFSNamedClass sourceTopClass) {
@@ -95,6 +97,7 @@ public class ICTMImporter {
 
 		try {
 			ictmImporter.importClasses();
+			ictmImporter.moveTopClass(sourceTopClass);
 		} catch (Throwable t) {
 			log.error(t.getMessage(), t);
 		}
@@ -159,9 +162,17 @@ public class ICTMImporter {
 		}
 	}
 
+	public void moveTopClass(RDFSNamedClass sourceICTMTopClass) {
+		RDFSNamedClass hangCls = targetOnt.getRDFSNamedClass(ICTMUtil.ICTM_HANG_CLASS);
+		if (hangCls == null) {
+			log.info("Could not find hang class: " + ICTMUtil.ICTM_HANG_CLASS);
+			return;
+		}
+		sourceICTMTopClass.addSuperclass(hangCls);
+		sourceICTMTopClass.removeSuperclass(targetOnt.getOWLThingClass());
+	}
+	
 	// *************** Generic methods *************/
-
-
 
 
 	private static OWLModel openOWLFile(String fileName) {
