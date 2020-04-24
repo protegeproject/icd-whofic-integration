@@ -168,8 +168,12 @@ public class ICTMImporter {
 			log.info("Could not find hang class: " + ICTMUtil.ICTM_HANG_CLASS);
 			return;
 		}
-		sourceICTMTopClass.addSuperclass(hangCls);
-		sourceICTMTopClass.removeSuperclass(targetOnt.getOWLThingClass());
+		RDFSNamedClass ictmTopCls = targetOnt.getRDFSNamedClass(sourceICTMTopClass.getName());
+		ictmTopCls.addSuperclass(hangCls);
+		ictmTopCls.removeSuperclass(targetOnt.getOWLThingClass());
+		
+		//add an entry in the parent for the ICTM top class
+		targetCM.addChildToIndex(hangCls, sourceICTMTopClass, true);
 	}
 	
 	// *************** Generic methods *************/
