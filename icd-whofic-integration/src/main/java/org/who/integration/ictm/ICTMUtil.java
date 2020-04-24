@@ -21,6 +21,10 @@ public class ICTMUtil {
 	public static final String EXT_REF_TERM_CLASS = "http://who.int/icd#ExternalReferenceTerm";
 	public static final String CODES_PROP = "http://who.int/ictm#codes";
 	
+	//TODO: edit this to match the class in the new content model, under which
+	//the classes should be imported
+	public static final String ICTM_HANG_CLASS = "http://who.int/icd#ICTMCategory";
+	
 	public static final Map<String, String> ICTM2ICDTypes = new HashMap<String, String>() {{
 		put("http://who.int/icd#InclusionTerm", "http://who.int/icd#BaseInclusionTerm");
 		put("http://who.int/icd#ExclusionTerm","http://who.int/icd#BaseExclusionTerm");
@@ -73,6 +77,7 @@ public class ICTMUtil {
 		metaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
 		metaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
 		//metaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#PostcoordinationSection"));
+		//TODO: add an ICTM-specific metaclass
 		return metaclses;
 	}
 	
