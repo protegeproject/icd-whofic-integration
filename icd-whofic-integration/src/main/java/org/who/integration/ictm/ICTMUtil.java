@@ -23,7 +23,7 @@ public class ICTMUtil {
 	
 	//TODO: edit this to match the class in the new content model, under which
 	//the classes should be imported
-	public static final String ICTM_HANG_CLASS = "http://who.int/icd#ICTMCategory";
+	public static final String ICTM_HANG_CLASS = "http://who.int/icd#ICDCategory";
 	
 	public static final Map<String, String> ICTM2ICDTypes = new HashMap<String, String>() {{
 		put("http://who.int/icd#InclusionTerm", "http://who.int/icd#BaseInclusionTerm");
