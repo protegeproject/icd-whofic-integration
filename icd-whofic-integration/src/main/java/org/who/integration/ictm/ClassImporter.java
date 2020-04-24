@@ -2,12 +2,11 @@ package org.who.integration.ictm;
 
 import java.util.Collection;
 
-import org.semanticweb.owlapi.model.OWLClass;
-
 import edu.stanford.bmir.whofic.IcdIdGenerator;
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.bmir.whofic.icd.ICDContentModelConstants;
 import edu.stanford.smi.protege.util.Log;
+import edu.stanford.smi.protegex.owl.model.OWLClass;
 import edu.stanford.smi.protegex.owl.model.OWLModel;
 import edu.stanford.smi.protegex.owl.model.OWLNamedClass;
 import edu.stanford.smi.protegex.owl.model.RDFProperty;
