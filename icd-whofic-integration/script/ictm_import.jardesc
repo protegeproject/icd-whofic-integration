@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="icd-whofic-integration/script/lib/ictm_import.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/icd-whofic-integration/script/ictm_import.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=icd-whofic-integration/src\/main\/java&lt;org.who.integration.ictm{ICTMImporter.java[ICTMImporter" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=icd-whofic-integration/src\/main\/resources"/>
+        <javaElement handleIdentifier="=icd-whofic-integration/src\/main\/java"/>
+    </selectedElements>
+</jardesc>
