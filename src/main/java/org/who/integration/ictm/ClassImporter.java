@@ -126,6 +126,7 @@ public class ClassImporter {
 	private void addInclusions(RDFSNamedClass cls) {
 		if (isICTM == true) {
 			addSimpleInclusions(cls);
+			addBaseIndexTerm(cls); //TT - this is needed for the current ICD CM; not necessary in the merged CM
 		} else {
 			addIndexBaseInclusions(cls);
 			addBaseIndexTerm(cls); //TT - this is needed for the current ICD CM; not necessary in the merged CM
