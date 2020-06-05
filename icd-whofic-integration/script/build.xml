@@ -60,7 +60,8 @@
 	                        maxmemory="${heap.size.max}">
 			      	<classpath refid = "project.classpath"/>
 		        	<jvmarg value="-Dlog4j.configurationFile=/srv/icat/icat-files/src/icd-whofic-integration/script/log4j.properties" />
-		 			<arg value="${icd.pprj.file}"/>	
+		        	<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
+		        	<arg value="${icd.pprj.file}"/>	
 		        	<arg value="${ictm.pprj.file}"/>	
 		        	<arg value="${ictm.topclass}"/>
 		        </java>
