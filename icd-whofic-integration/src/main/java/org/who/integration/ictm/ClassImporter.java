@@ -126,7 +126,6 @@ public class ClassImporter {
 	private void addInclusions(RDFSNamedClass cls) {
 		if (isICTM == true) {
 			addSimpleInclusions(cls);
-			addBaseIndexTerm(cls); //TT - this is needed for the current ICD CM; not necessary in the merged CM
 		} else {
 			addIndexBaseInclusions(cls);
 			addBaseIndexTerm(cls); //TT - this is needed for the current ICD CM; not necessary in the merged CM
@@ -138,6 +137,8 @@ public class ClassImporter {
 	@SuppressWarnings("deprecation")
 	private void addSimpleInclusions(RDFSNamedClass cls) {
 		addStringTermAnnotations(cls, targetCM.getIndexBaseInclusionProperty(), sourceCM.getInclusionProperty());
+		 //TT - this is needed for the current ICD CM; not necessary in the merged CM
+		addStringTermAnnotations(cls, targetCM.getBaseIndexProperty(), sourceCM.getInclusionProperty());
 	}
 
 	private void addSubclassBaseInclusions(RDFSNamedClass cls) {
@@ -150,7 +151,6 @@ public class ClassImporter {
 
 	private void addBaseIndexTerm(RDFSNamedClass cls) {
 		addStringTermAnnotations(cls, targetCM.getBaseIndexProperty(), sourceCM.getIndexBaseInclusionProperty());
-		
 	}
 	
 	private void addNarrower(RDFSNamedClass cls) {
