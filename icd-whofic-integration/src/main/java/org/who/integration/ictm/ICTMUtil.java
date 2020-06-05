@@ -76,8 +76,8 @@ public class ICTMUtil {
 		metaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#DefinitionSection"));
 		metaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
 		metaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
+		metaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICTMSection"));
 		//metaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#PostcoordinationSection"));
-		//TODO: add an ICTM-specific metaclass
 		return metaclses;
 	}
 	
