@@ -80,14 +80,14 @@ public class ICTMImporter {
 			System.exit(1);
 		}
 
-		exportOntology("ICTM", targetOWLModel, sourceOWLModel, sourceICTMTopClass);
+		importOntology("ICTM", targetOWLModel, sourceOWLModel, sourceICTMTopClass);
 		
 		log.info("\n===== End export at " + new Date());
 	}
 
 
 
-	private static void exportOntology(String ontShortName, OWLModel targetOWLModel, OWLModel sourceOWLModel, 
+	private static void importOntology(String ontShortName, OWLModel targetOWLModel, OWLModel sourceOWLModel, 
 			RDFSNamedClass sourceTopClass) {
 
 		log.info("Started the " + ontShortName + " export");
