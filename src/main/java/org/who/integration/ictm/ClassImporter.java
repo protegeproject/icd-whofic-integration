@@ -162,7 +162,15 @@ public class ClassImporter {
 	}
 
 	private void addPublicId(RDFSNamedClass cls) {
-		addStringAnnotation(cls, targetCM.getPublicIdProperty(), sourceCM.getPublicIdProperty());
+		//addStringAnnotation(cls, targetCM.getPublicIdProperty(), sourceCM.getPublicIdProperty());
+		//TT: per requirements, replace "ictm" with "icd" in the public id
+		String val = (String) sourceCls.getPropertyValue(sourceCM.getPublicIdProperty());
+		if (val == null) {
+			return;
+		}
+		val = val.replace("ictm", "icd");
+		
+		cls.setPropertyValue(targetCM.getPublicIdProperty(), val);
 	}
 
 	private void addNote(RDFSNamedClass cls) {
@@ -246,7 +254,8 @@ public class ClassImporter {
 		OWLNamedClass extRefTermCls = targetOnt.getOWLNamedClass(ICTMUtil.EXT_REF_TERM_CLASS);
 		
 		for (RDFResource term : terms) {
-			RDFResource targetTerm = extRefTermCls.createOWLIndividual(term.getName());
+			//RDFResource targetTerm = extRefTermCls.createOWLIndividual(term.getName());
+			RDFResource targetTerm = createTerm(extRefTermCls, term.getName());
 			targetTerm.setPropertyValue(targetCM.getOntologyIdProperty(), term.getPropertyValue(sourceCM.getOntologyIdProperty()));
 			targetTerm.setPropertyValue(targetCM.getTermIdProperty(), term.getPropertyValue(sourceCM.getTermIdProperty()));
 			targetTerm.setPropertyValue(targetCM.getLabelProperty(), term.getPropertyValue(sourceCM.getLabelProperty()));
