@@ -82,6 +82,9 @@ public class ICTMImporter {
 
 		importOntology("ICTM", targetOWLModel, sourceOWLModel, sourceICTMTopClass);
 		
+		log.info("Saving ontology..");
+		targetOWLModel.getProject().save(new ArrayList<>());
+		
 		log.info("\n===== End export at " + new Date());
 	}
 
