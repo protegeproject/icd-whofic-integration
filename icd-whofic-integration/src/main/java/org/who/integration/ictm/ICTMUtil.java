@@ -69,7 +69,7 @@ public class ICTMUtil {
 	}
 	
 	public static Collection<RDFSNamedClass> getMetaclasses(OWLModel owlModel) {
-		if (metaclses.size() < 0) {
+		if (metaclses.size() > 0) {
 			return metaclses;
 		}
 		metaclses = new ArrayList<RDFSNamedClass>();
