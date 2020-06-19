@@ -11,6 +11,7 @@
         </sealing>
     </manifest>
     <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=icd-whofic-integration/src\/main\/java&lt;org.who.integration.util"/>
         <javaElement handleIdentifier="=icd-whofic-integration/src\/main\/java&lt;org.who.integration.icf"/>
     </selectedElements>
 </jardesc>
