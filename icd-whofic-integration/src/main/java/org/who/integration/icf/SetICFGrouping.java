@@ -43,13 +43,29 @@ public class SetICFGrouping {
 		HashSet<RDFSNamedClass> rangeAnc = new HashSet<RDFSNamedClass>();
 		findGroupingClses(icfCat, icfCat, rangeAnc);
 		
+		addFirstTwoLevels(rangeAnc);
+		
 		log.info("Found " + rangeAnc.size() + " classes that should be groupings. Adding groupings ..");
 
+		System.out.println(rangeAnc);
+		
 		setGrouping(rangeAnc);
 		
 		log.info("Saving..");
 		//prj.save(new ArrayList<>());
 		
+	}
+
+
+	private static void addFirstTwoLevels(HashSet<RDFSNamedClass> rangeAnc) {
+		for (RDFSNamedClass subcls : KBUtil.getNamedSubclasses(icfCat, false)) {
+			if (subcls.getName().contains("http://who.int/icf")) {
+				rangeAnc.add(subcls);
+				for (RDFSNamedClass subsubcls : KBUtil.getNamedSubclasses(subcls, false)) {
+					rangeAnc.add(subsubcls);
+				}
+			}
+		}
 	}
 
 
