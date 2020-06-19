@@ -47,8 +47,6 @@ public class SetICFGrouping {
 		
 		log.info("Found " + rangeAnc.size() + " classes that should be groupings. Adding groupings ..");
 
-		System.out.println(rangeAnc);
-		
 		setGrouping(rangeAnc);
 		
 		log.info("Saving..");
