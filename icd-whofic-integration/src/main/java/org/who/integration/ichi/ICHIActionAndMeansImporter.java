@@ -29,7 +29,7 @@ public class ICHIActionAndMeansImporter {
 
 	public static void main(String[] args) throws IOException {
 		if (args.length < 3) {
-			log.error("Expected 2 arguments: (1) PPRJ file to import into; (2) CSV file to import;"
+			log.error("Expected 3 arguments: (1) PPRJ file to import into; (2) CSV file to import;"
 					+ " (3) Top class under which to import content");
 			System.exit(1);
 		}
@@ -88,7 +88,7 @@ public class ICHIActionAndMeansImporter {
 		String action = getString(data, 1);
 		String title = getString(data, 2);
 		String definition = getString(data, 3);
-		String inclusion = getString(data, 4);
+		String indexTerms = getString(data, 4);
 		String exclusion = getString(data, 5);
 		String codeAlso = getString(data, 6);
 		
@@ -104,7 +104,7 @@ public class ICHIActionAndMeansImporter {
 		RDFSNamedClass superCls = ICHIUtil.getSupercls(owlModel, topCls, type);
 		
 		ICHIClassImporter clsImporter = new ICHIClassImporter(owlModel, cls);
-		clsImporter.importCls(superCls, action, title, definition, inclusion, exclusion, codeAlso);
+		clsImporter.importCls(superCls, action, title, definition, indexTerms, exclusion, codeAlso);
 	}
 
 
