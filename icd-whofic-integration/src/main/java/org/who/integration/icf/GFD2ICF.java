@@ -90,9 +90,8 @@ public class GFD2ICF {
 
 	private static void replaceClasses() {
 		for (RDFSNamedClass gfdCls : KBUtil.getNamedSubclasses(gfdTopCls, false)) {
-			String gfdTitle = cm.getTitleLabel(gfdCls);
+			RDFSNamedClass icfCls = gfd2icfcls.get(gfdCls);
 			
-			RDFSNamedClass icfCls = name2icfcls.get(gfdTitle.toLowerCase());
 			if (icfCls == null) { //we already know about this case
 				continue; 
 			}
@@ -117,9 +116,8 @@ public class GFD2ICF {
 
 	private static void replaceGFDChildren(RDFSNamedClass gfdParent, RDFSNamedClass icfParent) {
 		for (RDFSNamedClass gfdCls : KBUtil.getNamedSubclasses(gfdParent, true)) {
-			String gfdTitle = cm.getTitleLabel(gfdCls);
+			RDFSNamedClass icfCls = gfd2icfcls.get(gfdCls);
 			
-			RDFSNamedClass icfCls = name2icfcls.get(gfdTitle.toLowerCase());
 			if (icfCls == null) { //no mapping to ICF; move it under ICF parent, remove old GFD parent
 				gfdCls.addSuperclass(icfParent);
 				gfdCls.removeSuperclass(gfdParent);
@@ -163,7 +161,7 @@ public class GFD2ICF {
 		String title = cm.getTitleLabel(gfdCls);
 		RDFResource gfdTitleTerm = (RDFResource) gfdCls.getPropertyValue(cm.getIcdTitleProperty());
 		
-		RDFSNamedClass icfCls = name2icfcls.get(title.toLowerCase());
+		RDFSNamedClass icfCls = gfd2icfcls.get(gfdCls);
 		if (icfCls == null) {
 			log.warn("Expected that GFD class was mapped to ICF, but wasn't: " + gfdCls + " Title: " + title);
 			gfdTitleTerm.setPropertyValue(cm.getLabelProperty(), "Retired - " + title);
@@ -186,7 +184,7 @@ public class GFD2ICF {
 		icfCls.setPropertyValue(cm.getPublicIdProperty(), publicId);
 		gfdCls.setPropertyValue(cm.getPublicIdProperty(), "WAS: " + publicId);
 		
-		log.info("PUBLIC ID SWAP:\t" + publicId + "\t" + icfCls.getName() + "\t" + gfdCls);
+		log.info("PUBLIC ID SWAP:\t" + publicId + "\t" + icfCls.getName() + "\t" + gfdCls.getName());
 	}
 
 
@@ -231,7 +229,7 @@ public class GFD2ICF {
 	private static void checkGFDSubclassing() {
 		for (RDFSNamedClass gfdCls : KBUtil.getNamedSubclasses(gfdTopCls, true)) {
 			String gfdTitle = cm.getTitleLabel(gfdCls);
-			RDFSNamedClass icfCls = name2icfcls.get(gfdTitle.toLowerCase());
+			RDFSNamedClass icfCls = gfd2icfcls.get(gfdCls);
 			if (icfCls != null) {
 				Collection<RDFSClass> gfdParents = gfdCls.getSuperclasses(true);
 				Collection<RDFSClass> icfParents = icfCls.getSuperclasses(true);
