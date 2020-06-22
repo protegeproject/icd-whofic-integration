@@ -7,7 +7,9 @@ import java.util.List;
 import java.util.Map;
 
 import edu.stanford.bmir.whofic.IcdIdGenerator;
+import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.smi.protegex.owl.model.OWLModel;
+import edu.stanford.smi.protegex.owl.model.RDFResource;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
 public class ICHIUtil {
@@ -60,11 +62,23 @@ public class ICHIUtil {
 	}
 	
 	public static RDFSNamedClass getSupercls(OWLModel owlModel, RDFSNamedClass topCls, String name) {
+		name = name.replaceAll("^\\d \\- ", "");
+		name = name.replaceAll(", ", "_");
+		name = name.replaceAll(",", "_");
+		name = name.replaceAll(" " , "_");
+		
 		RDFSNamedClass supercls = name2supercls.get(name);
 		
 		if (supercls == null) {
 			supercls = getOrCreateCls(owlModel, name);
 			supercls.addSuperclass(topCls);
+			supercls.removeSuperclass(owlModel.getOWLThingClass());
+			
+			ICDContentModel cm = new ICDContentModel(owlModel);
+			RDFResource titleTerm = cm.createTitleTerm();
+			titleTerm.setPropertyValue(cm.getLabelProperty(), name);
+			supercls.setPropertyValue(cm.getIcdTitleProperty(), titleTerm);
+			
 			name2supercls.put(name, supercls);
 		}
 		

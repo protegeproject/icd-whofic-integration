@@ -18,19 +18,19 @@ public class ICHIClassImporter {
 	}
 
 	public void importCls(RDFSNamedClass superCls, String action, String title, String definition,
-			String inclusion, String exclusion, String codeAlso) {
+			String indexTerms, String exclusion, String codeAlso) {
 		
 		importICDCode(action);
 		importTitle(title);
 		importDefinition(definition);
-		importInclusion(inclusion);
+		importIndexTerms(indexTerms); //TODO: maybe this is a coding note, not inclusion, to be clarified
 		importExclusion(exclusion);
 		importCodeAlso(codeAlso); //TODO - not sure how to import
 		importPublicId(); //TODO - need more info
 		
 		addSuperCls(superCls);
-		
 	}
+
 
 	private void importICDCode(String action) {
 		cls.addPropertyValue(cm.getIcdCodeProperty(), action);
@@ -46,19 +46,19 @@ public class ICHIClassImporter {
 		cls.addPropertyValue(cm.getDefinitionProperty(), term);
 	}
 
-	private void importInclusion(String inclusions) {
-		if (inclusions == null) {
+	private void importIndexTerms(String indexTerms) {
+		if (indexTerms == null) {
 			return;
 		}
 		
-		String[] inclArray = inclusions.split(ICHIActionAndMeansImporter.VALUE_SEPARATOR);
+		String[] inclArray = indexTerms.split(ICHIActionAndMeansImporter.VALUE_SEPARATOR);
 		
 		for (int i = 0; i < inclArray.length; i++) {
-			String incl = inclArray[i];
-			incl = incl.trim();
+			String indexTerm = inclArray[i];
+			indexTerm = indexTerm.trim();
 			
-			RDFResource term = createTerm(cm.getTermBaseInclusionClass(), incl, "en");
-			cm.addBaseInclusionTermToClass(cls, term);
+			RDFResource term = createTerm(cm.getTermBaseInclusionClass(), indexTerm, "en");
+			//cm.addBaseInclusionTermToClass(cls, term);
 			 //TT - this is needed for the current ICD CM; not necessary in the merged CM
 			cm.addBaseIndexTermToClass(cls, term);
 		}
@@ -87,6 +87,7 @@ public class ICHIClassImporter {
 	
 	private void addSuperCls(RDFSNamedClass superCls) {
 		cls.addSuperclass(superCls);
+		cls.removeSuperclass(owlModel.getOWLThingClass());
 	}
 	
 	private void importPublicId() {
