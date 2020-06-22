@@ -11,19 +11,25 @@ import org.who.integration.util.KBUtil;
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.smi.protege.model.Project;
 import edu.stanford.smi.protegex.owl.model.OWLModel;
-import edu.stanford.smi.protegex.owl.model.RDFIndividual;
 import edu.stanford.smi.protegex.owl.model.RDFProperty;
 import edu.stanford.smi.protegex.owl.model.RDFResource;
 import edu.stanford.smi.protegex.owl.model.RDFSClass;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
 /**
- * Script to harmonize "General Functioning Domains" with ICF
+ * Script to harmonize "General Functioning Domains" (GFD) with ICF.
+ * 
  * 
  * @author ttania
  *
  */
 public class GFD2ICF {
+	
+	//TODO: +++ migrate sibling ordering for GFD top level only
+	//TODO: +++ copy public id from old class, print out mapping
+	//TODO: +++ check if we need to retain the title term id for translations; swap title terms
+	//TODO: ??? multiparent them also under the survey classes..
+
 	private static transient Logger log = Logger.getLogger(GFD2ICF.class);
 	
 	//General functioning domains class
@@ -31,20 +37,22 @@ public class GFD2ICF {
 	private static String GFD_RETIRED_CLS = "http://who.int/icd#35997_735007d5_2555_4eb5_a762_282e008a1468";
 
 	private static String ICF_CAT = "http://who.int/icf#ICFCategory";
-	private static String ICF_LIN_VIEW = "http://who.int/icd#ICFLinearizationView";
 	private static String REPLACES_PROP = "http://who.int/icd#replaces";
 	
 	private static OWLModel owlModel;
 	private static ICDContentModel cm;
 	private static RDFSNamedClass icfCat;
-	private static RDFIndividual icfLinView;
 	private static RDFSNamedClass gfdTopCls;
 	private static RDFSNamedClass gfdRetiredCls;
 	
 	private static RDFProperty replacesProp;
 
 	private static Map<String, RDFSNamedClass> name2icfcls = new HashMap<String, RDFSNamedClass>();
+	
+	//used only by checkGFDSubclassing
 	private static Map<RDFSNamedClass, RDFSNamedClass> icf2gfdcls = new HashMap<RDFSNamedClass, RDFSNamedClass>();
+	
+	private static Map<RDFSNamedClass, RDFSNamedClass> gfd2icfcls = new HashMap<RDFSNamedClass, RDFSNamedClass>();
 	
 	public static void main(String[] args) {
 				
@@ -57,7 +65,6 @@ public class GFD2ICF {
 		cm = new ICDContentModel(owlModel);
 		
 		icfCat = owlModel.getRDFSNamedClass(ICF_CAT);
-		icfLinView = owlModel.getRDFIndividual(ICF_LIN_VIEW);	
 		gfdTopCls = owlModel.getRDFSNamedClass(GFD);
 		gfdRetiredCls = owlModel.getRDFSNamedClass(GFD_RETIRED_CLS);
 		
@@ -72,17 +79,13 @@ public class GFD2ICF {
 		
 		log.info("Repacing classes...");
 		replaceClasses();
+		
+		log.info("Replacing GFD top class sibling ordering..");
+		replaceChildrenOrdering();
 
 		log.info("Saving..");
 		//prj.save(new ArrayList<>());
 	}
-
-	//TODO: migrate sibling ordering for GFD top level only
-	//TODO: unmapped children are not kept , check
-	//TODO: copy public id from old class, print out mapping
-	//TODO: check if we need to retain the title term id for translations
-	//TODO: multiparent them also under the survey classes..
-	//TODO: add replacedBy
 
 
 	private static void replaceClasses() {
@@ -105,33 +108,25 @@ public class GFD2ICF {
 			icfCls.addSuperclass(gfdTopCls);
 		}
 		
-		//copy linearization from GFD to ICF class
-		cm.copyLinearizationSpecificationsFromCls(icfCls, gfdCls);
+		replaceCls(gfdCls, icfCls);
 		
-		//replace gfd children
-		replaceGFDChildren(gfdCls);
-		
-		//add link bw the two classes
-		icfCls.setPropertyValue(replacesProp, gfdCls);
 		//retire GFD top class
 		retireTopGFDClass(gfdCls);
 	}
-	
 
-	private static void replaceGFDChildren(RDFSNamedClass gfdParent) {
+
+	private static void replaceGFDChildren(RDFSNamedClass gfdParent, RDFSNamedClass icfParent) {
 		for (RDFSNamedClass gfdCls : KBUtil.getNamedSubclasses(gfdParent, true)) {
 			String gfdTitle = cm.getTitleLabel(gfdCls);
 			
 			RDFSNamedClass icfCls = name2icfcls.get(gfdTitle.toLowerCase());
-			if (icfCls == null) { //we already know about this case
-				continue; 
+			if (icfCls == null) { //no mapping to ICF; move it under ICF parent, remove old GFD parent
+				gfdCls.addSuperclass(icfParent);
+				gfdCls.removeSuperclass(gfdParent);
+			} else {
+				replaceCls(gfdCls, icfCls);
 			}
-			
-			cm.copyLinearizationSpecificationsFromCls(icfCls, gfdCls);
-			//add link bw the two classes
-			icfCls.setPropertyValue(replacesProp, gfdCls);
 		}
-		
 	}
 
 
@@ -149,13 +144,49 @@ public class GFD2ICF {
 		}
 	}
 	
+	private static void replaceCls(RDFSNamedClass gfdCls, RDFSNamedClass icfCls) {
+		//copy linearization from GFD to ICF class
+		cm.copyLinearizationSpecificationsFromCls(icfCls, gfdCls);
+		
+		//replace gfd children
+		replaceGFDChildren(gfdCls, icfCls);
+		
+		//add link bw the two classes
+		icfCls.setPropertyValue(replacesProp, gfdCls);
+		//replace public id
+		replacePublicId(gfdCls, icfCls);
+	}
+	
 
-
+	//preserving the title term for the mapped ICF class; create new title term for the retired GFD class
 	private static void setRetiredTitle(RDFSNamedClass gfdCls) {
 		String title = cm.getTitleLabel(gfdCls);
+		RDFResource gfdTitleTerm = (RDFResource) gfdCls.getPropertyValue(cm.getIcdTitleProperty());
 		
-		RDFResource titleTerm = (RDFResource) gfdCls.getPropertyValue(cm.getIcdTitleProperty());
-		titleTerm.setPropertyValue(cm.getLabelProperty(), "Retired - " + title);
+		RDFSNamedClass icfCls = name2icfcls.get(title.toLowerCase());
+		if (icfCls == null) {
+			log.warn("Expected that GFD class was mapped to ICF, but wasn't: " + gfdCls + " Title: " + title);
+			gfdTitleTerm.setPropertyValue(cm.getLabelProperty(), "Retired - " + title);
+		} else {
+			RDFResource icfTitleTerm = (RDFResource) icfCls.getPropertyValue(cm.getIcdTitleProperty());
+			gfdTitleTerm.setPropertyValue(cm.getLangProperty(), icfTitleTerm.getPropertyValue(cm.getLangProperty()));
+			gfdTitleTerm.setPropertyValue(cm.getIdProperty(), icfTitleTerm.getPropertyValue(cm.getIdProperty()));
+			icfCls.setPropertyValue(cm.getIcdTitleProperty(), gfdTitleTerm);
+		
+			RDFResource newGfdTitleTerm = cm.createTitleTerm();
+			newGfdTitleTerm.setPropertyValue(cm.getLabelProperty(), "Retired - " + title);
+			newGfdTitleTerm.setPropertyValue(cm.getLangProperty(), icfTitleTerm.getPropertyValue(cm.getLangProperty()));
+			gfdCls.setPropertyValue(cm.getIcdTitleProperty(), newGfdTitleTerm);
+		}
+	}
+	
+	private static void replacePublicId(RDFSNamedClass gfdCls, RDFSNamedClass icfCls) {
+		String publicId = cm.getPublicId(gfdCls);
+		
+		icfCls.setPropertyValue(cm.getPublicIdProperty(), publicId);
+		gfdCls.setPropertyValue(cm.getPublicIdProperty(), "WAS: " + publicId);
+		
+		log.info("PUBLIC ID SWAP:\t" + publicId + "\t" + icfCls.getName() + "\t" + gfdCls);
 	}
 
 
@@ -170,6 +201,7 @@ public class GFD2ICF {
 				//System.out.println(gfdCls + "\t" + superclses + "\t" + gfdTitle + "\t" + KBUtil.getTitles(cm, superclses));
 			} else {
 				icf2gfdcls.put(icfCls, gfdCls);
+				gfd2icfcls.put(gfdCls, icfCls);
 			}
 		}
 	}
@@ -220,4 +252,16 @@ public class GFD2ICF {
 			}
 		}
 	}
+
+	private static void replaceChildrenOrdering() {
+		Collection<RDFResource> childOrderingRes = gfdTopCls.getPropertyValues(cm.getChildrenOrderProperty());
+		for (RDFResource childOrdering : childOrderingRes) {
+			RDFSNamedClass orderedChild = (RDFSNamedClass) childOrdering.getPropertyValue(cm.getOrderedChildProperty());
+			RDFSNamedClass icfCls = gfd2icfcls.get(orderedChild);
+			if (icfCls != null) {
+				childOrdering.setPropertyValue(cm.getOrderedChildProperty(), icfCls);
+			}
+		}
+	}
+	
 }
