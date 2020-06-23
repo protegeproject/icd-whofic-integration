@@ -37,25 +37,37 @@ public class ICHIClassImporter {
 	}
 
 	private void importTitle(String title) {
+		if (title == null || title.length() == 0) {
+			return;
+		}
+		
 		RDFResource term = createTerm(cm.getTermTitleClass(), title, "en");
 		cls.addPropertyValue(cm.getIcdTitleProperty(), term);
 	}
 
 	private void importDefinition(String definition) {
+		if (definition == null || definition.length() == 0) {
+			return;
+		}
+		
 		RDFResource term = createTerm(cm.getTermDefinitionClass(), definition, "en");
 		cls.addPropertyValue(cm.getDefinitionProperty(), term);
 	}
 
 	private void importIndexTerms(String indexTerms) {
-		if (indexTerms == null) {
+		if (indexTerms == null || indexTerms.length() == 0) {
 			return;
 		}
 		
-		String[] inclArray = indexTerms.split(ICHIActionAndMeansImporter.VALUE_SEPARATOR);
+		String[] inclArray = indexTerms.split(ICHIImporter.VALUE_SEPARATOR);
 		
 		for (int i = 0; i < inclArray.length; i++) {
 			String indexTerm = inclArray[i];
 			indexTerm = indexTerm.trim();
+			
+			if (indexTerm.length() == 0) {
+				continue;
+			}
 			
 			RDFResource term = createTerm(cm.getTermBaseInclusionClass(), indexTerm, "en");
 			//cm.addBaseInclusionTermToClass(cls, term);
@@ -66,17 +78,19 @@ public class ICHIClassImporter {
 
 
 	private void importExclusion(String exclusions) {
-		if (exclusions == null) {
+		if (exclusions == null || exclusions.length() == 0) {
 			return;
 		}
-		
-		String[] exclArray = exclusions.split(ICHIActionAndMeansImporter.VALUE_SEPARATOR);
+
+		String[] exclArray = exclusions.split(ICHIImporter.VALUE_SEPARATOR);
 		
 		for (int i = 0; i < exclArray.length; i++) {
 			String excl = exclArray[i];
 			excl = excl.trim();
 			
-			ICHIUtil.addExclusion(cls, excl);
+			if (excl.length() > 0) {
+				ICHIUtil.addExclusion(cls, excl);
+			}
 		}
 	}
 
@@ -88,6 +102,10 @@ public class ICHIClassImporter {
 	private void addSuperCls(RDFSNamedClass superCls) {
 		cls.addSuperclass(superCls);
 		cls.removeSuperclass(owlModel.getOWLThingClass());
+		
+		//Add the sibling ordering. The classes come already sorted in the tsv file, 
+		//so it should be fine to just add them to the index
+		cm.addChildToIndex(superCls, cls, true);
 	}
 	
 	private void importPublicId() {
