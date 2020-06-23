@@ -4,10 +4,10 @@ import java.io.IOException;
 
 import org.apache.log4j.Logger;
 
-public class ICHIActionAndMeansImporter extends ICHIImporter {
-	private static transient Logger log = Logger.getLogger(ICHIActionAndMeansImporter.class);
+public class ICHITargetImporter extends ICHIImporter {
+	private static transient Logger log = Logger.getLogger(ICHITargetImporter.class);
 	
-	public ICHIActionAndMeansImporter() {
+	public ICHITargetImporter() {
 		super();
 	}
 	
@@ -19,7 +19,7 @@ public class ICHIActionAndMeansImporter extends ICHIImporter {
 		}
 		
 		
-		ICHIActionAndMeansImporter importer = new ICHIActionAndMeansImporter();
+		ICHITargetImporter importer = new ICHITargetImporter();
 		importer.importClses(args[0], args[2], args[1]);
 	}
 	
