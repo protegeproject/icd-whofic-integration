@@ -6,14 +6,15 @@ import org.apache.log4j.Logger;
 
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
-public class ICHITargetImporter extends ICHIImporter {
+public class ICHIInterventionsImporter extends ICHIImporter {
 	
-	private static transient Logger log = Logger.getLogger(ICHITargetImporter.class);
+	private static transient Logger log = Logger.getLogger(ICHIInterventionsImporter.class);
 	
-	private static final String TARGET_EXCLUSION_PATTERN = "(.*).\\(([A-Z][A-Z][A-Z1-9])\\)(.*)";
-
+	private static final String INTERVENTIONS_EXCLUSION_PATTERN = "(.*?)[ ,]*\\(([A-Z][A-Z][A-Z1-9][ .][A-Z][A-Z][ .][A-Z][A-Z])\\)(.*)";
 	
-	public ICHITargetImporter() {
+	private static final String INTERVENTIONS_ON = "Interventions on ";
+	
+	public ICHIInterventionsImporter() {
 		super();
 	}
 	
@@ -24,7 +25,7 @@ public class ICHITargetImporter extends ICHIImporter {
 			System.exit(1);
 		}
 		
-		ICHITargetImporter importer = new ICHITargetImporter();
+		ICHIInterventionsImporter importer = new ICHIInterventionsImporter();
 		importer.importClses(args[0], args[2], args[1]);
 	}
 	
@@ -36,23 +37,28 @@ public class ICHITargetImporter extends ICHIImporter {
 		String section = getString(data, 1);
 		String group = getString(data, 2);
 		
-		String target = getString(data, 3);
+		String ichiCode = getString(data, 3);
 		String title = getString(data, 4);
 		String definition = getString(data, 5);
 		String indexTerms = getString(data, 6);
-		String exclusion = getString(data, 7);
-		String icfMap = getString(data, 8);
 		
-		if (target == null) {
+		String inclNotes = getString(data, 7);
+		String codeAlso = getString(data, 8);
+		
+		String exclusion = getString(data, 9);
+		
+		if (ichiCode == null) {
 			log.warn("Target column (icdTitle) is null for: " + row);
 		}	
 		
-		RDFSNamedClass cls = ICHIUtil.createAtmCls(owlModel, target);
+		RDFSNamedClass cls = ICHIUtil.createInterventionCls(owlModel, ichiCode);
 		
+		group = getGroupName(group);
 		RDFSNamedClass superCls = createSuperclses(chapter, section, group);
 		
-		ICHIClassImporter clsImporter = new ICHIClassImporter(owlModel, cls);
-		clsImporter.importTargetCls(superCls, target, title, definition, indexTerms, exclusion, icfMap);
+		InterventionClassImporter clsImporter = new InterventionClassImporter(owlModel, cls);
+		clsImporter.importInterventionsCls(superCls, ichiCode, title, definition, indexTerms, 
+				inclNotes, codeAlso, exclusion);
 	}
 	
 	private RDFSNamedClass createSuperclses(String chapter, String section, String group) {
@@ -63,8 +69,18 @@ public class ICHITargetImporter extends ICHIImporter {
 		return groupSuperCls;
 	}
 
+	private String getGroupName(String title) {
+		int index = title.indexOf("-");
+		if (index > 0) { //not the best check
+			title = title.substring(index + 1);
+			title = title.trim();
+		}
+		title = INTERVENTIONS_ON + title;
+		return title;
+	}
+	
 	@Override
 	protected String getExclusionCodePattern() {
-		return TARGET_EXCLUSION_PATTERN;
+		return INTERVENTIONS_EXCLUSION_PATTERN;
 	}
 }

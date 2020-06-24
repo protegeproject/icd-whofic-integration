@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.log4j.Logger;
 
 public class ICHIActionAndMeansImporter extends ICHIImporter {
+	
 	private static transient Logger log = Logger.getLogger(ICHIActionAndMeansImporter.class);
 	
 	public ICHIActionAndMeansImporter() {
