@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import edu.stanford.bmir.whofic.IcdIdGenerator;
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.smi.protegex.owl.model.OWLModel;
+import edu.stanford.smi.protegex.owl.model.RDFProperty;
 import edu.stanford.smi.protegex.owl.model.RDFResource;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
@@ -19,31 +20,55 @@ public class ICHIUtil {
 	private static transient Logger log = Logger.getLogger(ICHIUtil.class);
 			
 	public static final String DEFAULT_NS = "http://who.int/icd#";
+	public static final String ICF_NS = "http://who.int/icf#";
+	
+	public static final String ICF_MAP_PROP = "http://who.int/icd#icfMap";
 	
 	//Atm stands for: Action-Target-Means
 	
-	private static Collection<RDFSNamedClass> atmMetaclses = new ArrayList<RDFSNamedClass>();
+	private static Collection<RDFSNamedClass> metaclasses = new ArrayList<RDFSNamedClass>();
 	private static Map<String, RDFSNamedClass> code2cls = new HashMap<String, RDFSNamedClass>();
 	
 	private static Map<RDFSNamedClass, List<String>> cls2exclusions = new HashMap<RDFSNamedClass, List<String>>();
 	
+	private static RDFProperty icfMapProp;
 	
 	public static Collection<RDFSNamedClass> getAtmMetaclasses(OWLModel owlModel) {
-		if (atmMetaclses.size() > 0) {
-			return atmMetaclses;
+		if (metaclasses.size() > 0) {
+			return metaclasses;
 		}
-		atmMetaclses = new ArrayList<RDFSNamedClass>();
-		atmMetaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#DefinitionSection"));
-		atmMetaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
-		atmMetaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
-		atmMetaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ValueMetaClass"));
-		atmMetaclses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHIAxesSection"));
-		return atmMetaclses;
+		metaclasses = new ArrayList<RDFSNamedClass>();
+		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#DefinitionSection"));
+		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
+		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
+		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ValueMetaClass"));
+		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHIAxesSection"));
+		return metaclasses;
+	}
+	
+	//the metaclass methods are mutually exclusive
+	public static Collection<RDFSNamedClass> getInterventionMetaclasses(OWLModel owlModel) {
+		if (metaclasses.size() > 0) {
+			return metaclasses;
+		}
+		metaclasses = new ArrayList<RDFSNamedClass>();
+		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#DefinitionSection"));
+		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
+		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
+		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHIPostcoordinationSection"));
+		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHISection"));
+		return metaclasses;
 	}
 	
 	public static RDFSNamedClass createAtmCls(OWLModel owlModel, String code) {
 		RDFSNamedClass cls = createCls(owlModel, code);
 		addMetaclasses(cls, getAtmMetaclasses(owlModel));
+		return cls;
+	}
+	
+	public static RDFSNamedClass createInterventionCls(OWLModel owlModel, String code) {
+		RDFSNamedClass cls = createCls(owlModel, code);
+		addMetaclasses(cls, getInterventionMetaclasses(owlModel));
 		return cls;
 	}
 	
@@ -91,7 +116,12 @@ public class ICHIUtil {
 	}
 	
 	public static RDFSNamedClass getAtmSupercls(ICDContentModel cm, RDFSNamedClass topCls, String title) {
-		title = title.replaceAll("^\\d \\- ", "");
+		int index = title.indexOf("-");
+		if (index > 0) {
+			title = title.substring(index + 1);
+			title = title.trim();
+		}
+		//title = title.replaceAll("^\\d \\- ", "");
 		
 		RDFSNamedClass supercls = code2cls.get(title);
 		
@@ -112,4 +142,15 @@ public class ICHIUtil {
 		return supercls;
 	}
 	
+	public static RDFProperty getIcfMapProperty(OWLModel owlModel) {
+		if (icfMapProp == null) {
+			icfMapProp = owlModel.createAnnotationProperty(ICF_MAP_PROP);
+		}
+		
+		return icfMapProp;
+	}
+	
+	public static RDFSNamedClass getIcfClass(OWLModel owlModel, String icfCode) {
+		return owlModel.getRDFSNamedClass(ICF_NS + icfCode);
+	}
 }

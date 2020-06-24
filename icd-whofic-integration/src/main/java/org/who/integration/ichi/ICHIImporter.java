@@ -16,8 +16,9 @@ import edu.stanford.smi.protegex.owl.model.RDFResource;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
 public class ICHIImporter {
-
 	private static transient Logger log = Logger.getLogger(ICHIImporter.class);
+
+	private static final String EXCLUSION_CODE_PATTERN = "(.*).\\(([A-Z][A-Z])\\)(.*)";
 	
 	public static final String COL_SEPARATOR = "\t";
 	public static final String VALUE_SEPARATOR = "; *|\\\\n";
@@ -107,10 +108,10 @@ public class ICHIImporter {
 		RDFSNamedClass superCls = ICHIUtil.getAtmSupercls(cm, topCls, type);
 		
 		ICHIClassImporter clsImporter = new ICHIClassImporter(owlModel, cls);
-		clsImporter.importCls(superCls, action, title, definition, indexTerms, exclusion, codeAlso);
+		clsImporter.importAtmCls(superCls, action, title, definition, indexTerms, exclusion, codeAlso);
 	}
 
-	private String getString(String[] data, int index) {
+	protected String getString(String[] data, int index) {
 		if (data.length <= index) {
 			return null;
 		}
@@ -138,7 +139,7 @@ public class ICHIImporter {
 
 	private void addExclusion(RDFSNamedClass cls, String excl) {
 		ArrayList<String> codes = new ArrayList<String>();
-		final Pattern CODE_PATTERN = Pattern.compile("(.*).\\(([A-Z][A-Z])\\)(.*)");
+		final Pattern CODE_PATTERN = Pattern.compile(getExclusionCodePattern());
 		Matcher m = CODE_PATTERN.matcher(excl);
 		String label = excl;
 		while ( m.find() ) {
@@ -147,15 +148,16 @@ public class ICHIImporter {
 		    m = CODE_PATTERN.matcher(label);
 		}
 		
-		//System.out.println(cls.getName() + "\t" + excl + "\t" + label + "\t" + codes);
+		//log.info(cls.getPropertyValue(cm.getIcdCodeProperty()) + "\t" + excl + "\t" + label + "\t" + codes);
+		//System.out.println(cls.getPropertyValue(cm.getIcdCodeProperty()) + "\t" + excl + "\t" + label + "\t" + codes);
 		
 		if (codes.size() == 0) {
-			log.warn("EXCLUSION: " + cls.getName() + " has no reference codes for exclusion " + excl);
+			log.warn("EXCLUSION: " + cls.getPropertyValue(cm.getIcdCodeProperty()) + " has no reference codes for exclusion: " + excl);
 			addIncompleteExclusion(cls, label);
 		}
 		
 		if (codes.size() > 1) {
-			log.warn("EXCLUSION: " + cls.getName() + " has multiple reference codes for exclusion " + excl + ": " + codes);
+			log.warn("EXCLUSION: " + cls.getPropertyValue(cm.getIcdCodeProperty()) + " has multiple reference codes for exclusion: " + excl + ": " + codes);
 		}
 		
 		for (String code : codes) {
@@ -163,18 +165,26 @@ public class ICHIImporter {
 		}
 		
 	}
+	
+	protected String getExclusionCodePattern() {
+		return EXCLUSION_CODE_PATTERN;
+	}
 
 	private void addExclusion(RDFSNamedClass cls, String excl, String label, String code) {
 		RDFSNamedClass exclCls = ICHIUtil.getCls(code);
 		
 		if (exclCls == null) {
-			log.warn("EXCLUSION: Could not find excluded class: " + code + 
-					" for class: " + cls.getName() + " and exclusion: " + excl);
+			exclCls = ICHIUtil.getCls(code.replaceAll(" ", "."));
 		}
-		
+/*		
+		if (exclCls == null) {
+			log.warn("EXCLUSION: Could not find excluded class: " + code + 
+					" for class: " + cls.getPropertyValue(cm.getIcdCodeProperty()) + ". Exclusion: " + excl);
+		}
+*/		
 		if (label == null || label.length() == 0) {
 			log.warn("EXCLUSION: No label for excluded class: " + code + 
-					" for class: " + cls.getName() + " and exclusion: " + excl);
+					" for class: " + cls.getPropertyValue(cm.getIcdCodeProperty()) + ". Exclusion: " + excl);
 		}
 		
 		RDFResource exclTerm = cm.createBaseExclusionTerm();
