@@ -4,8 +4,15 @@ import java.io.IOException;
 
 import org.apache.log4j.Logger;
 
+import edu.stanford.smi.protegex.owl.model.OWLModel;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
+//TODO: import linearizations -- will do with script
+//TODO: import code also
+//TODO: import include_notes
+//TODO: add logical defs
+//TODO: add postcoordination
+//TODO: improve error reporting
 public class ICHIInterventionsImporter extends ICHIImporter {
 	
 	private static transient Logger log = Logger.getLogger(ICHIInterventionsImporter.class);
@@ -27,6 +34,17 @@ public class ICHIInterventionsImporter extends ICHIImporter {
 		
 		ICHIInterventionsImporter importer = new ICHIInterventionsImporter();
 		importer.importClses(args[0], args[2], args[1]);
+	}
+	
+	@Override
+	protected void init(OWLModel owlModel, RDFSNamedClass topCls) {
+		super.init(owlModel, topCls);
+		
+		//create the ICHI Linearization
+		ICHIUtil.getICHILinearizationView(getOwlModel());
+		
+		//init ATM maps
+		ICHIUtil.initATMCodes2ClsesMaps(getCm());
 	}
 	
 	@Override
@@ -56,15 +74,15 @@ public class ICHIInterventionsImporter extends ICHIImporter {
 		group = getGroupName(group);
 		RDFSNamedClass superCls = createSuperclses(chapter, section, group);
 		
-		InterventionClassImporter clsImporter = new InterventionClassImporter(owlModel, cls);
+		InterventionClassImporter clsImporter = new InterventionClassImporter(owlModel, cls, getTopCls());
 		clsImporter.importInterventionsCls(superCls, ichiCode, title, definition, indexTerms, 
 				inclNotes, codeAlso, exclusion);
 	}
 	
 	private RDFSNamedClass createSuperclses(String chapter, String section, String group) {
-		RDFSNamedClass chapterSuperCls = ICHIUtil.getAtmSupercls(cm, topCls, chapter);
-		RDFSNamedClass sectionSuperCls = ICHIUtil.getAtmSupercls(cm, chapterSuperCls, section);
-		RDFSNamedClass groupSuperCls = ICHIUtil.getAtmSupercls(cm, sectionSuperCls, group);
+		RDFSNamedClass chapterSuperCls = ICHIUtil.getSupercls(cm, topCls, chapter);
+		RDFSNamedClass sectionSuperCls = ICHIUtil.getSupercls(cm, chapterSuperCls, section);
+		RDFSNamedClass groupSuperCls = ICHIUtil.getSupercls(cm, sectionSuperCls, group);
 		
 		return groupSuperCls;
 	}
