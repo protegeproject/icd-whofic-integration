@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import org.apache.log4j.Logger;
 
+import edu.stanford.smi.protegex.owl.model.OWLModel;
+import edu.stanford.smi.protegex.owl.model.RDFProperty;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
 public class ICHITargetImporter extends ICHIImporter {
@@ -26,6 +28,16 @@ public class ICHITargetImporter extends ICHIImporter {
 		
 		ICHITargetImporter importer = new ICHITargetImporter();
 		importer.importClses(args[0], args[2], args[1]);
+	}
+	
+	@Override
+	protected void init(OWLModel owlModel, RDFSNamedClass topCls) {
+		super.init(owlModel, topCls);
+	
+		RDFProperty icfMapProp = ICHIUtil.getIcfMapProperty(getOwlModel());
+		if (icfMapProp == null) {
+			icfMapProp = owlModel.createAnnotationProperty(ICHIUtil.ICF_MAP_PROP);
+		}
 	}
 	
 	@Override
@@ -56,9 +68,9 @@ public class ICHITargetImporter extends ICHIImporter {
 	}
 	
 	private RDFSNamedClass createSuperclses(String chapter, String section, String group) {
-		RDFSNamedClass chapterSuperCls = ICHIUtil.getAtmSupercls(cm, topCls, chapter);
-		RDFSNamedClass sectionSuperCls = ICHIUtil.getAtmSupercls(cm, chapterSuperCls, section);
-		RDFSNamedClass groupSuperCls = ICHIUtil.getAtmSupercls(cm, sectionSuperCls, group);
+		RDFSNamedClass chapterSuperCls = ICHIUtil.getSupercls(cm, topCls, chapter);
+		RDFSNamedClass sectionSuperCls = ICHIUtil.getSupercls(cm, chapterSuperCls, section);
+		RDFSNamedClass groupSuperCls = ICHIUtil.getSupercls(cm, sectionSuperCls, group);
 		
 		return groupSuperCls;
 	}

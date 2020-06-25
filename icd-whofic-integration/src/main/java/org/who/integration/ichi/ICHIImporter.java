@@ -60,6 +60,12 @@ public class ICHIImporter {
 		this.owlModel = owlModel;
 		this.cm = new ICDContentModel(owlModel);
 		this.topCls = topCls;
+		
+		RDFResource ichiLinView = ICHIUtil.getICHILinearizationView(owlModel);
+		if (ichiLinView == null) {
+			ichiLinView = owlModel.getRDFSNamedClass(ICHIUtil.LIN_VIEW).createInstance(ICHIUtil.ICHI_LIN_VIEW);
+			ichiLinView.addLabel("ICHI", null);
+		}
 	}
 
 
@@ -105,7 +111,7 @@ public class ICHIImporter {
 		}
 		
 		RDFSNamedClass cls = ICHIUtil.createAtmCls(owlModel, action);
-		RDFSNamedClass superCls = ICHIUtil.getAtmSupercls(cm, topCls, type);
+		RDFSNamedClass superCls = ICHIUtil.getSupercls(cm, topCls, type);
 		
 		ICHIClassImporter clsImporter = new ICHIClassImporter(owlModel, cls);
 		clsImporter.importAtmCls(superCls, action, title, definition, indexTerms, exclusion, codeAlso);
@@ -176,12 +182,12 @@ public class ICHIImporter {
 		if (exclCls == null) {
 			exclCls = ICHIUtil.getCls(code.replaceAll(" ", "."));
 		}
-/*		
+		
 		if (exclCls == null) {
 			log.warn("EXCLUSION: Could not find excluded class: " + code + 
 					" for class: " + cls.getPropertyValue(cm.getIcdCodeProperty()) + ". Exclusion: " + excl);
 		}
-*/		
+		
 		if (label == null || label.length() == 0) {
 			log.warn("EXCLUSION: No label for excluded class: " + code + 
 					" for class: " + cls.getPropertyValue(cm.getIcdCodeProperty()) + ". Exclusion: " + excl);
@@ -209,6 +215,18 @@ public class ICHIImporter {
 		RDFResource exclTerm = cm.createBaseExclusionTerm();
 		exclTerm.setPropertyValue(cm.getLabelProperty(), label);
 		cm.addBaseExclusionTermToClass(cls, exclTerm);
+	}
+	
+	public ICDContentModel getCm() {
+		return cm;
+	}
+	
+	public OWLModel getOwlModel() {
+		return owlModel;
+	}
+	
+	public RDFSNamedClass getTopCls() {
+		return topCls;
 	}
 
 }

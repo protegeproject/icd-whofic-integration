@@ -34,6 +34,7 @@ public class ICHIClassImporter {
 		importCodeAlso(codeAlso); //TODO - not sure how to import
 		
 		importPublicId(); //TODO - need more info
+		importICHILin();
 		
 		addSuperCls(superCls);
 	}
@@ -50,6 +51,7 @@ public class ICHIClassImporter {
 		importIcfMap(icfMap); //TODO - not sure how to import
 		
 		importPublicId(); //TODO - need more info
+		importICHILin();
 		
 		addSuperCls(superCls);
 	}
@@ -80,7 +82,7 @@ public class ICHIClassImporter {
 		Collection<String> terms = getTerms(indexTerms, "INDEX_TERM");
 		
 		for (String term : terms) {
-			RDFResource termRes = createTerm(cm.getTermBaseInclusionClass(), term, "en");
+			RDFResource termRes = createTerm(cm.getTermBaseIndexClass(), term, "en");
 			//cm.addBaseInclusionTermToClass(cls, termRes);
 			 //TT - this is needed for the current ICD CM; not necessary in the merged CM
 			cm.addBaseIndexTermToClass(cls, termRes);
@@ -171,6 +173,10 @@ public class ICHIClassImporter {
 		//TT - need more info from WHO
 	}
 	
+	protected void importICHILin() {
+		ICHIUtil.addICHILin(getCm(), getCls(), true, false);
+	}
+	
 	protected RDFResource createTerm(RDFSNamedClass termCls, String label, String lang) {
 		RDFResource term = cm.createTerm(termCls);
 		term.addPropertyValue(cm.getLabelProperty(), label);
@@ -180,5 +186,13 @@ public class ICHIClassImporter {
 
 	public RDFSNamedClass getCls() {
 		return cls;
+	}
+	
+	public ICDContentModel getCm() {
+		return cm;
+	}
+	
+	public OWLModel getOwlModel() {
+		return owlModel;
 	}
 }
