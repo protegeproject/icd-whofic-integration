@@ -30,6 +30,7 @@ public class ICHIUtil {
 	
 	public static final String ICHI_LIN_VIEW = "http://who.int/icd#ICHILinearizationView";
 	public static final String LIN_VIEW = "http://who.int/icd#LinearizationView";
+	public static final String FOUNDATION_LIN_VIEW = "http://who.int/icd#FoundationComponent";
 	
 	//Atm stands for: Action-Target-Means
 	
@@ -49,6 +50,8 @@ public class ICHIUtil {
 	private static RDFProperty hasTargetProp;
 	
 	private static RDFResource ichiLinView;
+	private static RDFResource foundationLinView;
+	
 	
 	public static Collection<RDFSNamedClass> getAtmMetaclasses(OWLModel owlModel) {
 		if (metaclasses.size() > 0) {
@@ -152,6 +155,7 @@ public class ICHIUtil {
 			supercls.setPropertyValue(cm.getIcdTitleProperty(), titleTerm);
 			
 			addICHILin(cm, supercls, true, true);
+			addPostcoordinationSpecToIchiCls(cm, supercls);
 			
 			cm.addChildToIndex(topCls, supercls, true);
 			
@@ -242,5 +246,24 @@ public class ICHIUtil {
 		return action2cls.get(code);
 	}
 	
+	/* post-coordination */
+	
+	public static RDFResource getFoundationLinearizationView(OWLModel owlModel) {
+		if (foundationLinView == null) {
+			foundationLinView = owlModel.getRDFIndividual("http://who.int/icd#FoundationComponent");
+		}
+		return foundationLinView;
+	}
+	
+	public static void addPostcoordinationSpec(ICDContentModel cm, RDFSNamedClass cls, RDFResource linView) {
+        RDFResource linSpec = cm.getPostcoordinationAxesSpecificationClass().createInstance(IcdIdGenerator.getNextUniqueId(cm.getOwlModel()));
+        linSpec.setPropertyValue(cm.getLinearizationViewProperty(), linView);
+        cls.addPropertyValue(cm.getAllowedPostcoordinationAxesProperty(), linSpec);
+	}
+	
+	public static void addPostcoordinationSpecToIchiCls(ICDContentModel cm, RDFSNamedClass cls) {
+		addPostcoordinationSpec(cm, cls, getFoundationLinearizationView(cm.getOwlModel()));
+		addPostcoordinationSpec(cm, cls, getICHILinearizationView(cm.getOwlModel()));
+	}
 	
 }

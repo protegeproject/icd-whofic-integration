@@ -123,9 +123,36 @@ public class ICHIImporter {
 		}
 		String text = data[index];
 		
-		return text == null ? null : text.trim();
+		return text == null ? null : makeReplacements(text);
 	}
 
+	private String makeReplacements(String term) {
+		if (term == null) {
+			return null;
+		}
+		//account for errors in the input csv
+		
+		
+		if (term.startsWith("\"")) {
+			term = term.substring(1);
+		}
+		if (term.endsWith("\"")) {
+			term = term.substring(0, term.length()-1);
+		}
+		
+		term = term.trim();
+		
+		if (term.endsWith(";")) {
+			term = term.substring(0, term.length()-1);
+		}
+			
+		term = term.replaceAll(";\\ \\:", ":;"); 
+		
+		term = term.trim();
+		
+		return term;
+	}
+	
 	protected void postprocess() {
 		addExclusions();
 	}
@@ -158,12 +185,20 @@ public class ICHIImporter {
 		//System.out.println(cls.getPropertyValue(cm.getIcdCodeProperty()) + "\t" + excl + "\t" + label + "\t" + codes);
 		
 		if (codes.size() == 0) {
-			log.warn("EXCLUSION: " + cls.getPropertyValue(cm.getIcdCodeProperty()) + " has no reference codes for exclusion: " + excl);
+			log.warn("EXCLUSION: '" + cls.getPropertyValue(cm.getIcdCodeProperty()) + " " + 
+					cm.getTitleLabel(cls) +
+					"' has no reference codes for exclusion: " + excl);
+			
 			addIncompleteExclusion(cls, label);
 		}
 		
 		if (codes.size() > 1) {
-			log.warn("EXCLUSION: " + cls.getPropertyValue(cm.getIcdCodeProperty()) + " has multiple reference codes for exclusion: " + excl + ": " + codes);
+			log.warn("EXCLUSION: '" + cls.getPropertyValue(cm.getIcdCodeProperty()) + " " + 
+					cm.getTitleLabel(cls) +
+					"' has multiple reference codes for exclusion: " + excl);
+			
+			//By WHO request: if there are multiple references to a label, don't use the label, use only the reference code
+			label = null;
 		}
 		
 		for (String code : codes) {
@@ -184,13 +219,17 @@ public class ICHIImporter {
 		}
 		
 		if (exclCls == null) {
-			log.warn("EXCLUSION: Could not find excluded class: " + code + 
-					" for class: " + cls.getPropertyValue(cm.getIcdCodeProperty()) + ". Exclusion: " + excl);
+			log.warn("EXCLUSION: For '" + cls.getPropertyValue(cm.getIcdCodeProperty()) + " " + 
+					cm.getTitleLabel(cls) +
+					"' could not find excluded class: " + code + 
+					". Exclusion: " + excl);
 		}
 		
 		if (label == null || label.length() == 0) {
-			log.warn("EXCLUSION: No label for excluded class: " + code + 
-					" for class: " + cls.getPropertyValue(cm.getIcdCodeProperty()) + ". Exclusion: " + excl);
+			log.warn("EXCLUSION: For '" + cls.getPropertyValue(cm.getIcdCodeProperty()) + " " + 
+					cm.getTitleLabel(cls) +
+					"' no exclusion label for excluded class: " + code + 
+					". Exclusion: " + excl);
 		}
 		
 		RDFResource exclTerm = cm.createBaseExclusionTerm();
