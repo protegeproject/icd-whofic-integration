@@ -34,10 +34,15 @@ public class InterventionClassImporter extends ICHIClassImporter {
 		importICHILin();
 		
 		addSuperCls(superCls);
+		addPostcoordSpecs();
 		importLogicalDef(ichiCode);
 	}
 
 	
+	private void addPostcoordSpecs() {
+		ICHIUtil.addPostcoordinationSpecToIchiCls(getCm(), getCls());
+	}
+
 	private void importLogicalDef(String ichiCode) {
 		//TODO: maybe we should take the top level Intervention class
 		//RDFSNamedClass supercls = (RDFSNamedClass) getCls().getSuperclasses(false).iterator().next();
