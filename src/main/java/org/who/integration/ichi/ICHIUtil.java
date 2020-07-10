@@ -136,12 +136,7 @@ public class ICHIUtil {
 	}
 	
 	public static RDFSNamedClass getSupercls(ICDContentModel cm, RDFSNamedClass topCls, String title) {
-		int index = title.indexOf("-");
-		if (index > 0) {
-			title = title.substring(index + 1);
-			title = title.trim();
-		}
-		//title = title.replaceAll("^\\d \\- ", "");
+		title = title.replaceAll("^\\d+ \\- ", "");
 		
 		RDFSNamedClass supercls = code2cls.get(title);
 		

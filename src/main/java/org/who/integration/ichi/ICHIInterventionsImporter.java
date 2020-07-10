@@ -73,6 +73,7 @@ public class ICHIInterventionsImporter extends ICHIImporter {
 		RDFSNamedClass cls = ICHIUtil.createInterventionCls(owlModel, ichiCode);
 		
 		group = getGroupName(group);
+		
 		RDFSNamedClass superCls = createSuperclses(chapter, section, group);
 		
 		InterventionClassImporter clsImporter = new InterventionClassImporter(owlModel, cls, getTopCls());
@@ -83,9 +84,12 @@ public class ICHIInterventionsImporter extends ICHIImporter {
 	private RDFSNamedClass createSuperclses(String chapter, String section, String group) {
 		RDFSNamedClass chapterSuperCls = ICHIUtil.getSupercls(cm, topCls, chapter);
 		RDFSNamedClass sectionSuperCls = ICHIUtil.getSupercls(cm, chapterSuperCls, section);
-		RDFSNamedClass groupSuperCls = ICHIUtil.getSupercls(cm, sectionSuperCls, group);
 		
-		return groupSuperCls;
+		if (chapter.contains("Interventions on the Environment")) {
+			return sectionSuperCls;
+		} else {
+			return ICHIUtil.getSupercls(cm, sectionSuperCls, group); //this is the groupCls
+		}
 	}
 
 	private String getGroupName(String title) {
