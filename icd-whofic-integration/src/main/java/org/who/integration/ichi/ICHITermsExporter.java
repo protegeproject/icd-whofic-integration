@@ -315,6 +315,16 @@ public class ICHITermsExporter {
 	private String getExpandedInclusionUnhandledNEC(String ichiCode, String baseTerm, String term) {
 		String lcTerm = term.toLowerCase();
 		
+		/*
+		if (baseTerm.contains(term)) {
+			term2warn.put(ichiCode+baseTerm+term, "Repeated include note in base term");
+			reportWarning(ichiCode, "INCLUDE", "Repeated include note in base term", term,
+					"Repeated include note in base term. Base term: " + baseTerm);
+			System.out.println("Repeated include note in base term. Base term: " + baseTerm + ". Include note: " + term);
+			return "";
+		}
+		*/
+		
 		if (lcTerm.startsWith(THAT)) {
 			return baseTerm + " " + term.substring(5).trim();
 		}
@@ -452,6 +462,29 @@ public class ICHITermsExporter {
 			return str;
 		}
 		
+		if (baseTerm.contains("abdominal or pelvic artery")) {
+			String str = term.replaceAll("[Aa]rtery", "").trim();
+			if (str.matches("\\w+")) { //include note is only one word
+				String ret = baseTerm.replaceAll("abdominal or pelvic artery", str + " artery");
+				//System.out.println(ret);
+				return ret;
+			}
+		}
+		
+		if (baseTerm.contains("vein of thorax")) {
+			String str = term.replaceAll("[Vv]ein", "").trim();
+			if (str.matches("\\w+")) { //include note is only one word
+				String ret = baseTerm.replaceAll("vein of thorax", str + " vein");
+				//System.out.println(ret);
+				return ret;
+			}
+		}
+		
+		if (baseTerm.contains("drug use") && lcTerm.contains("drug use")) {
+			String str = baseTerm.replaceAll("drug use", lcTerm);
+			//System.out.println(str);
+			return str;
+		}
 		
 		String intersection = StringUtils.longestCommonToken(baseTerm, term);
 		if (intersection != null && intersection.length() > 0  ){
@@ -586,7 +619,6 @@ public class ICHITermsExporter {
 				suberrorType + COL_SEPARATOR +
 				term + COL_SEPARATOR +
 				fullText);
-				
 				
 	}
 	

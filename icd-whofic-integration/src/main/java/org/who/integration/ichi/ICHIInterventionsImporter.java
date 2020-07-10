@@ -12,6 +12,7 @@ import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 //TODO: import include_notes
 //TODO: add logical defs
 //TODO: add postcoordination
+//TODO: for exclusions with "omit code", import them as coding notes
 //TODO: improve error reporting
 public class ICHIInterventionsImporter extends ICHIImporter {
 	
