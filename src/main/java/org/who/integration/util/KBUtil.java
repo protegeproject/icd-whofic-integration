@@ -25,6 +25,19 @@ public class KBUtil {
 		return namedSubclses;
 	}
 	
+	
+	public static Collection<RDFSNamedClass> getNamedSuperclasses(RDFSNamedClass cls, boolean transitive) {
+		List<RDFSNamedClass> namedSuperclses = new ArrayList<RDFSNamedClass>();
+		
+		for (Object subcls : cls.getSuperclasses(transitive)) {
+			if (subcls instanceof RDFSNamedClass) {
+				namedSuperclses.add((RDFSNamedClass) subcls);
+			}
+		}
+		
+		return namedSuperclses;
+	}
+	
 	public static Collection<String> getTitles(ICDContentModel cm, Collection<RDFSNamedClass> clses) {
 		Collection<String> list = new ArrayList<String>();
 		

@@ -8,9 +8,11 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 import org.who.integration.util.KBUtil;
 
+import edu.stanford.bmir.whofic.IcdIdGenerator;
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.smi.protege.model.Project;
 import edu.stanford.smi.protegex.owl.model.OWLModel;
+import edu.stanford.smi.protegex.owl.model.RDFIndividual;
 import edu.stanford.smi.protegex.owl.model.RDFProperty;
 import edu.stanford.smi.protegex.owl.model.RDFResource;
 import edu.stanford.smi.protegex.owl.model.RDFSClass;
@@ -28,7 +30,7 @@ public class GFD2ICF {
 	//TODO: +++ migrate sibling ordering for GFD top level only
 	//TODO: +++ copy public id from old class, print out mapping
 	//TODO: +++ check if we need to retain the title term id for translations; swap title terms
-	//TODO: ??? multiparent them also under the survey classes..
+	//TODO: +++ Copy the post-coordination spec from GFD to ICF classes.
 
 	private static transient Logger log = Logger.getLogger(GFD2ICF.class);
 	
@@ -37,15 +39,20 @@ public class GFD2ICF {
 	private static String GFD_RETIRED_CLS = "http://who.int/icd#35997_735007d5_2555_4eb5_a762_282e008a1468";
 
 	private static String ICF_CAT = "http://who.int/icf#ICFCategory";
+	private static String ICF_LIN_VIEW = "http://who.int/icd#ICFLinearizationView";
+	
 	private static String REPLACES_PROP = "http://who.int/icd#replaces";
+	private static String ICF_MAP_PROP = "http://who.int/icd#icfMap";
 	
 	private static OWLModel owlModel;
 	private static ICDContentModel cm;
 	private static RDFSNamedClass icfCat;
 	private static RDFSNamedClass gfdTopCls;
 	private static RDFSNamedClass gfdRetiredCls;
+	private static RDFIndividual icfLinView;
 	
 	private static RDFProperty replacesProp;
+	private static RDFProperty icfMapProp;
 
 	private static Map<String, RDFSNamedClass> name2icfcls = new HashMap<String, RDFSNamedClass>();
 	
@@ -67,8 +74,10 @@ public class GFD2ICF {
 		icfCat = owlModel.getRDFSNamedClass(ICF_CAT);
 		gfdTopCls = owlModel.getRDFSNamedClass(GFD);
 		gfdRetiredCls = owlModel.getRDFSNamedClass(GFD_RETIRED_CLS);
+		icfLinView = owlModel.getOWLIndividual(ICF_LIN_VIEW);
 		
 		replacesProp = getReplacesProp();
+		icfMapProp = getIcfMapProp();
 		
 		cacheICF();
 		
@@ -146,15 +155,36 @@ public class GFD2ICF {
 		//copy linearization from GFD to ICF class
 		cm.copyLinearizationSpecificationsFromCls(icfCls, gfdCls);
 		
+		//will do with script
+		//copy post-coordination specs from GFD to ICF class
+		//cm.copyPostcoordinationSpecificationsFromCls(icfCls, gfdCls);
+		//createICFLinAndPCSpecs(icfCls);
+		
 		//replace gfd children
 		replaceGFDChildren(gfdCls, icfCls);
 		
 		//add link bw the two classes
-		icfCls.setPropertyValue(replacesProp, gfdCls);
+		icfCls.setPropertyValue(replacesProp, gfdCls); 
+		gfdCls.setPropertyValue(icfMapProp, icfCls);
+		
 		//replace public id
 		replacePublicId(gfdCls, icfCls);
 	}
 	
+
+	private static void createICFLinAndPCSpecs(RDFSNamedClass icfCls) {
+		//Add ICF linearization with isIncluded = true
+		RDFResource icfLinSpec = cm.getLinearizationSpecificationClass().createRDFIndividual(IcdIdGenerator.getNextUniqueId(owlModel));
+		icfLinSpec.setPropertyValue(cm.getLinearizationViewProperty(), icfLinView);
+		icfLinSpec.setPropertyValue(cm.getIsIncludedInLinearizationProperty(), true);
+		icfCls.addPropertyValue(cm.getLinearizationViewProperty(), icfLinSpec);
+		
+		//Add ICF PC spec
+		RDFResource icfPCSpec = cm.getPostcoordinationAxesSpecificationClass().createRDFIndividual(IcdIdGenerator.getNextUniqueId(owlModel));
+		icfPCSpec.setPropertyValue(cm.getLinearizationViewProperty(), icfLinSpec);
+		icfCls.addPropertyValue(cm.getAllowedPostcoordinationAxesProperty(), icfPCSpec);
+	}
+
 
 	//preserving the title term for the mapped ICF class; create new title term for the retired GFD class
 	private static void setRetiredTitle(RDFSNamedClass gfdCls) {
@@ -209,6 +239,14 @@ public class GFD2ICF {
 		RDFProperty prop = owlModel.getRDFProperty(REPLACES_PROP);
 		if (prop == null) {
 			prop = owlModel.createAnnotationProperty(REPLACES_PROP);
+		}
+		return prop;
+	}
+	
+	private static RDFProperty getIcfMapProp() {
+		RDFProperty prop = owlModel.getRDFProperty(ICF_MAP_PROP);
+		if (prop == null) {
+			prop = owlModel.createAnnotationProperty(ICF_MAP_PROP);
 		}
 		return prop;
 	}
