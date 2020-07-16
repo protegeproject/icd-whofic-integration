@@ -20,6 +20,7 @@ public class ICTMUtil {
 	public static final String ICTM_TOP_CLASS = "http://who.int/ictm#ICTMCategory";
 	public static final String EXT_REF_TERM_CLASS = "http://who.int/icd#ExternalReferenceTerm";
 	public static final String CODES_PROP = "http://who.int/ictm#codes";
+	public static final String ICTM_LIN = "http://who.int/ictm#ICDChapterTM";
 	
 	//TODO: edit this to match the class in the new content model, under which
 	//the classes should be imported
@@ -32,6 +33,8 @@ public class ICTMUtil {
 	
 	private static Collection<RDFSNamedClass> metaclses = new ArrayList<RDFSNamedClass>();
 	private static Collection<RDFResource> linViewsTopCls;
+	
+	private static RDFResource ictmLin;
 	
 	private static RDFProperty codesProp;
 	
@@ -66,6 +69,13 @@ public class ICTMUtil {
 	public static String getICDCorrespondentType(String ictmType) {
 		String icdType = ICTM2ICDTypes.get(ictmType);
 		return icdType == null ? ictmType : icdType;
+	}
+	
+	public static RDFResource getICTMLin(OWLModel owlModel) {
+		if (ictmLin == null) {
+			ictmLin = owlModel.getRDFResource(ICTM_LIN);
+		}
+		return ictmLin;
 	}
 	
 	public static Collection<RDFSNamedClass> getMetaclasses(OWLModel owlModel) {
@@ -116,14 +126,14 @@ public class ICTMUtil {
 	
 	public static Collection<RDFResource> getTopLevelLinViews(ICDContentModel cm) {
 		if (linViewsTopCls == null) {
-			linViewsTopCls = getLinearizationViewsFromCls(cm, cm.getICDCategoryClass(), cm.getLinearizationProperty());
+			linViewsTopCls = getLinearizationViewsFromCls(cm, cm.getICDCategoryClass());
 		}
 		return linViewsTopCls;
 	}
 	
-	private static Collection<RDFResource> getLinearizationViewsFromCls(ICDContentModel cm, RDFSNamedClass cls, RDFProperty linProp) {
+	private static Collection<RDFResource> getLinearizationViewsFromCls(ICDContentModel cm, RDFSNamedClass cls) {
         Collection<RDFResource> linViews = new ArrayList<RDFResource>();
-        Collection<RDFResource> linearizationSpecs = cls.getPropertyValues(linProp);
+        Collection<RDFResource> linearizationSpecs = cls.getPropertyValues(cm.getLinearizationProperty());
 
         for (RDFResource linearizationSpec : linearizationSpecs) {
             RDFResource linearizationView = (RDFResource) linearizationSpec.getPropertyValue(cm.getLinearizationViewProperty());
@@ -135,6 +145,19 @@ public class ICTMUtil {
         return linViews;
     }
 
+	public static boolean isIncludedInICTMLin(ICDContentModel cm, RDFSNamedClass cls) {
+        Collection<RDFResource> linSpecs = cls.getPropertyValues(cm.getLinearizationProperty());
+        RDFResource ictmLin = getICTMLin(cm.getOwlModel());
+        
+        for (RDFResource linSpec : linSpecs) {
+            RDFResource linView = (RDFResource) linSpec.getPropertyValue(cm.getLinearizationViewProperty());
+            if (linView != null && linView.equals(ictmLin)) {
+               return Boolean.TRUE.equals(linSpec.getPropertyValue(cm.getIsIncludedInLinearizationProperty()));
+            }
+        }
+        
+        return false;
+	}
 	
 	
 }

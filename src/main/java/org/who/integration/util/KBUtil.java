@@ -5,6 +5,8 @@ import java.util.Collection;
 import java.util.List;
 
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
+import edu.stanford.smi.protegex.owl.model.RDFProperty;
+import edu.stanford.smi.protegex.owl.model.RDFResource;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
 public class KBUtil {
@@ -48,6 +50,12 @@ public class KBUtil {
 		}
 		
 		return list;
+	}
+	
+	public static boolean getBooleanValue(RDFResource res, RDFProperty prop) {
+		Object value = res.getPropertyValue(prop);
+		
+		return value == null ? false : Boolean.TRUE.equals(value);
 	}
 	
 	

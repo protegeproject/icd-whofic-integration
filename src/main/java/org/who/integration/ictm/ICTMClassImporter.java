@@ -2,6 +2,8 @@ package org.who.integration.ictm;
 
 import java.util.Collection;
 
+import org.who.integration.util.KBUtil;
+
 import edu.stanford.bmir.whofic.IcdIdGenerator;
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.bmir.whofic.icd.ICDContentModelConstants;
@@ -13,7 +15,7 @@ import edu.stanford.smi.protegex.owl.model.RDFProperty;
 import edu.stanford.smi.protegex.owl.model.RDFResource;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
-public class ClassImporter {
+public class ICTMClassImporter {
 
 	private OWLModel sourceOnt;
 	private OWLModel targetOnt;
@@ -26,7 +28,7 @@ public class ClassImporter {
     private boolean isICTM = false;
     
 
-	public ClassImporter(RDFSNamedClass cls, OWLModel sourceOnt, OWLModel targetOnt, 
+	public ICTMClassImporter(RDFSNamedClass cls, OWLModel sourceOnt, OWLModel targetOnt, 
 			ICDContentModel sourceCM, ICDContentModel targetCM, boolean isICTM) {
 		this.sourceCls = cls;
 		
@@ -69,7 +71,19 @@ public class ClassImporter {
 
 
 	private void addLinearizations(RDFSNamedClass cls) {
+		boolean isIncludedInICTMLin = false;
+		boolean isGroupingInICTMLin = false;
+		
+		for (RDFResource sourceLinSpec : (Collection<RDFResource>)sourceCls.getPropertyValues(sourceCM.getLinearizationProperty())) {
+			RDFResource sourceLinView = (RDFResource) sourceLinSpec.getPropertyValue(sourceCM.getLinearizationViewProperty());
+            if (sourceLinView.equals(ICTMUtil.getICTMLin(sourceOnt))) {
+               isIncludedInICTMLin = KBUtil.getBooleanValue(sourceLinSpec, sourceCM.getIsIncludedInLinearizationProperty());
+               isGroupingInICTMLin = KBUtil.getBooleanValue(sourceLinSpec, sourceCM.getIsGroupingProperty());
+            }
+		}
+		
 		Collection<RDFResource> linViews = ICTMUtil.getTopLevelLinViews(targetCM);
+		
 		for (RDFResource linView : linViews) {
 			RDFResource linSpec = targetCM.getLinearizationSpecificationClass().createInstance(IcdIdGenerator.getNextUniqueId(targetOnt));
             linSpec.setPropertyValue(targetCM.getLinearizationViewProperty(), linView);
@@ -77,8 +91,8 @@ public class ClassImporter {
             linSpec.setPropertyValue(targetCM.getIsAuxiliaryAxisChildProperty(), Boolean.FALSE);
 
             if (linView.getName().equals(ICDContentModelConstants.LINEARIZATION_VIEW_MORBIDITY)) {
-                linSpec.setPropertyValue(targetCM.getIsIncludedInLinearizationProperty(), Boolean.TRUE);
-                linSpec.setPropertyValue(targetCM.getIsGroupingProperty(), isGroupingMorbidity());
+                linSpec.setPropertyValue(targetCM.getIsIncludedInLinearizationProperty(), isIncludedInICTMLin);
+                linSpec.setPropertyValue(targetCM.getIsGroupingProperty(), isGroupingInICTMLin);
             } else if (linView.getName().equals(ICDContentModelConstants.LINEARIZATION_VIEW_MORTALITY)) {
                 linSpec.setPropertyValue(targetCM.getIsIncludedInLinearizationProperty(), Boolean.FALSE);
             }
@@ -87,16 +101,6 @@ public class ClassImporter {
 		}
 	}
 
-	private Boolean isGroupingMorbidity() {
-		Collection<RDFResource> lins = sourceCls.getPropertyValues(sourceCM.getLinearizationProperty());
-		for (RDFResource lin : lins) {
-			RDFResource linView = (RDFResource) lin.getPropertyValue(sourceCM.getLinearizationViewProperty());
-			if (linView.getName().equals(ICDContentModelConstants.LINEARIZATION_VIEW_MORBIDITY)) {
-				return (Boolean) lin.getPropertyValue(sourceCM.getIsGroupingProperty());
-			}
-		}
-		return null;
-	}
 
 	private void addExternalCodes(RDFSNamedClass cls) {
 		addExtRefTermAnnotations(cls, targetCM.getExternalReferenceProperty(), ICTMUtil.getCodesProp(sourceOnt));

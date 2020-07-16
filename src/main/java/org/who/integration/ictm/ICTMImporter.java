@@ -122,10 +122,15 @@ public class ICTMImporter {
 			return;
 		}
 
+		if (ICTMUtil.isIncludedInICTMLin(sourceCM, sourceCls) == false) {
+			//This will also filter out the subtrees
+			return;
+		}
+		
 		traversed.add(sourceCls);
 
 		try {
-			ClassImporter clsExporter = new ClassImporter(sourceCls, sourceOnt, targetOnt, sourceCM, targetCM, true);
+			ICTMClassImporter clsExporter = new ICTMClassImporter(sourceCls, sourceOnt, targetOnt, sourceCM, targetCM, true);
 			RDFSNamedClass targetCls = clsExporter.importCls();
 
 			addChildren(sourceCls);
@@ -158,7 +163,8 @@ public class ICTMImporter {
 	private void addChildren(RDFSNamedClass sourceCls) {
 		List<RDFSNamedClass> subclses = ICTMUtil.getSortedNamedSubclasses(sourceCls);
 		for (RDFSNamedClass subcls : subclses) {
-			if (excludedClasses.isExcludedTopClass(subcls) == false) {
+			if (excludedClasses.isExcludedTopClass(subcls) == false &&
+					ICTMUtil.isIncludedInICTMLin(sourceCM, subcls) == true) {
 				addSuperCls(subcls, sourceCls);
 				importClass(subcls, sourceCls);
 			}
