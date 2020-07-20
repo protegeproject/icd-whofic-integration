@@ -45,6 +45,7 @@ public class ICTMClassImporter {
 		RDFSNamedClass cls = ICTMUtil.getOrCreateCls(targetOnt, sourceCls.getName());
 		
 		addTitle(cls);
+		
 		addDefinition(cls);
 		addLongDefinition(cls);
 		
@@ -297,7 +298,7 @@ public class ICTMClassImporter {
 		
 		String lang = (String) termInst.getPropertyValue(langProp);
 		
-		return lang == null || lang.length() == 0 || "en".equals(lang);
+		return lang == null || lang.length() == 0 || lang.contains("en");
 	}
 	
 }
