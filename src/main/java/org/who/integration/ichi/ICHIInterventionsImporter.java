@@ -7,11 +7,11 @@ import org.apache.log4j.Logger;
 import edu.stanford.smi.protegex.owl.model.OWLModel;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
-//TODO: import linearizations -- will do with script
+//TODO: +++ import linearizations -- will do with script
 //TODO: import code also
 //TODO: import include_notes
-//TODO: add logical defs
-//TODO: add postcoordination
+//TODO: +++ add logical defs
+//TODO: +++ add postcoordination
 //TODO: for exclusions with "omit code", import them as coding notes
 //TODO: improve error reporting
 public class ICHIInterventionsImporter extends ICHIImporter {
@@ -46,6 +46,9 @@ public class ICHIInterventionsImporter extends ICHIImporter {
 		
 		//init ATM maps
 		ICHIUtil.initATMCodes2ClsesMaps(getCm());
+		
+		//add post-coordination spec to top cls
+		ICHIUtil.addPostcoordinationSpecToIchiCls(getCm(), topCls);
 	}
 	
 	@Override
