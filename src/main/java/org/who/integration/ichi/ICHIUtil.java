@@ -107,7 +107,10 @@ public class ICHIUtil {
 		}
 		
 		cls = owlModel.createOWLNamedClass(IcdIdGenerator.getNextUniqueId(owlModel));
-		code2cls.put(code, cls);
+		
+		if (code != null && code.length() > 0) {//unhappy about this, but it happens for extension codes
+			code2cls.put(code, cls); 
+		}
 		
 		return cls;
 	}
