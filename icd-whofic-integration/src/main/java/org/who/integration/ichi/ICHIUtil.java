@@ -36,6 +36,8 @@ public class ICHIUtil {
 	
 	private static Collection<RDFSNamedClass> atmMetaClasses = new ArrayList<RDFSNamedClass>();
 	private static Collection<RDFSNamedClass> interventionMetaClasses = new ArrayList<RDFSNamedClass>();
+	private static Collection<RDFSNamedClass> extCodesMetaClasses = new ArrayList<RDFSNamedClass>();
+	
 	private static Map<String, RDFSNamedClass> code2cls = new HashMap<String, RDFSNamedClass>();
 	
 	private static Map<RDFSNamedClass, List<String>> cls2exclusions = new HashMap<RDFSNamedClass, List<String>>();
@@ -81,6 +83,19 @@ public class ICHIUtil {
 		return interventionMetaClasses;
 	}
 	
+	public static Collection<RDFSNamedClass> getExtCodesMetaclasses(OWLModel owlModel) {
+		if (extCodesMetaClasses.size() > 0) {
+			return extCodesMetaClasses;
+		}
+		extCodesMetaClasses = new ArrayList<RDFSNamedClass>();
+		extCodesMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#DefinitionSection"));
+		extCodesMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
+		extCodesMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
+		extCodesMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ValueMetaClass"));
+		extCodesMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHIAxesSection"));
+		return extCodesMetaClasses;
+	}
+	
 	public static RDFSNamedClass createAtmCls(OWLModel owlModel, String code) {
 		RDFSNamedClass cls = createCls(owlModel, code);
 		addMetaclasses(cls, getAtmMetaclasses(owlModel));
@@ -90,6 +105,12 @@ public class ICHIUtil {
 	public static RDFSNamedClass createInterventionCls(OWLModel owlModel, String code) {
 		RDFSNamedClass cls = createCls(owlModel, code);
 		addMetaclasses(cls, getInterventionMetaclasses(owlModel));
+		return cls;
+	}
+	
+	public static RDFSNamedClass createExtCodeCls(OWLModel owlModel, String code) {
+		RDFSNamedClass cls = createCls(owlModel, code);
+		addMetaclasses(cls, getExtCodesMetaclasses(owlModel));
 		return cls;
 	}
 	
@@ -261,5 +282,6 @@ public class ICHIUtil {
 		addPostcoordinationSpec(cm, cls, getFoundationLinearizationView(cm.getOwlModel()));
 		addPostcoordinationSpec(cm, cls, getICHILinearizationView(cm.getOwlModel()));
 	}
+	
 	
 }
