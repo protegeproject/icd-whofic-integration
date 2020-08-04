@@ -166,6 +166,10 @@ public class ICHIUtil {
 		return supercls;
 	}
 	
+	public static void addToCode2ClsMap(String code, RDFSNamedClass cls) {
+		code2cls.put(code, cls);
+	}
+	
 	public static RDFProperty getIcfMapProperty(OWLModel owlModel) {
 		if (icfMapProp == null) {
 			icfMapProp = owlModel.getRDFProperty(ICF_MAP_PROP);
