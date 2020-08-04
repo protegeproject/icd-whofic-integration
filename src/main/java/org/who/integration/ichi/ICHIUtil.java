@@ -34,7 +34,8 @@ public class ICHIUtil {
 	
 	//Atm stands for: Action-Target-Means
 	
-	private static Collection<RDFSNamedClass> metaclasses = new ArrayList<RDFSNamedClass>();
+	private static Collection<RDFSNamedClass> atmMetaClasses = new ArrayList<RDFSNamedClass>();
+	private static Collection<RDFSNamedClass> interventionMetaClasses = new ArrayList<RDFSNamedClass>();
 	private static Map<String, RDFSNamedClass> code2cls = new HashMap<String, RDFSNamedClass>();
 	
 	private static Map<RDFSNamedClass, List<String>> cls2exclusions = new HashMap<RDFSNamedClass, List<String>>();
@@ -54,30 +55,30 @@ public class ICHIUtil {
 	
 	
 	public static Collection<RDFSNamedClass> getAtmMetaclasses(OWLModel owlModel) {
-		if (metaclasses.size() > 0) {
-			return metaclasses;
+		if (atmMetaClasses.size() > 0) {
+			return atmMetaClasses;
 		}
-		metaclasses = new ArrayList<RDFSNamedClass>();
-		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#DefinitionSection"));
-		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
-		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
-		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ValueMetaClass"));
-		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHIAxesSection"));
-		return metaclasses;
+		atmMetaClasses = new ArrayList<RDFSNamedClass>();
+		atmMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#DefinitionSection"));
+		atmMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
+		atmMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
+		atmMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ValueMetaClass"));
+		atmMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHIAxesSection"));
+		return atmMetaClasses;
 	}
 	
 	//the metaclass methods are mutually exclusive
 	public static Collection<RDFSNamedClass> getInterventionMetaclasses(OWLModel owlModel) {
-		if (metaclasses.size() > 0) {
-			return metaclasses;
+		if (interventionMetaClasses.size() > 0) {
+			return interventionMetaClasses;
 		}
-		metaclasses = new ArrayList<RDFSNamedClass>();
-		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#DefinitionSection"));
-		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
-		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
-		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHIPostcoordinationSection"));
-		metaclasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHISection"));
-		return metaclasses;
+		interventionMetaClasses = new ArrayList<RDFSNamedClass>();
+		interventionMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#DefinitionSection"));
+		interventionMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
+		interventionMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
+		interventionMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHIPostcoordinationSection"));
+		interventionMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHISection"));
+		return interventionMetaClasses;
 	}
 	
 	public static RDFSNamedClass createAtmCls(OWLModel owlModel, String code) {
