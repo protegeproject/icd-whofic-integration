@@ -34,9 +34,9 @@ public class ICHIUtil {
 	
 	//Atm stands for: Action-Target-Means
 	
+	//good for extension codes as well
 	private static Collection<RDFSNamedClass> atmMetaClasses = new ArrayList<RDFSNamedClass>();
 	private static Collection<RDFSNamedClass> interventionMetaClasses = new ArrayList<RDFSNamedClass>();
-	private static Collection<RDFSNamedClass> extCodesMetaClasses = new ArrayList<RDFSNamedClass>();
 	
 	private static Map<String, RDFSNamedClass> code2cls = new HashMap<String, RDFSNamedClass>();
 	
@@ -83,18 +83,6 @@ public class ICHIUtil {
 		return interventionMetaClasses;
 	}
 	
-	public static Collection<RDFSNamedClass> getExtCodesMetaclasses(OWLModel owlModel) {
-		if (extCodesMetaClasses.size() > 0) {
-			return extCodesMetaClasses;
-		}
-		extCodesMetaClasses = new ArrayList<RDFSNamedClass>();
-		extCodesMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#DefinitionSection"));
-		extCodesMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#TermSection"));
-		extCodesMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#LinearizationSection"));
-		extCodesMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ValueMetaClass"));
-		extCodesMetaClasses.add(owlModel.getRDFSNamedClass("http://who.int/icd#ICHIAxesSection"));
-		return extCodesMetaClasses;
-	}
 	
 	public static RDFSNamedClass createAtmCls(OWLModel owlModel, String code) {
 		RDFSNamedClass cls = createCls(owlModel, code);
@@ -107,12 +95,7 @@ public class ICHIUtil {
 		addMetaclasses(cls, getInterventionMetaclasses(owlModel));
 		return cls;
 	}
-	
-	public static RDFSNamedClass createExtCodeCls(OWLModel owlModel, String code) {
-		RDFSNamedClass cls = createCls(owlModel, code);
-		addMetaclasses(cls, getExtCodesMetaclasses(owlModel));
-		return cls;
-	}
+
 	
 	public static RDFSNamedClass createCls(OWLModel owlModel, String code) {
 		RDFSNamedClass cls = code2cls.get(code);
