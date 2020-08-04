@@ -45,6 +45,7 @@ public class ICHIUtil {
 	private static Map<String, RDFSNamedClass> target2cls = new HashMap<String, RDFSNamedClass>();
 	private static Map<String, RDFSNamedClass> means2cls = new HashMap<String, RDFSNamedClass>();
 	private static Map<String, RDFSNamedClass> action2cls = new HashMap<String, RDFSNamedClass>();
+	private static Map<String, RDFSNamedClass> intervention2cls = new HashMap<String, RDFSNamedClass>();
 	
 	private static RDFProperty icfMapProp;
 	
@@ -224,6 +225,12 @@ public class ICHIUtil {
 		initCode2ClsesMap(cm, means2cls, owlModel.getRDFSNamedClass("http://who.int/icd#Means"));
 	}
 	
+	public static void initInterventionCodes2ClsesMaps(ICDContentModel cm) {
+		OWLModel owlModel = cm.getOwlModel();
+		
+		initCode2ClsesMap(cm, intervention2cls, owlModel.getRDFSNamedClass("http://who.int/icd#HealthIntervention"));
+	}
+	
 	private static void initCode2ClsesMap(ICDContentModel cm, Map<String, RDFSNamedClass> map, RDFSNamedClass topCls) {
 		Collection<RDFSNamedClass> subclses = topCls.getSubclasses(true);
 		for (RDFSNamedClass subcls : subclses) {
@@ -244,6 +251,10 @@ public class ICHIUtil {
 	
 	public static RDFSNamedClass getAction(String code) {
 		return action2cls.get(code);
+	}
+	
+	public static RDFSNamedClass getIntervention(String code) {
+		return intervention2cls.get(code);
 	}
 	
 	/* post-coordination */
