@@ -29,9 +29,6 @@ public class ICHIExtensionCodesImporter extends ICHIImporter {
 		importer.importClses(args[0], args[2], args[1]);
 	}
 	
-	//TODO: intermediate-level classes are missing
-	//TODO: fix exclusion pattern
-	
 	@Override
 	protected void processLine(String row) {
 		String[] data = row.split(COL_SEPARATOR);
