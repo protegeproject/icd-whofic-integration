@@ -7,7 +7,6 @@ import java.util.Map;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.python.parser.ast.Delete;
 
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.smi.protege.model.Project;
@@ -75,7 +74,6 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 		this.topCls = owlModel.getRDFSNamedClass("http://who.int/icd#HealthIntervention");
 		
 		ICHIUtil.initInterventionCodes2ClsesMaps(cm);
-		//init properties
 	}
 	
 	@Override
@@ -88,11 +86,11 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 		String inclNote = getString(data, 3);
 		String action = getString(data, 4);
 		String finalIndexTerm = getString(data, 5);
-		String autoWarning = getString(data, 6);
-		String actFlagComment = getString(data, 7);
+		//String autoWarning = getString(data, 6);
+		//String actFlagComment = getString(data, 7);
 		
 		String origTitle = getString(data, 23); //col X
-		String origExpIndexTerm = getString(data, 24); //col Y
+		//String origExpIndexTerm = getString(data, 24); //col Y
 		
 		if ( isEmptyString(action)
 				&& (!isEmptyString(indexTerm) || !isEmptyString(inclNote))) {
@@ -135,13 +133,13 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 		if (!isEmptyString(indexTerm)) {
 			String indexTermTitle = (isEmptyString(finalIndexTerm) ? indexTerm : finalIndexTerm);
 			if (SYNONYM.equals(action)) {
-				//create synonym of intervention
+				//Create synonym of intervention
 				addSynonymToClass( indexTermTitle, superCls);
 				lastIndexTermToSynonym = true;
 			}
 			else if (INCLUDE.equals(action)) {
-				//create subclass of intervention
-				cls = getSupercls(cm, superCls, indexTermTitle);
+				//Create subclass of intervention
+				cls = getOrCreateCls(cm, superCls, indexTermTitle);
 				//add it to map
 				indTerm2ClassMap.put(indexTerm, cls);
 				lastIndexTermToSynonym = false;				
@@ -153,34 +151,32 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 		}
 		else if (!isEmptyString(inclNote)) {
 			if (SYNONYM.equals(action)) {
-				//create synonym of intervention
+				//Create synonym of intervention
 				addSynonymToClass( finalIndexTerm, superCls);
 			}
 			else if (INCLUDE.equals(action)) {
-				//TODO create subclass of intervention or index OR synonym of appropriate inclusion note
+				//Create subclass of intervention or index, OR synonym of appropriate inclusion note
 				if (lastIndexTerm == null) {
-					//create subclass of intervention
-					cls = getSupercls(cm, superCls, finalIndexTerm);
+					//Create subclass of intervention
+					cls = getOrCreateCls(cm, superCls, finalIndexTerm);
 					//add it to map
 					inclNote2ClassMap.put(inclNote, cls);
 				}
 				else {
 					if (lastIndexTermToSynonym) {
 						//get appropriate class to add synonym
-						//TODO superCls = this.getSupercls(cm, topCls, ichiCode);
 						superCls = inclNote2ClassMap.get(inclNote);
 						if (superCls == null) {
 							log.error(String.format("Superclass for synonym '%s' not found. Ignoring row: %s", inclNote, row));
-							return;
-							//TODO Instead of return, we could add the synonym to the intervention
+							return;		//Instead of return, we could add the synonym to the intervention
 						}
 						//add synonym
 						addSynonymToClass( finalIndexTerm, superCls);
 					}
 					else {
-						//create subclass of index
+						//Create subclass of index
 						superCls = indTerm2ClassMap.get(lastIndexTerm);
-						cls = getSupercls(cm, superCls, inclNote);
+						cls = getOrCreateCls(cm, superCls, inclNote);
 					}
 				}
 			}
@@ -192,9 +188,6 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 			log.error(String.format("Unexpected row content (either indexTerm or includeNotes should be set): %s", row));
 		}
 		
-		//TODO continue here
-//		ICHIClassImporter clsImporter = new ICHIClassImporter(owlModel, cls);
-//		clsImporter.importAtmCls(superCls, action, title, definition, indexTerm, exclusion, codeAlso);
 	}
 
 	private void updateTitle(String ichiCode, String origTitle, String title) {
@@ -225,8 +218,14 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 
 	}
 
-	//adatped from ICHIUtil.getSupercls
-	public static RDFSNamedClass getSupercls(ICDContentModel cm, RDFSNamedClass topCls, String title) {
+	/**
+	 * Adatped from {@link ICHIUtil.getSupercls}
+	 * @param cm
+	 * @param topCls
+	 * @param title
+	 * @return
+	 */
+	public static RDFSNamedClass getOrCreateCls(ICDContentModel cm, RDFSNamedClass topCls, String title) {
 		//title = title.replaceAll("^\\d+ \\- ", "");
 		
 		RDFSNamedClass supercls = ICHIUtil.getCls(title);
