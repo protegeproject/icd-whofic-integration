@@ -193,17 +193,24 @@ public class ICHIImporter {
 		//System.out.println(cls.getPropertyValue(cm.getIcdCodeProperty()) + "\t" + excl + "\t" + label + "\t" + codes);
 		
 		if (codes.size() == 0) {
+			/*
 			log.warn("EXCLUSION: '" + cls.getPropertyValue(cm.getIcdCodeProperty()) + " " + 
 					cm.getTitleLabel(cls) +
 					"' has no reference codes for exclusion: " + excl);
+					*/
+			System.out.println("NO REFS:\t" + cls.getPropertyValue(cm.getIcdCodeProperty()) + "\t" + cm.getTitleLabel(cls)
+			+ "\t" + excl);
 			
 			addIncompleteExclusion(cls, label);
 		}
 		
 		if (codes.size() > 1) {
-			log.warn("EXCLUSION: '" + cls.getPropertyValue(cm.getIcdCodeProperty()) + " " + 
+			/*log.warn("EXCLUSION: '" + cls.getPropertyValue(cm.getIcdCodeProperty()) + " " + 
 					cm.getTitleLabel(cls) +
 					"' has multiple reference codes for exclusion: " + excl);
+			*/
+			System.out.println("MULTIPLE REFS:\t" + cls.getPropertyValue(cm.getIcdCodeProperty()) + "\t" + cm.getTitleLabel(cls)
+			+ "\t" + excl);
 			
 			//By WHO request: if there are multiple references to a label, don't use the label, use only the reference code
 			label = null;
@@ -227,17 +234,23 @@ public class ICHIImporter {
 		}
 		
 		if (exclCls == null) {
+			/*
 			log.warn("EXCLUSION: For '" + cls.getPropertyValue(cm.getIcdCodeProperty()) + " " + 
 					cm.getTitleLabel(cls) +
 					"' could not find excluded class: " + code + 
 					". Exclusion: " + excl);
+					*/
+			System.out.println("NOT FOUND:\t" + cls.getPropertyValue(cm.getIcdCodeProperty()) + "\t" + cm.getTitleLabel(cls)
+			+ "\t" + excl + "\t" + code);
 		}
 		
+		
 		if (label == null || label.length() == 0) {
-			log.warn("EXCLUSION: For '" + cls.getPropertyValue(cm.getIcdCodeProperty()) + " " + 
+		/*	log.warn("EXCLUSION: For '" + cls.getPropertyValue(cm.getIcdCodeProperty()) + " " + 
 					cm.getTitleLabel(cls) +
 					"' no exclusion label for excluded class: " + code + 
 					". Exclusion: " + excl);
+					*/
 		}
 		
 		RDFResource exclTerm = cm.createBaseExclusionTerm();
