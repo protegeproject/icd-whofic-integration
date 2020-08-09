@@ -1,0 +1,669 @@
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AA - Brain and Cranial Nerves	AAA	Brain (Encephalon)		Globus pallidus; Intracerebral; Intracranial NOS; Thalamus; 	meninges of brain (AAC); vasculature of brain (IAA); ventricular system of brain (AAE)	
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AA - Brain and Cranial Nerves	AAC	Intracranial meninges		Cranial sinus; Dura; 		
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AA - Brain and Cranial Nerves	AAE	Ventricular system of brain		Intracranial cerebrospinal fluid; 		
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AA - Brain and Cranial Nerves	AAG	Intracranial Space		Subarachnoid space; Subdural space; 		
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AA - Brain and Cranial Nerves	AAN	Cranial nerve		Facial nerve; Trigeminal nerve; Vagus nerve; 		
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AB - Spinal cord structures	ABA	Spinal cord			"central canal (ABG)\nvasculature of spinal cord (see location of vessel, e.g. neck (IBA), (IBD); thorax (IDA), (IDB))"	
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AB - Spinal cord structures	ABC	Spinal meninges		Dura; 		
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AB - Spinal cord structures	ABG	Spinal cavity		Central canal; Spinal cerebrospinal fluid; 		
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AB - Spinal cord structures	ABN	Spinal nerve				
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AC - Peripheral nervous system	ACA	Peripheral nervous system				
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AD - Sympathetic nervous system	ADA	"Sympathetic nervous system, unspecified"		Adrenal; Periarterial; 	cervical (ADB)\nlumbar (ADD)\nsacral (ADE)\nthoracic (ADC)	
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AD - Sympathetic nervous system	ADB	"Sympathetic nervous system, cervical"				
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AD - Sympathetic nervous system	ADC	"Sympathetic nervous system, thoracic"				
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AD - Sympathetic nervous system	ADD	"Sympathetic nervous system, lumbar"				
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AD - Sympathetic nervous system	ADE	"Sympathetic nervous system, sacral"				
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AE - Parasympathetic nervous system	AEA	Parasympathetic nervous system				
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AS - Mental function	AS1	Mental functions				b1
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AT - Global mental functions	AT2	Global mental functions				b110-b139
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AT - Global mental functions	ATC	Awareness and alertness functions				b110
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AT - Global mental functions	ATD	Orientation functions				b114
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AT - Global mental functions	ATE	Intellectual functions				b117
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AT - Global mental functions	ATF	Global psychosocial  functions				b122
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AT - Global mental functions	ATH	Temperament and personality functions				b126
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AT - Global mental functions	ATI	Energy and drive functions				b130
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AT - Global mental functions	ATK	Sleep functions				b134
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AU2	Specific mental functions				b140-b189
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUA	Attention functions				b140
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUB	Memory functions				b144
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUC	Psychomotor functions				b147
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUD	Emotional functions				b152
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUE	Perceptual functions				b156
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUF	Thought  functions				b160
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUH	Higher-level cognitive functions				b164
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUI	Mental functions of language				b167
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUJ	Calculation functions				b172
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUK	Mental functions of sequencing complex movements				b176
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AU - Specific mental functions	AUL	Experience of self and time functions		Representation and awareness of one's body; 		b180
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AV - Sensory function and Pain	AV1	Sensory functions and pain				b210-b298
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AV - Sensory function and Pain	AV2	Additional sensory functions				b250-b279
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AV - Sensory function and Pain	AVA	Taste function				b250
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AV - Sensory function and Pain	AVB	Smell function				b255
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AV - Sensory function and Pain	AVC	Proprioceptive function				b260
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AV - Sensory function and Pain	AVD	Touch function				b265
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AV - Sensory function and Pain	AVE	Sensory functions related to temperature and other stimuli				b270
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	AX - Pain	AXA	Sensation of pain				b280
+1 - Targets for Body Systems and Functions	01 - Nervous System and Mental Function Targets	"AZ - Nervous system, unspecified"	AZZ	Nervous system unspecified				
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BA - Eyelid, lacrimal system, orbit"	BAA	Eyelid		Eyelash; 		
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BA - Eyelid, lacrimal system, orbit"	BAD	Lacrimal apparatus		Lacrimal duct; Lacrimal gland; 		
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BA - Eyelid, lacrimal system, orbit"	BAM	Orbit				
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BB - Eye, anterior segment structures"	BBA	Conjunctiva		Subconjunctiva; 		
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BB - Eye, anterior segment structures"	BBB	Cornea				
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BB - Eye, anterior segment structures"	BBC	Iris		Pupil; 		
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BB - Eye, anterior segment structures"	BBD	Ciliary Body		Ciliary muscle; 		
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BB - Eye, anterior segment structures"	BBE	Anterior chamber of eye		trabecular meshwork; 		
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BB - Eye, anterior segment structures"	BBF	Lens				
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BC - Eye, posterior segment structures"	BCA	Posterior segment structures of eyeball		Choroid; 	retina (BCC);\nsclera (BCB);\nvitreous body (BCD)	
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BC - Eye, posterior segment structures"	BCB	Sclera				
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BC - Eye, posterior segment structures"	BCC	Retina		Blood vessels of the eye; Macula lutea; Optic disc; Retinal fundus; 		
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BC - Eye, posterior segment structures"	BCD	Vitreous body				
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	BD - Ocular muscles	BDA	Extraocular muscle		Tendon of extraocular muscle; 		
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BT - Eye, function"	BT2	Seeing and related functions				b210-b229
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BT - Eye, function"	BTB	Seeing functions				b210
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BT - Eye, function"	BTF	Functions of structure adjoining the eye				b215
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BT - Eye, function"	BTK	Sensations associated with the eye and adjoining structure				b220
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BZ - Eye(ball) and eye function, unspecified"	BZA	Eyeball		Cavity of eyeball; Eyeball NOS; 		
+1 - Targets for Body Systems and Functions	02 - Visual System Targets	"BZ - Eye(ball) and eye function, unspecified"	BZZ	"Eye and eye functions, unspecified"				
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CA - External ear	CAA	"External ear, unspecified"				
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CA - External ear	CAC	Auricle		Helix; Lobule; Pinna; Tragus; 		
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CA - External ear	CAE	External auditory canal		External auditory meatus; Ear canal NOS; 		
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CB - Middle ear	CBA	"Middle ear, unspecified"				
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CB - Middle ear	CBB	Tympanic membrane				
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CB - Middle ear	CBC	Stapes				
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CB - Middle ear	CBF	Other auditory ossicle		Auditory ossicle NOS; \nIncus; \nMalleus; 	stapes (CBC)	
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CB - Middle ear	CBH	Eustachian tube				
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CC - Internal ear	CCA	Inner ear		Labyrinth; Semicircular canals; Vestibule; 	cochlea (CCB)	
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CC - Internal ear	CCB	Cochlea				
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CD - Mastoid sinus	CDA	Mastoid sinus			mastoid bone/process (MAI)	
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CT - Ear functions	CT2	Hearing and vestibular functions				b230-b249
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CT - Ear functions	CTB	Hearing functions				b230
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CT - Ear functions	CTE	Vestibular functions				b235
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	CT - Ear functions	CTK	Sensations associated with hearing and vestibular function				b240
+1 - Targets for Body Systems and Functions	03 - Ear and Mastoid Targets	"CZ - Ear and ear functions, unspecified"	CZZ	"Ear and ear functions, unspecified"				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	"DA - Tonsil, Adenoid"	DAA	Palatine or pharyngeal tonsil		lingual tonsil; 	adenoid (DAB)	
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	"DA - Tonsil, Adenoid"	DAB	Adenoid				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DB - Thymus	DBA	Thymus				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DF - Lymphatic system	DFA	Lymph node other and unspecified		lymph node of other region; 	lymph node of:;\nabdominal and pelvic region (DFF); axilla (DFC); inguinal region (DFM);  mediastinum (DFE); neck (DFB)	
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DF - Lymphatic system	DFB	Lymph node of neck				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DF - Lymphatic system	DFC	Lymph node of axilla				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DF - Lymphatic system	DFE	Lymph node of  mediastinum		Lymph node:; Hilar; Intrathoracic; Mammary; Supraclavicular; 		
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DF - Lymphatic system	DFF	Lymph node of abdomen or pelvic region		Lymph node:; Iliac; para-aortic; pre-aortic; mesenteric; retroperitoneal; 	inguinal lymph node (DFM)	
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DF - Lymphatic system	DFM	Inguinal lymph node				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DF - Lymphatic system	DFO	"Lymphatic vessel, other and unspecified"				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DF - Lymphatic system	DFP	Thoracic duct				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DF - Lymphatic system	DFZ	"Lymphatic structure, unspecified"			"lymph node, not elsewhere classified (DFA)"	
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DG - Bone marrow	DGA	Bone marrow				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DI - Blood	DIA	Blood				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DJ - Spleen	DJA	Spleen				
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DT - Functions of haematopoietic and reticuloendothelial system	DTA	Haematological system function				b430
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	DT - Functions of haematopoietic and reticuloendothelial system	DTB	Immunological system function				b435
+1 - Targets for Body Systems and Functions	04 - Haematopoietic and Lymphatic System Targets	"DZ - Haematopoietic and reticuloendothelial system, unspecified"	DZZ	"Haematopoietic or reticuloendothelial system, unspecified"				
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	EA - Cerebral endocrine structures	EAA	Pituitary gland				
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	EA - Cerebral endocrine structures	EAB	Pineal body				
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	EB - Peripheral endocrine structures	EBA	Thyroid gland				
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	EB - Peripheral endocrine structures	EBB	Parathyroid gland				
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	EB - Peripheral endocrine structures	EBC	Adrenal gland				
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	EB - Peripheral endocrine structures	EBD	Endocrine pancreas (islets of Langerhans)				
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	EB - Peripheral endocrine structures	EBE	Paraganglion				
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	ET - Metabolic and endocrine functions	ET2	Function related to the metabolic and the endocrine system				b540-559
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	ET - Metabolic and endocrine functions	ETB	General metabolic functions				b540
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	ET - Metabolic and endocrine functions	ETE	"Water, mineral and electrolyte balance functions"				b545
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	ET - Metabolic and endocrine functions	ETG	Thermoregulatory functions				b550
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	ET - Metabolic and endocrine functions	ETK	Endocrine functions				b555
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	ET - Metabolic and endocrine functions	ETM	Growth maintenance functions				b560
+1 - Targets for Body Systems and Functions	05 - Endocrine System Targets	"EZ - Endocrine System, unspecified"	EZZ	"Endocrine system, unspecified"				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HA - Heart, atrium"	HAA	Left atrium			"complex congenital heart malformation, atrium (HAM)"	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HA - Heart, atrium"	HAB	Right atrium			"complex congenital heart malformation, atrium (HAM)"	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HA - Heart, atrium"	HAD	Atrial septum				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HA - Heart, atrium"	HAM	"Complex congenital heart malformation, atrium"				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HA - Heart, atrium"	HAZ	"Atrium, unspecified"			atrial septum (HAD); left atrium (HAA); right atrium (HAB)	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HB - Heart, ventricle"	HBA	Left cardiac ventricle				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HB - Heart, ventricle"	HBB	Right cardiac ventricle				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HB - Heart, ventricle"	HBD	Ventricular septum				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HB - Heart, ventricle"	HBM	"Complex congenital heart malformation, ventricle"				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HB - Heart, ventricle"	HBZ	"Heart ventricle, unspecified"			left cardiac ventricle (HBA); right cardiac ventricle (HBB); ventricular septum (HBD)	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HD - Heart valves	HDE	Aortic valve		Adjacent structures (e.g. subvalvular ring) of aortic valve \nAnnulus; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HD - Heart valves	HDF	Mitral valve		"Adjacent structures (chordae tendinae, papillary muscle) of mitral valve; "		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HD - Heart valves	HDG	Pulmonary valve		Adjacent structures of pulmonary valve \nAnnulus; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HD - Heart valves	HDH	Tricuspid valve		"Adjacent structures (chordae tendinae, papillary muscle) of tricuspid valve; "		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HD - Heart valves	HDM	"Complex congenital heart malformation, valve"				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HF - Endocardium, Pericardium, Myocardium"	HFA	Endocardium				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HF - Endocardium, Pericardium, Myocardium"	HFB	Atrioventricular septum			atrial septum (HAD); ventricular septum (HBD)	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HF - Endocardium, Pericardium, Myocardium"	HFC	Conducting system of heart				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HF - Endocardium, Pericardium, Myocardium"	HFD	Myocardium			conducting system (HFC)	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HF - Endocardium, Pericardium, Myocardium"	HFF	Pericardium				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIA	Coronary artery		Bypass vessel; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIB	Vena cava superior		[SVC]; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIC	Vena cava inferior		[IVC]; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HID	Pulmonary artery				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIE	Pulmonary vein				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIF	Ascending aorta				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIG	"Aorta, thoracic descending"				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIH	"Aorta, abdominal"		Aorta NOS; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIJ	Ductus arteriosus		Arterial duct; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIK	Aortic arch				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIL	Aortic root				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIM	"Complex congenital heart malformation, coronary artery"			great vessels (HIN)	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	HI - Coronary arteries and great vessels	HIN	"Complex congenital heart malformation, great vessel"			coronary artery (HIM)	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HT - Functions of heart and cardiovascular system, unspecified"	HT2	Functions of the cardiovascular system				b410-b429
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HT - Functions of heart and cardiovascular system, unspecified"	HTB	Heart functions				b410
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HT - Functions of heart and cardiovascular system, unspecified"	HTC	Blood supply to the heart				b4103
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HT - Functions of heart and cardiovascular system, unspecified"	HTG	Heart rhythm				b4101
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HT - Functions of heart and cardiovascular system, unspecified"	HTK	Contraction force of ventricular muscle				b4102
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HT - Functions of heart and cardiovascular system, unspecified"	HTM	Exercise tolerance functions				b455
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HT - Functions of heart and cardiovascular system, unspecified"	HTR	Heart rate				b4100
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HZ - Heart, unspecified"	HZA	Left heart				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HZ - Heart, unspecified"	HZB	Right heart				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HZ - Heart, unspecified"	HZM	"Complex congenital heart malformation, unspecified"				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	"HZ - Heart, unspecified"	HZZ	"Entire heart, heart or great vessel, unspecified"		Epicardium; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IA - Cerebral vessels	IAA	Intracranial artery		Intracranial vessel; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IA - Cerebral vessels	IAD	Intracranial vein				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IB - Vessels of head and neck	IBA	"Artery of head and neck, extracranial"		Extracranial artery; Vessel of head and neck NOS; 	"carotid artery, extracranial (IBB)"	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IB - Vessels of head and neck	IBB	"Carotid artery, extracranial"				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IB - Vessels of head and neck	IBD	"Vein of head and neck, extracranial"		Jugular vein; Subclavian vein; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IC - Vessels of upper limb	ICA	Artery of upper limb		Artery of shoulder; Axillary artery; Brachial artery; Radial artery; Ulnar artery; Vessel of upper limb; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IC - Vessels of upper limb	ICD	Vein of upper limb				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	ID - Vessels of thorax	IDA	Artery of thorax		Vessel of thorax; 	aortic arch (HIF); thoracic (descending) aorta (HIG)	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	ID - Vessels of thorax	IDB	Vein of thorax			inferior vena cava (HIC); superior vena cava (HIB)	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	ID - Vessels of thorax	IDM	"Complex congenital malformation, thoracic artery"				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IE - Abdominal vessels	IEA	Abdominal or pelvic artery			abdominal aorta (HIH)	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IE - Abdominal vessels	IED	Abdominal or pelvic vein			portal vein and branches (IEF); vena cava inferior (HIC); vena cava superior (HIB)	
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IE - Abdominal vessels	IEF	Portal vein and branches				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IF - Vessels of lower limb	IFA	Artery of lower limb		femoral (common) (superficial); peroneal; popliteal; tibial; \nVessel of lower limb NOS; 		
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IF - Vessels of lower limb	IFD	Vein of lower limb				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IT - Vessel functions	ITA	Blood pressure functions				b420
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IT - Vessel functions	ITB	Blood vessel functions				b415
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IZ - Vessels unspecified	IZA	"Artery, other or unspecified"				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IZ - Vessels unspecified	IZD	"Vein, other or unspecified"				
+1 - Targets for Body Systems and Functions	06 - Circulatory System Targets	IZ - Vessels unspecified	IZZ	"Blood vessel, unspecified"				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JA - Upper respiratory tract	JAA	Nose			nasal septum (JAB)\nturbinate (JAC)	
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JA - Upper respiratory tract	JAB	Nasal septum				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JA - Upper respiratory tract	JAC	Turbinate			nasal septum (JAB)	
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JA - Upper respiratory tract	JAE	"Paranasal sinus, unspecified"			ethmoid (JAH); frontal (JAG); maxillary(JAF); sphenoid (JAI)	
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JA - Upper respiratory tract	JAF	Maxillary sinus				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JA - Upper respiratory tract	JAG	Frontal sinus				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JA - Upper respiratory tract	JAH	Ethmoid sinus				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JA - Upper respiratory tract	JAI	Sphenoid sinus				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JA - Upper respiratory tract	JAM	Nasal pharynx				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JA - Upper respiratory tract	JAN	Larynx and epiglottis		Vocal cord; 		
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JB - Lower respiratory tract	JBA	Trachea				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JB - Lower respiratory tract	JBB	Bronchus		Bronchiole; 		
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JB - Lower respiratory tract	JBF	Lung parenchyma				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JC - Pleura and thoracic spaces	JCA	Pleura				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JC - Pleura and thoracic spaces	JCB	Pleural cavity				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JC - Pleura and thoracic spaces	JCG	Mediastinal space				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JC - Pleura and thoracic spaces	JCH	Thoracic cavity				
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JT - Function of respiratory system	JT2	Functions of the respiratory system				b440-b449
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JT - Function of respiratory system	JTB	Respiration functions				b440
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JT - Function of respiratory system	JTC	Respiratory muscle functions				b445
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JT - Function of respiratory system	JTG	Additional functions of the respiratory system		Blowing; Coughing; Mouth breathing; Sneezing; Whistling; Yawning; 	exercise tolerance function (HTM)	b450
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JU - Voice and speech	JU1	Voice and speech functions				b3
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JU - Voice and speech	JUB	Voice functions				b310
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JU - Voice and speech	JUC	Speech functions				b320+b330
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JU - Voice and speech	JUD	Articulation functions				b320
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JU - Voice and speech	JUF	Fluency and rhythm of speech functions		cluttering; stammering; stuttering; 		b330
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	JU - Voice and speech	JUG	Alternative vocalisation functions				b340
+1 - Targets for Body Systems and Functions	07 - Respiratory System and Voice and Speech Targets	"JZ - Respiratory system and voice and speech, unspecified"	JZZ	"Respiratory system, unspecified"				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KA - Mouth and pharynx	KAA	Lip				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KA - Mouth and pharynx	KAB	Tongue				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KA - Mouth and pharynx	KAE	Teeth		Periodontium; Pulp; 		
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KA - Mouth and pharynx	KAG	Gums		Alveolus; Gingiva; 		
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KA - Mouth and pharynx	KAL	Parotid gland				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KA - Mouth and pharynx	KAM	Salivary gland		Minor salivary gland; Salivary duct; Salivary gland NOS; Submandibular gland; 	parotid gland (KAL)	
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KA - Mouth and pharynx	KAR	Oral pharynx		Hypopharyx; Pharynx NOS; 		
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KA - Mouth and pharynx	KAS	Soft palate		uvula; 	hard palate (KAT)	
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KA - Mouth and pharynx	KAT	Hard palate				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KA - Mouth and pharynx	KAZ	"Oral cavity, unspecified"		Mouth NOS; Submandibular space NOS; 	tongue (KAB)	
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBA	Oesophagus				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBE	Gastroesophageal junction				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBF	Stomach		Pylorus; Gastro-oesophageal junction; 		
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBI	Duodenum				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBK	"Small intestine, not elsewhere classified"		Jejunum; Small intestine NOS; 	duodenum (KBI)	
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBO	Appendix				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBP	Colon		ascending colon; caecum; descending colon; hepatic flexure; splenic flexure; transverse colon; 	sigmoid colon (KBU)	
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBU	Sigmoid colon				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBW	Rectum		Perirectal area; 		
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBX	Anus and anal canal		Perianal area; 		
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KB - Gastrointestinal tract	KBZ	"Large intestine, unspecified"		Caecum; 		
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KC - Hepatic and biliary structures	KCA	Liver				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KC - Hepatic and biliary structures	KCF	Gall bladder				
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KC - Hepatic and biliary structures	KCM	Bile duct		Ampulla of Vater; Common bile duct; Cystic duct; Hepatic duct; 		
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KC - Hepatic and biliary structures	KCO	Pancreas and pancreatic duct			endocrine pancreas (EBD)	
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KM - Peritoneum	KMA	Peritoneum and peritoneal cavity		Broad ligament; Cul-de-sac; Mesentery; Omentum; Pouch of Douglas; Retroperitoneum; 	abdominal and pelvic cavity NOS (PAK);	
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KT - Functions of digestive system	KT2	Functions related to the digestive system				b510-b539
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KT - Functions of digestive system	KTB	Ingestion functions				b510
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KT - Functions of digestive system	KTC	Swallowing				b5105
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KT - Functions of digestive system	KTE	Digestive functions				b515
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KT - Functions of digestive system	KTH	Assimilation functions				b520
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KT - Functions of digestive system	KTK	Defaecation functions				b525
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KT - Functions of digestive system	KTN	Weight maintenance functions				b530
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	KT - Functions of digestive system	KTQ	Sensations associated with the digestive system				b535
+1 - Targets for Body Systems and Functions	08 - Digestive System Targets	"KZ - Digestive system, unspecified"	KZZ	"Digestive system, unspecified"				
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LA - Skin	LAA	Skin and subcutaneous cell tissue of head or neck		Eyebrow; 		
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LA - Skin	LAB	Skin and subcutaneous cell tissue of trunk			skin of breast (LCA)	
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LA - Skin	LAE	Skin and subcutaneous cell tissue of the upper limb				
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LA - Skin	LAG	Skin and subcutaneous cell tissue of the lower limb				
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LB - Skin appendages	LBA	Skin appendage of head or neck		Skin glands of head or neck; 		
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LB - Skin appendages	LBB	Skin appendage of trunk		Skin glands of trunk; 		
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LB - Skin appendages	LBD	Nail of finger				
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LB - Skin appendages	LBE	"Skin appendage of upper limb, not elsewhere classified"		Skin glands of upper limb; 	nail of finger (LBD)	
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LB - Skin appendages	LBF	Nail of toe				
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LB - Skin appendages	LBG	"Skin appendage of lower limb, not elsewhere classified"		Skin glands of lower limb; 	nail of toe (LBF)	
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LC - Breast	LCA	Breast and related structures		Nipple; Skin of breast; 		
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LT - Skin functions	LT2	Functions of the skin				b810-b849
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LT - Skin functions	LTC	Protective functions of the skin				b810
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LT - Skin functions	LTD	Repair functions of the skin				b820
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LT - Skin functions	LTK	Other functions of the skin				b830
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LT - Skin functions	LTP	Sensations related to the skin				b840
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LU - Skin appendages functions	LU2	Functions of the hair and nails				b850-b869
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LU - Skin appendages functions	LUB	Functions of hair				b850
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	LU - Skin appendages functions	LUC	Functions of nails				b860
+1 - Targets for Body Systems and Functions	09 - Integumentary System Targets	"LZ - Integumentary system, unspecified"	LZZ	"Skin and subcutaneous cell tissue, unspecified"		Hair; Skin appendage NOS; Skin glands NOS; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAA	Bone of cranium		Occipital bone; Parietal bones; Skull; Temporal bones; 	mastoid (MAI)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAB	"Facial bone, unspecified"			cranium (MAA); ethmoid (MAD); hyoid (MAH); mandible (MAG); mastoid (MAI); maxilla (MAF); nasal (MAE); zygoma (MAC)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAC	Zygomatic bone			"jaw, mandible (MAG)"	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAD	Ethmoid				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAE	Nasal bone				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAF	Maxilla				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAG	Mandible or Jaw				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAH	Hyoid bone				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAI	Mastoid bone		Mastoid process; 	mastoid sinus (CDA)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAJ	Joint of head or neck region			joints of cervical vertebral column (MBA)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAL	Ligament and fascia of head or neck				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAM	Muscle of head or neck region			oculomotor muscles (BDA)\ntendons of head or neck region (MAT)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAS	Soft tissue of head or neck		Bursa of head or neck; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAT	Tendon of head or neck region				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MA - Musculoskeletal structures of head and neck	MAZ	"Bone, joint or soft tissue of head, neck or trunk, unspecified"				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBA	Cervical vertebral column				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBB	Cervical intervertebral disc				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBC	Cervico-thoracic vertebral column		Intersection of cervical and thoracic part of  vertebral column; 	cervical vertebral column (MBA) \nthoracic vertebral column (MBG)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBG	Thoracic vertebral column				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBH	Thoracic intervertebral disc				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBI	Thoraco-lumbar vertebral column		Intersection of thoracic and lumbar part of  vertebral column; 	lumbar vertebral column (MBM)\nthoracic vertebral column (MBG)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBM	Lumbar vertebral column				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBN	Lumbar intervertebral disc				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBO	Lumbo-sacral vertebral column		Intersection of lumbar and sacral part of  vertebral column; 	lumbar vertebral column (MBM)\nsacral vertebral column (MBR)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBR	Sacral vertebral column				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBU	Coccyx				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBY	"Intervertebral disc, unspecified"			cervical (MBB); lumbar (MBN); thoracic (MBH)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MB - Vertebral column	MBZ	"Vertebral column, unspecified"			cervical (MBA); cervico-thoracic (MBC); lumbar (MBM); lumbo-sacral (MBO); thoracic (MBG); thoraco-lumbar (MBI)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MC - Musculoskeletal structures of trunk	MCB	Bone of thoracic cage		rib; sternum; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MC - Musculoskeletal structures of trunk	MCL	Ligament and fascia of trunk				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MC - Musculoskeletal structures of trunk	MCM	Muscle of trunk			diaphragm (MCX) \ntendon of trunk (MCT)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MC - Musculoskeletal structures of trunk	MCS	"Soft tissue of trunk, not otherwise specified"		Bursa of trunk; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MC - Musculoskeletal structures of trunk	MCT	Tendon of trunk				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MC - Musculoskeletal structures of trunk	MCX	Diaphragm				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MD - Musculoskeletal structures of shoulder	MDB	Bone of shoulder region		Clavicula; Scapula; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MD - Musculoskeletal structures of shoulder	MDC	Shoulder cartilage				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MD - Musculoskeletal structures of shoulder	MDJ	Joint of the shoulder region		Acromioclavicular joint; Glenohumeral joint; Sternoclavicular joint; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MD - Musculoskeletal structures of shoulder	MDL	Ligament and fascia of shoulder region			tendon of shoulder region (MDT)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MD - Musculoskeletal structures of shoulder	MDM	Muscle of shoulder region			tendon of shoulder region (MDT)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MD - Musculoskeletal structures of shoulder	MDT	Tendon of shoulder region				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ME - Musculoskeletal structures of upper arm	MEB	Bone of upper arm		Humerus; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ME - Musculoskeletal structures of upper arm	MEC	Elbow cartilage				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ME - Musculoskeletal structures of upper arm	MEJ	Elbow joint				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ME - Musculoskeletal structures of upper arm	MEL	Ligament and fascia of upper arm				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ME - Musculoskeletal structures of upper arm	MEM	Muscle of upper arm				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ME - Musculoskeletal structures of upper arm	MET	Tendon of upper arm				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MF - Musculoskeletal structures of forearm	MFB	Bone of forearm		Olecranon; Radial styloid process; Radius; Ulna; Ulnar styloid process; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MF - Musculoskeletal structures of forearm	MFC	Wrist cartilage				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MF - Musculoskeletal structures of forearm	MFJ	Wrist joint				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MF - Musculoskeletal structures of forearm	MFL	Ligament and fascia of forearm				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MF - Musculoskeletal structures of forearm	MFM	Muscle of forearm			tendon of forearm (MFT)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MF - Musculoskeletal structures of forearm	MFT	Tendon of forearm				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MG - Musculoskeletal structures of hand or fingers	MGB	Bone of hand or fingers		carpals; metacarpals; phalanx of fingers; scaphoid; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MG - Musculoskeletal structures of hand or fingers	MGJ	Joint of hand or fingers				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MG - Musculoskeletal structures of hand or fingers	MGL	Ligament and fascia of hand or fingers				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MG - Musculoskeletal structures of hand or fingers	MGM	Muscle of hand			tendon of hand (MGT)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MG - Musculoskeletal structures of hand or fingers	MGT	Tendon of hand or fingers				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	"MI - Musculoskeletal structures of upper limb, unspecified"	MIS	Soft tissue of upper limb		Bursa of upper limb; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	"MI - Musculoskeletal structures of upper limb, unspecified"	MIZ	"Bone, joint or soft tissue of upper limb, unspecified"				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MK - Musculoskeletal structures of pelvic region	MKB	Bone of pelvic region		Hip bone; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MK - Musculoskeletal structures of pelvic region	MKJ	Joint of pelvic region		Lumbosacral joint; Sacroiliac joint; 	hip joint (MLJ)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MK - Musculoskeletal structures of pelvic region	MKL	Ligament and fascia of pelvic region				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MK - Musculoskeletal structures of pelvic region	MKM	Muscle of pelvic region		Soft tissue of pelvic region NOS; Tendon of pelvic region NOS; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ML - Musculoskeletal structures of thigh	MLB	Bone of thigh		"Femur (eg. diaphysis, neck, shaft); "		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ML - Musculoskeletal structures of thigh	MLJ	Hip joint				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ML - Musculoskeletal structures of thigh	MLL	Ligament and fascia of thigh				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ML - Musculoskeletal structures of thigh	MLM	Muscle of thigh		Soft tissue of thigh NOS; 	tendon of thigh (MLT)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	ML - Musculoskeletal structures of thigh	MLT	Tendon of thigh				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MM - Musculoskeletal structures of knee	MMC	Knee cartilage				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MM - Musculoskeletal structures of knee	MMD	Knee meniscus		lateral meniscus; medial meniscus; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MM - Musculoskeletal structures of knee	MMJ	Knee joint				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MM - Musculoskeletal structures of knee	MML	Knee ligament				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MM - Musculoskeletal structures of knee	MMP	Patella				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MM - Musculoskeletal structures of knee	MMT	Knee tendon				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MN - Musculoskeletal structures of lower leg	MNB	Bone of lower leg		calcaneus; fibula; talus; tibia; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MN - Musculoskeletal structures of lower leg	MNC	Ankle cartilage				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MN - Musculoskeletal structures of lower leg	MNJ	Ankle joint		lateral malleolus; medial malleolus; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MN - Musculoskeletal structures of lower leg	MNL	Ligament and fascia of lower leg				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MN - Musculoskeletal structures of lower leg	MNM	Muscle of lower leg		Soft tissue of lower leg NOS; 	tendon of lower leg (MNT)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MN - Musculoskeletal structures of lower leg	MNT	Tendon of lower leg				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MO - Musculoskeletal structures of foot or toes	MOB	Bone of foot or toes		hallux; malleolus; metatarsal; phalanx (phalanges) of toes; tarsal; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MO - Musculoskeletal structures of foot or toes	MOC	Cartilage of ankle				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MO - Musculoskeletal structures of foot or toes	MOJ	Joint of foot or toes		distal phalangeal [DP] joint; interphalangeal joint; metatarsophalangeal [MTP] joint; proximal interphalangeal [PIP] joint; talocrural joint; 		
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MO - Musculoskeletal structures of foot or toes	MOL	Ligament and fascia of foot or toes				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MO - Musculoskeletal structures of foot or toes	MOM	Muscle of foot or toes		Soft tissue of foot or toes NOS; 	tendon of foot (MOT)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MO - Musculoskeletal structures of foot or toes	MOT	Tendon of foot or toes				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	"MQ - Musculoskeletal structures of lower limb, unspecified"	MQS	Soft tissue of lower limb				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	"MQ - Musculoskeletal structures of lower limb, unspecified"	MQZ	"Bone, joint or soft tissue of lower limb, unspecified"				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	"MR - Musculoskeletal structures, unspecified"	MRB	Bone				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	"MR - Musculoskeletal structures, unspecified"	MRJ	Joint				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	"MR - Musculoskeletal structures, unspecified"	MRM	Muscle			tendon NEC (MRT)	
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	"MR - Musculoskeletal structures, unspecified"	MRS	Soft tissue	"Soft tissue is defined as tissue that connects, supports or surrounds other structures and organs of the body. Soft tissue includes muscles, nerves, tendons, fat, blood or lymph vessels, fasciae and tissue around joints (synovial tissue) (that is, all tissue excluding skin, subcutaneous tissue, cartilage and bone)."			
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	"MR - Musculoskeletal structures, unspecified"	MRT	Tendon				
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MT - Functions of joints and bones	MT1	Neuromusculoskeletal and movement related functions				b7
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MT - Functions of joints and bones	MT2	Functions of joints and bones				b710-b729
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MT - Functions of joints and bones	MTB	Mobility of joint functions				b710
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MT - Functions of joints and bones	MTC	Stability of joint functions				b715
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MT - Functions of joints and bones	MTD	Mobility of bone functions				b720
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MU - Muscle  functions	MU2	Muscle functions				b730-b749
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MU - Muscle  functions	MUB	Muscle power functions				b730
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MU - Muscle  functions	MUC	Muscle tone functions				b735
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MU - Muscle  functions	MUD	Muscle endurance functions				b740
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MV - Movement	MV2	Movement functions				b750-b789
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MV - Movement	MVB	Motor reflex functions				b750
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MV - Movement	MVC	Involuntary movement reaction functions				b755
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MV - Movement	MVD	Control of voluntary movement functions				b760
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MV - Movement	MVF	Involuntary movement functions				b765
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MV - Movement	MVG	Gait pattern functions				b770
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MV - Movement	MVH	Spontaneous movements	"Functions associated with frequency, fluency and complexity of total and individual body-part movements such as infant spontaneous movements and patterns of movement. Note: this code should be applied only to infants aged less than corrected age 6 months."			b761
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	MV - Movement	MVI	Sensations related to muscle and movement functions				b780
+1 - Targets for Body Systems and Functions	10 - Musculoskeletal System Targets	"MZ - Musculoskeletal system, unspecified"	MZZ	"Musculoskeletal system, not otherwise specified"				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NA - Urinary System	NAA	Kidney		Kidney-ureter-complex; 		
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NA - Urinary System	NAB	Renal pelvis and pyeloureteral junction				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NA - Urinary System	NAE	Ureter				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NA - Urinary System	NAI	Urinary bladder		Urachus; 	neck of urinary bladder (NAK)	
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NA - Urinary System	NAK	Neck of urinary bladder		urethrovesical junction; 		
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NA - Urinary System	NAM	Urethra		Bulbourethral glands; Skene's glands; 		
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NA - Urinary System	NAZ	"Urinary system, unspecified"				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NG - Male genital system	NGA	Prostate and seminal vesicle		Periprostatic tissue; 		
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NG - Male genital system	NGD	Spermatic cord		Epididymis; Vas deferens; Processus vaginalis; 		
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NG - Male genital system	NGG	Scrotum				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NG - Male genital system	NGL	Testis		Tunica vaginalis testis; 		
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NG - Male genital system	NGM	Penis				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NG - Male genital system	NGZ	"Male genital system, unspecified"		Cowper's glands; 		
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NM - Female genital System	NMA	Ovary				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NM - Female genital System	NMC	Fallopian tube				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NM - Female genital System	NME	Uterus			cervix uteri (NMF)	
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NM - Female genital System	NMF	Cervix uteri				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NM - Female genital System	NMH	Vagina		Hymen; Vestibular glands (Bartholin's glands); 	cul-de-sac (KMA); perineum (PAW); pouch of Douglas (KMA)	
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NM - Female genital System	NMI	Vulva		Clitoris; Labia minora and majora; 	cul-de-sac (KMA); perineum (PAW); Pouch of Douglas (KMA); vagina (NMH)	
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NM - Female genital System	NMM	"Placenta, amnion, cord"				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NM - Female genital System	NMR	Fetal or embryonic structure				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NM - Female genital System	NMZ	"Female genital system, unspecified"				
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NT - Genitourinary and reproductive functions	NT1	Genitourinary and reproductive functions				b6
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NT - Genitourinary and reproductive functions	NT2	Urinary functions				b610-b639
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NT - Genitourinary and reproductive functions	NTC	Urinary excretory functions				b610
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NT - Genitourinary and reproductive functions	NTD	Urination functions				b620
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NT - Genitourinary and reproductive functions	NTE	Sensations associated with urinary functions				b630
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NU - Genital and reproductive functions	NU2	Genital and reproductive functions				b640-b679
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NU - Genital and reproductive functions	NUA	Sexual functions				b640
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NU - Genital and reproductive functions	NUB	Menstruation functions				b650
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NU - Genital and reproductive functions	NUC	Procreation functions				b660
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NU - Genital and reproductive functions	NUD	Functions related to fertility				b6600
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NU - Genital and reproductive functions	NUE	Functions related to pregnancy				b6601
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NU - Genital and reproductive functions	NUG	Functions related to childbirth				b6602
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NU - Genital and reproductive functions	NUH	Lactation				b6603
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	NU - Genital and reproductive functions	NUK	Sensations associated with genital and reproductive functions				b670
+1 - Targets for Body Systems and Functions	11 - Genitourinary System Targets	"NZ - Urogenital system, unspecified"	NZZ	"Urogenital system, unspecified"				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	"PA - Topographical regions: Trunk, head and neck"	PAA	"Trunk, unspecified"				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	"PA - Topographical regions: Trunk, head and neck"	PAB	Head or neck				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	"PA - Topographical regions: Trunk, head and neck"	PAE	Thorax				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	"PA - Topographical regions: Trunk, head and neck"	PAF	"Chest wall, not elsewhere classified"				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	"PA - Topographical regions: Trunk, head and neck"	PAK	"Abdomen, not elsewhere classified"		Abdominal cavity NOS; Pelvic cavity NOS; 		
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	"PA - Topographical regions: Trunk, head and neck"	PAL	"Abdominal wall, unspecified"				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	"PA - Topographical regions: Trunk, head and neck"	PAM	"Abdominal wall, inguinal"				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	"PA - Topographical regions: Trunk, head and neck"	PAN	"Abdominal wall, femoral"				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	"PA - Topographical regions: Trunk, head and neck"	PAO	"Abdominal wall, umbilical"				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	"PA - Topographical regions: Trunk, head and neck"	PAW	Perineum				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PM - Topographical regions: Upper limb	PMA	"Upper limb, unspecified"				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PM - Topographical regions: Upper limb	PMB	Upper arm				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PM - Topographical regions: Upper limb	PMC	Forearm				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PM - Topographical regions: Upper limb	PMD	Hand				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PM - Topographical regions: Upper limb	PME	Finger				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PN - Topographical regions: Lower limb	PNA	"Lower limb, unspecified"				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PN - Topographical regions: Lower limb	PNB	Thigh				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PN - Topographical regions: Lower limb	PNC	Lower leg				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PN - Topographical regions: Lower limb	PND	Foot				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PN - Topographical regions: Lower limb	PNE	Toe				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PS - Topographical regions: Set of viscera	PSA	Set of thoracic viscera		"Heart and lung (pericardial and pleural sac, thymus) Heart-lung-complex; "		
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PS - Topographical regions: Set of viscera	PSB	Set of female pelvic viscera		Fallopian tube; Ovaries; Urinary bladder; Uterine tube; Uterus; 		
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PS - Topographical regions: Set of viscera	PSC	Set of male pelvic viscera		Prostate; Urinary bladder; 		
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PT - Artificial body structure	PTA	Artificial body structure: Gastrostomy		PEG; 		
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PT - Artificial body structure	PTB	Artificial body structure: Enterostomy		Colostomy; Ileostomy; Jejunostomy; 		
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PT - Artificial body structure	PTC	Artificial body structure: Tracheostomy				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PT - Artificial body structure	PTD	Artificial body structure: Other stoma		Cystostomy; Nephrostomy; Ureterostomy; Urethrostomy; 		
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PY - Genome (Microscopic  body structure)	PYA	Genome				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PZ - Comprehensive or unspecified topography	PZA	Whole body				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PZ - Comprehensive or unspecified topography	PZB	Whole person				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PZ - Comprehensive or unspecified topography	PZX	Any site				
+1 - Targets for Body Systems and Functions	12 - Other and Unspecified Body System and Function Targets	PZ - Comprehensive or unspecified topography	PZZ	Unspecified site				
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SA - Learning and applying knowledge; Purposeful sensory experiences	SA1	Learning and applying knowledge				d1
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SA - Learning and applying knowledge; Purposeful sensory experiences	SA2	Purposeful sensory experiences				d110-d129
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SA - Learning and applying knowledge; Purposeful sensory experiences	SAA	Watching				d110
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SA - Learning and applying knowledge; Purposeful sensory experiences	SAD	Listening				d115
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SA - Learning and applying knowledge; Purposeful sensory experiences	SAE	Purposeful sensing			listening (SAD)\nwatching (SAA) 	d120
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SB2	Basic learning				d130-d159
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBA	Copying				d130
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBB	Learning through actions with objects and persons	"Learning through simple actions on a single object, two or more objects, symbolic and pretend play, such as in hitting an object, banging blocks and playing with dolls or cars."			d131
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBC	Acquiring language	"Developing the competence to represent persons, objects, events, or feelings through words, symbols, phrases, and sentences."			d132
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBD	Acquiring an additional language	"Developing the competence to represent persons, objects, events, feelings through words, symbols, phrases and sentences, in an additional language such as a foreign language or signing."			d133
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBF	Rehearsing				d135
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBG	Acquiring concepts	"Developing competence to understand and use basic and complex concepts related to characteristics of things, persons or events."			d137
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBH	Acquiring information	"Obtaining facts about persons, things and events, such as asking why, what, where and how, asking for names."			d138
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBI	Learning to read				d140
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBL	Learning to write				d145
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBN	Learning to calculate				d150
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SB - Basic learning	SBQ	Acquiring skills				d155
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SC - Applying knowledge	SC2	Applying knowledge				d160-d179
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SC - Applying knowledge	SCA	Focusing attention				d160
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SC - Applying knowledge	SCC	Thinking				d163
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SC - Applying knowledge	SCF	Reading			learning to read (SBI)	d166
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SC - Applying knowledge	SCG	Writing			learning to write (SBL)	d170
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SC - Applying knowledge	SCI	Calculating			learning to calculate (SBN)	d172
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SC - Applying knowledge	SCJ	Solving problems				d175
+2 - Targets for Activities and Participation Domains	13 - Learning and Applying Knowledge Targets	SC - Applying knowledge	SCL	Making decisions				d177
+2 - Targets for Activities and Participation Domains	14 - General Task and Demand Targets	SD - General tasks and demands	SD1	General tasks and demands				d2
+2 - Targets for Activities and Participation Domains	14 - General Task and Demand Targets	SD - General tasks and demands	SDA	Undertaking tasks				d210;  d220
+2 - Targets for Activities and Participation Domains	14 - General Task and Demand Targets	SD - General tasks and demands	SDG	Carrying out daily routine				d230
+2 - Targets for Activities and Participation Domains	14 - General Task and Demand Targets	SD - General tasks and demands	SDJ	Handling stress and other psychological demands		Handling responsibilities; handling stress and crisis; 		d240
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SE - Communication; Receiving communication	SE1	Communication				d3
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SE - Communication; Receiving communication	SE2	Communicating - receiving				d310-d329
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SE - Communication; Receiving communication	SEA	Communicating with - receiving spoken messages				d310
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SE - Communication; Receiving communication	SEB	Non-speech vocal expression	"Vocalising when aware of another person in the proximal environment, such as producing sounds when the mother is close; babbling; babbling in turn-taking activities. Vocalising in response to speech through imitating speech-sounds in a turn taking procedure."			d331
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SE - Communication; Receiving communication	SEC	Singing	Using tones in a sequence resulting in a melody to convey messages.			d332
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SE - Communication; Receiving communication	SED	Communicating with - receiving nonverbal messages				d315
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SE - Communication; Receiving communication	SEG	Communicating with - receiving sign language messages				d320
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SE - Communication; Receiving communication	SEJ	Communicating with - receiving written messages				d325
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SF - Producing communication	SF2	Communication - producing				d330-d349
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SF - Producing communication	SFA	Speaking				d330
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SF - Producing communication	SFD	Producing nonverbal messages				d335
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SF - Producing communication	SFJ	Producing messages in formal sign languages				d340
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SF - Producing communication	SFK	Writing messages				d345
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SG - Conversation and use of communication devices and techniques	SG2	Conversation and use of communication devices and techniques				d350-d369
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SG - Conversation and use of communication devices and techniques	SGA	Having a conversation				d350
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SG - Conversation and use of communication devices and techniques	SGD	Discussion				d355
+2 - Targets for Activities and Participation Domains	15 - Communication Targets	SG - Conversation and use of communication devices and techniques	SGG	Using communication devices and techniques				d360
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SH - Mobility; Changing and maintaining body position	SH1	Mobility				d4
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SH - Mobility; Changing and maintaining body position	SH2	Changing and maintaining body position				d410-d429
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SH - Mobility; Changing and maintaining body position	SHA	Changing basic body position				d410
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SH - Mobility; Changing and maintaining body position	SHD	Maintaining a body position				d415
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SH - Mobility; Changing and maintaining body position	SHG	Transferring oneself		Transferring oneself while sitting or lying; 	changing and maintaining body position (SHA)	d420
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	"SI - Carrying, moving and handling objects"	SI2	"Carrying, moving and handling objects"				d430-d449
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	"SI - Carrying, moving and handling objects"	SIA	Lifting and carrying objects				d430
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	"SI - Carrying, moving and handling objects"	SID	Moving objects with lower extremities		by using feet; by using legs; 		d435
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	"SI - Carrying, moving and handling objects"	SIG	Fine hand use				d440
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	"SI - Carrying, moving and handling objects"	SIJ	Hand and arm use				d445
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	"SI - Carrying, moving and handling objects"	SIK	Fine foot use	"Performing the coordinated actions of picking up, manipulating and releasing objects using one's foot and toes."			d446
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SJ - Walking and moving	SJ2	Walking and moving				d450-d469
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SJ - Walking and moving	SJA	Walking				d450
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SJ - Walking and moving	SJB	Going up and down stairs			moving around (SJD)\nwalking (SJA)	d451
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SJ - Walking and moving	SJD	Moving around		Climbing; Crawling; Jogging; Jumping; Running; Swimming; 	going up and down stairs (SJB)\nmoving around using equipment (SJJ)\nwalking (SJA)	d455
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SJ - Walking and moving	SJG	Moving around in different locations				d460
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SJ - Walking and moving	SJJ	Moving around using equipment				d465
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SK - Moving around using transportation	SK2	Moving around using transportation				d470-d489
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SK - Moving around using transportation	SKA	Using transportation as a passenger				d470
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SK - Moving around using transportation	SKD	Driving				d475
+2 - Targets for Activities and Participation Domains	16 - Mobility Targets	SK - Moving around using transportation	SKG	Riding animals for transportation				d480
+2 - Targets for Activities and Participation Domains	17 - Self Care Targets	SM - Self care	SM1	Self care				d5
+2 - Targets for Activities and Participation Domains	17 - Self Care Targets	SM - Self care	SMB	Washing oneself				d510
+2 - Targets for Activities and Participation Domains	17 - Self Care Targets	SM - Self care	SMC	Caring for body parts				d520
+2 - Targets for Activities and Participation Domains	17 - Self Care Targets	SM - Self care	SMD	Toileting				d530
+2 - Targets for Activities and Participation Domains	17 - Self Care Targets	SM - Self care	SME	Dressing				d540
+2 - Targets for Activities and Participation Domains	17 - Self Care Targets	SM - Self care	SMF	Eating			eating behaviours (VEA)	d550
+2 - Targets for Activities and Participation Domains	17 - Self Care Targets	SM - Self care	SMG	Drinking				d560
+2 - Targets for Activities and Participation Domains	17 - Self Care Targets	SM - Self care	SMH	Looking after one's health		Ensuring one's physical comfort; Maintaining one's health; 		d570
+2 - Targets for Activities and Participation Domains	18 - Domestic Life Targets	SN - Domestic life; Acquisition of necessities	SN1	Domestic life				d6
+2 - Targets for Activities and Participation Domains	18 - Domestic Life Targets	SN - Domestic life; Acquisition of necessities	SN2	Acquisition of necessities				d610-d629
+2 - Targets for Activities and Participation Domains	18 - Domestic Life Targets	SN - Domestic life; Acquisition of necessities	SNC	Acquiring a place to live				d610
+2 - Targets for Activities and Participation Domains	18 - Domestic Life Targets	SN - Domestic life; Acquisition of necessities	SND	Acquisition of goods and services				d620
+2 - Targets for Activities and Participation Domains	18 - Domestic Life Targets	SO - Household tasks	SO2	Household tasks				d630-d649
+2 - Targets for Activities and Participation Domains	18 - Domestic Life Targets	SO - Household tasks	SOA	Preparing meals				d630
+2 - Targets for Activities and Participation Domains	18 - Domestic Life Targets	SO - Household tasks	SOD	Doing housework				d640
+2 - Targets for Activities and Participation Domains	18 - Domestic Life Targets	SP - Caring for household objects and assisting others	SP2	Caring for household objects and assisting others				d650-d669
+2 - Targets for Activities and Participation Domains	18 - Domestic Life Targets	SP - Caring for household objects and assisting others	SPA	Caring for household objects				d650
+2 - Targets for Activities and Participation Domains	18 - Domestic Life Targets	SP - Caring for household objects and assisting others	SPD	Assisting others				d660
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SR - Interpersonal interactions and relationships; General interpersonal interactions	SR1	Engaging in interpersonal interactions and relationships				d7
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SR - Interpersonal interactions and relationships; General interpersonal interactions	SR2	Engaging in general interpersonal interactions				d710-d729
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SR - Interpersonal interactions and relationships; General interpersonal interactions	SRC	Engaging in basic interpersonal interactions				d710
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SR - Interpersonal interactions and relationships; General interpersonal interactions	SRD	Engaging in complex interpersonal interactions				d720
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SS - Particular interpersonal relationships	SS2	Engaging in particular interpersonal relationships				d730-d779
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SS - Particular interpersonal relationships	SSA	Relating with strangers				d730
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SS - Particular interpersonal relationships	SSD	Engaging in formal relationships				d740
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SS - Particular interpersonal relationships	SSG	Engaging in informal social relationships				d750
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SS - Particular interpersonal relationships	SSJ	Engaging in family relationships				d760
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SS - Particular interpersonal relationships	SSK	Engaging in parent-child relationships				d7600
+2 - Targets for Activities and Participation Domains	19 - Interpersonal Interaction and Relationship Targets	SS - Particular interpersonal relationships	SSM	Engaging in intimate relationships				d770
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	ST - Major life areas; Education	ST1	Engaging in major life areas				d8
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	ST - Major life areas; Education	ST2	Engaging in education				d810-d839
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	ST - Major life areas; Education	STC	Engaging in informal education				d810
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	ST - Major life areas; Education	STD	Engaging in preschool education				d815
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	ST - Major life areas; Education	STE	Engaging in school education				d820
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	ST - Major life areas; Education	STF	Engaging in vocational training				d825
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	ST - Major life areas; Education	STG	Engaging in higher education				d830
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	ST - Major life areas; Education	STJ	Engaging in education life	"Engaging in aspects of life of education institutions, such as university and school related associations, including: clubs, sports, related civic bodies (e.g. school council), and other institutionally-organised initiatives that are not part of the academic curriculum"			d835
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	SU - Work and employment	SU2	Engaging in work and employment				d840-d859
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	SU - Work and employment	SUA	Engaging in apprenticeship				d840
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	SU - Work and employment	SUD	"Acquiring, keeping and terminating a job"				d845
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	SU - Work and employment	SUG	Engaging in remunerative employment				d850
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	SU - Work and employment	SUJ	Engaging in non-remunerative employment			household tasks (SO2); caring for household objects and assisting others (SP2)	d855
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	SV - Economic life	SV2	Engaging in economic life				d860-d879
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	SV - Economic life	SVA	Engaging in basic economic transactions				d860
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	SV - Economic life	SVD	Engaging in complex economic transactions				d865
+2 - Targets for Activities and Participation Domains	20 - Major Life Area Targets	SV - Economic life	SVG	Engaging in economic self-sufficiency				d870
+2 - Targets for Activities and Participation Domains	"21 - Community, Social and Civic Life Targets"	"SX - Community, social and civic life"	SX1	"Engaging in community, social and civic life"				d9
+2 - Targets for Activities and Participation Domains	"21 - Community, Social and Civic Life Targets"	"SX - Community, social and civic life"	SXB	Engaging in community life				d910
+2 - Targets for Activities and Participation Domains	"21 - Community, Social and Civic Life Targets"	"SX - Community, social and civic life"	SXC	Engaging in recreation and leisure				d920
+2 - Targets for Activities and Participation Domains	"21 - Community, Social and Civic Life Targets"	"SX - Community, social and civic life"	SXD	Playing				d9200
+2 - Targets for Activities and Participation Domains	"21 - Community, Social and Civic Life Targets"	"SX - Community, social and civic life"	SXH	Engaging in religion and spirituality				d930
+2 - Targets for Activities and Participation Domains	"21 - Community, Social and Civic Life Targets"	"SX - Community, social and civic life"	SXK	Enjoying human rights				d940
+2 - Targets for Activities and Participation Domains	"21 - Community, Social and Civic Life Targets"	"SX - Community, social and civic life"	SXL	Engaging in political life and citizenship				d950
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UA1	Products and technology				e1
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAA	Products or substances for personal consumption			food safety and security (UAB)	e110
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAB	Food safety and security	"Physical and economic accessibility of sufficient safe, culturally acceptable, and nutritious food"			e1100
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAC	Drugs				e1101
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAD	Products and technology for personal use in daily living		"Accessories for sitting furniture; Adjustable furniture; Equipment for movement, strength and balance training; Orthoses, prostheses and therapeutic footwear.; "		e115
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAE	Products and technology for personal indoor and outdoor mobility and transportation				e120
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAF	Products and technology for communication		Computers and devices for computer; 		e125
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAG	Products and technology for education				e130
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAH	Products and technology for employment		Assistive products to manage the work; Machines and tools for use in the workplace; Workplace furniture and furniture elements; 		e135
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAI	"Products and technology for culture, recreation and sport"				e140
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAJ	Products and technology for the practice of religion and spirituality				e145
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAK	"Design, construction and building products and technology of buildings for public use"				e150
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAL	"Design, construction and building products and technology of buildings for private use"				e155
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAM	"Design, construction and building products and technology of buildings unspecified"				
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAN	Products and technology of land development				e160
+3 - Targets for the Environment	22 - Environment: Products and Technology Targets	UA - Environment: Products and technology	UAO	Assets				e165
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UB1	Natural environment and human-made changes to environment				e2
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBB	Physical features of the Earth				e210
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBC	Population				e215
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBD	Flora and fauna			Animals as vectors of disease (UBQ)	e220
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBE	Climate				e225
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBF	Natural events				e230
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBG	Human-caused events				e235
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBH	Light				e240
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBI	Time-related changes				e245
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBJ	Sound				e250
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBK	Vibration				e255
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBL	Indoor air quality	"Nature of the air inside buildings or enclosed areas, including odour, smoke, pollution, air conditioning (controlled air quality) or uncontrolled air quality"			e2600
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBM	Outdoor air quality	"Nature of the air outside buildings or enclosed areas, including odour, smoke, pollution, ozone levels, and other features of the atmosphere"			e2601
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBN	Water quality	"The physical, chemical, biological, radiological and aesthetic (appearance and smell) characteristics of water; the condition of water relative to the requirements of one or more biotic species and/or to any human need or purpose"			
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBO	Soil quality	"Evaluating the physical, chemical, biological, and radiological characteristics of the soil and land surface, and its capacity to sustain plant and animal productivity, maintain or enhance water and air quality, and support human health and habitation"			e2700
+3 - Targets for the Environment	23 - Natural Environment including human changes Targets	UB - Natural environment including human changes	UBQ	Animals as vectors of disease	Animals or populations of animals that carry disease	Animals that may transmit disease to humans; arthropods; domesticated animals; mosquitoes; 		
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UC1	Support and relationships				e3
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCB	Support from immediate family				e310
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCC	Support from extended family				e315
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCD	Support from friends				e320
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCE	"Support from acquaintances, peers, colleagues, neighbours and community members"				e325
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCF	Support from people in positions of authority				e330
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCG	Support from people in subordinate positions				e335
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCH	Support from personal care providers and personal assistants				e340
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCI	Support from strangers				e345
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCJ	Support from domesticated animals				e350
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCK	Support from health professionals				e355
+3 - Targets for the Environment	24 - Environment: Support and Relationship Targets	UC - Environment: Support and relationships	UCL	Support from other professionals				e360
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UD1	Attitudes				e4
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDB	Individual attitudes of immediate family members				e410
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDC	Individual attitudes of extended family members				e415
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDD	Individual attitudes of friends				e420
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDE	"Individual attitudes of acquaintances, peers, colleagues, neighbours and community members"				e425
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDF	Individual attitudes of people in positions of authority				e430
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDG	Individual attitudes of people in subordinate positions				e435
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDH	Individual attitudes of personal care providers and personal assistants				e440
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDI	Individual attitudes of strangers				e445
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDJ	Individual attitudes of health professionals				e450
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDK	Individual attitudes of health-related professionals				e455
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDL	Societal attitudes				e460
+3 - Targets for the Environment	25 - Environment: Attitude Targets	UD - Environment: Attitudes	UDM	"Social norms, practices and ideologies"				e465
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UE1	"Services, systems and policies"				e5
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEB	"Services, systems and policies for the production of consumer goods"				e510
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEC	"Architecture and construction services, systems and policies"				e515
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UED	"Open space planning services, systems and policies"				e520
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEE	"Housing services, systems and policies"				e525
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEF	"Utilities services, systems and policies"				e530
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEG	"Communication services, systems and policies"				e535
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEH	"Transportation services, systems and policies"				e540
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEI	"Civil protection services, systems and policies"				e545
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEJ	"Legal services, systems and policies"				e550
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEK	"Associations and organisational services, systems and policies"				e555
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEL	"Media services, systems and policies"				e560
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEM	"Economic services, systems and policies"				e565
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEN	"Social security services, systems and policies"				e570
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEO	"General social support services, systems and policies"				e575
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEP	"Health services, systems and policies"				e580
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UEQ	"Education and training services, systems and policies"				e585
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UER	"Labour and employment services, systems and policies"				e590
+3 - Targets for the Environment	"26 - Environment: Services, Systems, Policies Targets"	"UE - Environment: Services, Systems, Policies"	UES	"Political services, systems and policies"				e595
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VA - Substance-related and addictive behaviours	VA1	Substance-related and addictive behaviours	"Behaviour concerning patterns of use of substances for personal consumption that are addictive or potentially harmful, and other types of addictive behaviours (e.g., gambling, gaming)."			
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VA - Substance-related and addictive behaviours	VAA	Alcohol use behaviours	Behaviour concerning patterns of alcohol consumption			
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VA - Substance-related and addictive behaviours	VAB	Tobacco use behaviours	Behaviour concerning patterns of use of smoked or smokeless tobacco products	Use of e-cigarettes; \nUse of snuff and chewing tobacco; 		
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VA - Substance-related and addictive behaviours	VAC	Illicit drug use behaviours	"Behaviour concerning patterns of non-medical use of drugs that are prohibited by law, including where and how such drugs are obtained and consumed"	Injecting drug use; 		
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VA - Substance-related and addictive behaviours	VAD	Pharmaceutical use behaviours	"Behaviour concerning patterns of use of pharmaceutical products, including where and how pharmaceuticals are obtained and consumed"	Adherence to medication regime; Misuse of medicines; 		
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VA - Substance-related and addictive behaviours	VAE	Gambling behaviours	Behaviour concerning patterns of placing bets or playing at games of chance for money or other stakes	Online gambling; 		
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VA - Substance-related and addictive behaviours	VAF	Digital technology use behaviours	Behaviour concerning patterns of use of screen-based technology	Digital technology addiction; Digital technology overuse; Gaming addiction; Internet addiction; 	gambling behaviours (VAE)	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VB - Violence-related behaviours	VB1	Violence-related behaviours	"Behaviour concerning the intentional use of physical force or power, threatened or actual, against persons (including self)"			
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VB - Violence-related behaviours	VBA	Self-harm behaviours	"A range of behaviours that include attempting suicide, any intentional self-inflicted harm, intentional risk-taking, and thinking about or planning for suicide and self-harm (ideation)"			
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VB - Violence-related behaviours	VBB	Family and partner violence behaviours	"Behaviour relating to the intentional use of physical force or power, threatened or actual, against another person, largely between family members and intimate partners"	Sexual violence towards a partner or family member; 		
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VB - Violence-related behaviours	VBC	Community violence behaviours	"Behaviour relating to the intentional use of physical force or power, threatened or actual, against another person, or against a group,  between individuals who are unrelated, and who may or may not know each other"	Sexual violence towards someone who is not a partner or family member; 		
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VC - Safety-related behaviours	VC1	Safety-related behaviours	"Behaviour concerning practices, specific to a particular setting or situation, that increase or reduce the risk of physical harm to individuals"			
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VC - Safety-related behaviours	VCA	Road safety behaviours	Behaviour concerning patterns of road use as a driver or pedestrian			
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VC - Safety-related behaviours	VCB	Workplace safety behaviours	"Behaviour concerning workplace practices that increase or reduce the risk of physical harm to individuals, including use of protective products and clothing"			
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VC - Safety-related behaviours	VCC	Home safety behaviours	Behaviour concerning practices within the home that increase or reduce the risk of physical harm to individuals		family and partner violence behaviours (VBB)	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VD - Health-service-related behaviours	VD1	Health-service-related behaviours	Behaviour concerning patterns of use of health services			
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VD - Health-service-related behaviours	VDA	Immunisation behaviours	Behaviour concerning patterns of use of immunisation services	Adherence to immunisation regimes; 		
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VD - Health-service-related behaviours	VDB	Screening behaviours	Behaviour concerning patterns of use of health screening services			
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VE1	Lifestyle behaviours	Behavioural patterns concerning a person’s day-to-day way of life		Substance-related and addictive behaviours (VA1)	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VEA	Eating behaviours	"Behaviour concerning patterns of eating, including frequency, quantity, and food choice"	Diet; Drinking behaviours; 	alcohol use behaviours (VAA)	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VEB	Physical activity behaviours	"Behaviour concerning patterns of physical activity, defined as ‘any bodily movement produced by skeletal muscles that requires energy expenditure – including activities undertaken while working, playing, carrying out household chores, travelling, and engaging in recreational pursuits"	Exercise patterns; 		
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VEC	Sleep and rest behaviours	Behaviour concerning patterns of sleep and rest		sleep functions (ATK)	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VED	Hygiene behaviours	Behaviour concerning personal and domestic practices that help to prevent the spread of communicable diseases.	Appropriate use of water sources; Disposal of contaminated waste; Disposal of human faeces; Hand washing; 	caring for body parts (SMC); food hygiene practices (UAC); oral hygiene behaviours (VEE); washing oneself (SMB); 	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VEE	Oral hygiene behaviours	Behaviour concerning practices for keeping the mouth clean and healthy by brushing and flossing to prevent tooth decay and gum disease.		caring for body parts (SMC); hygiene behaviours (VED)  	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VEF	Sexual behaviours	Behaviour concerning sexual activity and sexual relationships	Use of condoms or other products to protect against sexually transmissible diseases; contraception use; 	sexual violence (ref to codes for ‘Family and partner violence behaviours’ (VBB) and ‘Community violence behaviours’ (VBC))	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VEG	UV radiation exposure behaviours	"Behaviour concerning patterns of exposure to UV radiation, including use of protective products"	Use of sunbeds; 		
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VEH	Breastfeeding behaviours	Behaviour concerning patterns of breastfeeding	Choosing whether to breastfeed infant; choosing where to breastfeed infant; frequency of breastfeeding; duration of breastfeeding; 		
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VEJ	Parenting behaviours	"Behaviour concerning patterns of interaction between a parent and their child/children, including nature and degree of monitoring  and supervision, involvement and engagement, discipline, nurturing, and expression of affection"	Parenting style; 	family and partner violence behaviours (VBB); social behaviours (VEK) 	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VEK	Social behaviours	"Behaviour involving more than one individual with the primary function of establishing, maintaining, or changing a relationship between individuals, or in a group (society)"	Bullying; Discrimination or prejudice expressed towards particular individuals or groups\n; 	community violence behaviours (VBC); family and partner violence behaviours (VBB); parenting behaviours (VEJ)	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VE - Lifestyle-related behaviours	VEL	Behaviours related to psychological health and wellbeing	Patterns of behaviour that may positively or negatively affect psychological health and wellbeing		self-harm behaviours (VBA); social behaviours (VEK)	
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VF - Other health-related behaviours	VFS	Health literacy	"The personal characteristics and social resources needed for individuals and communities to access, understand, appraise and use health information and health services, and to make decisions about health."			
+4 - Targets for Health-related Behaviours	27 - Health-related Behaviour Targets	VF - Other health-related behaviours	VFX	"Other health-related behaviours, NEC"	"Patterns of behaviour that may positively or negatively affect health and wellbeing, not elsewhere classified"			
