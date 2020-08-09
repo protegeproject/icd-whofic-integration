@@ -69,7 +69,7 @@ public class ICHIImporter {
 	}
 
 
-	private void importCSV(String inputCSV) throws IOException {
+	protected void importCSV(String inputCSV) throws IOException {
 		BufferedReader csvReader = null;
 		
 		csvReader = new BufferedReader(new FileReader(inputCSV));
@@ -126,6 +126,10 @@ public class ICHIImporter {
 		return text == null ? null : makeReplacements(text);
 	}
 
+	public boolean isEmptyString(String data) {
+		return (data == null || data.isEmpty());
+	}
+	
 	private String makeReplacements(String term) {
 		if (term == null) {
 			return null;
