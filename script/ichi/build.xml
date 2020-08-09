@@ -125,7 +125,7 @@
 		<java 
 				fork="true" 
 		        	dir="." 
-		            	classname="org.who.integration.ichi.ICHIExtensionCodesImporter"
+		            	classname="org.who.integration.ichi.ICHIIndexTermImporter"
 	                        maxmemory="${heap.size.max}">
 			<classpath refid = "project.classpath"/>
 			<arg value="${icd.pprj.file}" />
