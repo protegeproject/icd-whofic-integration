@@ -63,7 +63,6 @@
 		            	classname="org.who.integration.ichi.ICHIActionAndMeansImporter"
 	                        maxmemory="${heap.size.max}">
 			<classpath refid = "project.classpath"/>
-			<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
 			<arg value="${icd.pprj.file}" />
 			<arg value="${action.file}" />
 			<arg value="${action.topcls}" />
@@ -77,7 +76,6 @@
 		            	classname="org.who.integration.ichi.ICHIActionAndMeansImporter"
 	                        maxmemory="${heap.size.max}">
 			<classpath refid = "project.classpath"/>
-			<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
 			<arg value="${icd.pprj.file}" />
 			<arg value="${means.file}" />
 			<arg value="${means.topcls}" />
@@ -91,7 +89,6 @@
 		            	classname="org.who.integration.ichi.ICHITargetImporter"
 	                        maxmemory="${heap.size.max}">
 			<classpath refid = "project.classpath"/>
-			<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
 			<arg value="${icd.pprj.file}" />
 			<arg value="${target.file}" />
 			<arg value="${target.topcls}" />
@@ -105,7 +102,6 @@
 		            	classname="org.who.integration.ichi.ICHIInterventionsImporter"
 	                        maxmemory="${heap.size.max}">
 			<classpath refid = "project.classpath"/>
-			<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
 			<arg value="${icd.pprj.file}" />
 			<arg value="${interventions.file}" />
 			<arg value="${interventions.topcls}" />
@@ -119,7 +115,6 @@
 		            	classname="org.who.integration.ichi.ICHIExtensionCodesImporter"
 	                        maxmemory="${heap.size.max}">
 			<classpath refid = "project.classpath"/>
-			<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
 			<arg value="${icd.pprj.file}" />
 			<arg value="${xcodes.file}" />
 			<arg value="${xcodes.topcls}" />
@@ -133,7 +128,6 @@
 		            	classname="org.who.integration.ichi.ICHIExtensionCodesImporter"
 	                        maxmemory="${heap.size.max}">
 			<classpath refid = "project.classpath"/>
-			<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
 			<arg value="${icd.pprj.file}" />
 			<arg value="${ichi.index.terms.file}" />
 		</java>
