@@ -1,0 +1,40 @@
+1 - Approach	AA	Open approach	Exposing the actual site of the intervention by incision of the skin or mucous membrane and any other underlying tissue.	Transmastoid; 	Cutting per orifice (AC)
+1 - Approach	AB	Percutaneous endoscopic	"Endoscopic access, by puncture or minor incision, through the skin and any other body layers necessary to access the site of the intervention."	Arthroscopic; \nIntraoperative endoscopy; \nLaparoscopic; \nThat with imaging assistance; \nTransparietal endoscopic; 	Endoscopic per orifice (AD)
+1 - Approach	AC	Per Orifice	Access by a natural or artificial orifice	That with imaging assistance; Transorifice; 	endoscopic per orifice (AD); percutaneous endoscopic (AB)
+1 - Approach	AD	Per orifice endoscopic	Endoscopic access by a natural or artificial orifice	That with imaging assistance; Transorifice endoscopic access; 	per orifice (AC); percutaneous endoscopic (AB)
+1 - Approach	AE	Percutaneous	"Entry, by puncture or minor incision, with instrumentation through the skin or mucous membrane and any other body layers necessary to reach the site of the intervention."	Intramuscular (I.M.) injection; Intraosseous injection; Intravitreal injection; Needle biopsy; Subcutaneous (S.C.) injection; That with imaging assistance; 	percutaneous endoscopic (AB)
+1 - Approach	AF	Percutaneous transluminal	"Entry, by puncture or minor incision, of instrumentation through the skin and any other body layers necessary to reach the site of the intervention in the lumen of a vessel or a duct."	Intra-arterial injection; \nIntravenous (I.V.) injection; \nThat with imaging assistance; \nTransparietal intraluminal access; 	
+1 - Approach	AG	Transparietal intraluminal endoscopic access		Includes that with imaging guidance; 	
+1 - Approach	AH	External	The intervention is either performed directly on the skin or mucous membrane or indirectly by application of external force through the skin or mucous membrane.		
+1 - Approach	AI	"Combined approach, percutaneous endoscopic and by orifice"			
+1 - Approach	AJ	"Combined approach, percutaneous and per orifice endoscopic"			
+1 - Approach	AK	"Combined approach, open and transparietal or transvascular"	A specified surgical and transcatheter intraoperative approach.	Hybrid approach; 	
+1 - Approach	AL	"Combined approach, not otherwise specified"			
+1 - Approach	AZ	Approach not elsewhere classified	Medical or surgical intervention approach not elsewhere classified		
+2 - Technique	BA	"Radiation, not otherwise specified"	"Use of ionizing radiation, external or by sealed sources"	Brachytherapy; External beam radiotherapy; Fluoroscopy (context: diagnostic imaging); Plain radiography; Plain x-ray; Sealed source radiotherapy (context: radiotherapy/destruction); That without contrast medium; 	CT (BC) (BD); with contrast medium (BB)
+2 - Technique	BB	Radiation with contrast medium	"Use of ionizing radiation, external or by sealed sources, and contrast medium"	Fluoroscopy with contrast medium; Plain radiography with contrast medium; Plain x-ray with contrast medium; 	CT (BC) (BD); without contrast (BA)
+2 - Technique	BC	"Computerised tomography, not otherwise specified"	Linear or multi-directional scanning where images are processed and displayed in cross-sections	Computerised tomography without contrast medium; 	
+2 - Technique	BD	Computerised tomography with contrast medium	"Linear or multi-directional scanning where images are processed and displayed in cross-sections, and contrast medium"		CT without  contrast medium (BC)\nCT NOS (BC)
+2 - Technique	BE	"Ionising agents, open, not otherwise specified"	"The radioactive substances used are administered systemically (context: nuclear medicine, diagnostic and therapeutic)"	Non imaging assay; Probe and uptake; Radiation therapy with open radionuclides; 	positron emission tomography (PET) (BG)\nSPECT (BF)
+2 - Technique	BF	Ionising agents emitting (single) photons	The radioactive substances used are administered systemically (context: nuclear medicine)	SPECT; 	
+2 - Technique	BG	Ionising agents emitting positrons	The radioactive substances used are administered systemically (context: nuclear medicine)	PET; PET CT; Positron emission tomography; 	
+2 - Technique	BH	"Nuclear magnetic resonance, not otherwise specified"	Production of computer reformatted digital displays of multi-planar images developed from the capture of radio frequency signals emitted by nuclei in a body site excited within a magnetic field	"MRI, NOS; MRI without contrast medium; MRT; "	
+2 - Technique	BI	Nuclear magnetic resonance with contrast medium	"Production of computer reformatted digital displays of multi-planar images developed from the capture of radio frequency signals emitted by nuclei in a body site excited within a magnetic field, and contrast medium"	MRI with contrast medium; 	MRI without  contrast medium (BH)\nMRI NOS (BH)
+2 - Technique	BJ	Ultrasound	"A subfield of acoustics dealing in the radio frequency range higher than acoustic sound waves (approximately above 20 kilohertz). Ultrasonic radiation is used therapeutically (diathermy and ultrasonic therapy) to generate heat and to selectively destroy tissues. It is also used in diagnostics, for example, ultrasonography and doppler ultrasound ; echoencephalography; and echocardiography, to visually display echoes received from irradiated tissues. (Def.: MeSH)"		
+2 - Technique	BL	Image (capture and) analysis	Extraction of meaningful information from images	Photography; Video recording; 	
+2 - Technique	BO	Magnetic field			
+2 - Technique	BP	Electric field			
+2 - Technique	BQ	Heat			
+2 - Technique	BS	Water		Hydrotherapy; 	
+3 - Method	QD	Enactment	Passing laws or putting enforceable rules or obligations in place		
+3 - Method	QE	Enforcement	"Compelling observance of or compliance with a law, rule, or obligation"	Providing mechanisms or resources for enforcement; 	
+3 - Method	QF	Economic instruments	Economic policy measures that influence behaviour via their impact on market signals	"Taxes, marketable permits, deposit-refund systems, performance bonds; "	Fines (QE)
+4 - Sample	XA	Blood			
+4 - Sample	XB	Urine			
+4 - Sample	XC	Sputum			
+4 - Sample	XD	Saliva			
+4 - Sample	XE	Cerebro-spinal fluid			
+4 - Sample	XF	Secretion not elsewhere classified			sputum (XC); saliva (XD)
+4 - Sample	XG	Faeces		Meconium; Stool; 	
+4 - Sample	XH	Tissue			
+5 - Unspecified	ZZ	Other and unspecified means	"Intervention using other method, without approach or not otherwise specified"	other and unspecified method and technique; 	unspecified medical/surgical intervention approach (AZ)
