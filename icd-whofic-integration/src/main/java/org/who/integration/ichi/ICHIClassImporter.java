@@ -16,6 +16,9 @@ public class ICHIClassImporter {
 	private OWLModel owlModel;
 	private ICDContentModel cm;
 	private RDFSNamedClass cls;
+	
+	protected Collection<String> exclsThatAreCodingNotes = new ArrayList<String>();
+	protected RDFResource ichiLinSpec;
 
 	public ICHIClassImporter(OWLModel owlModel, RDFSNamedClass cls) {
 		this.owlModel = owlModel;
@@ -30,11 +33,14 @@ public class ICHIClassImporter {
 		importTitle(title);
 		importDefinition(definition);
 		importIndexTerms(indexTerms);
-		importExclusion(exclusion);
-		importCodeAlso(codeAlso); //TODO - not sure how to import
 		
-		importPublicId(); //TODO - need more info
+		importExclusion(exclusion);
+		
+		//importPublicId(); //TODO - need more info
 		importICHILin();
+		
+		//this needs to come after import exclusions, and after import ICHI lin
+		importCodeAlso(codeAlso); 
 		
 		addSuperCls(superCls);
 	}
@@ -83,8 +89,6 @@ public class ICHIClassImporter {
 		
 		for (String term : terms) {
 			RDFResource termRes = createTerm(cm.getTermBaseIndexClass(), term, "en");
-			//cm.addBaseInclusionTermToClass(cls, termRes);
-			 //TT - this is needed for the current ICD CM; not necessary in the merged CM
 			cm.addBaseIndexTermToClass(cls, termRes);
 		}
 	}
@@ -94,7 +98,11 @@ public class ICHIClassImporter {
 		Collection<String> terms = getTerms(exclusions, "EXCLUSION");
 		
 		for (String term : terms) {
-			ICHIUtil.addExclusion(cls, term);
+			if (term.toLowerCase().contains(ICHIUtil.OMIT_CODE)) {
+				exclsThatAreCodingNotes.add(term);
+			} else {
+				ICHIUtil.addExclusion(cls, term);
+			}
 		}
 	}
 	
@@ -136,13 +144,19 @@ public class ICHIClassImporter {
 
 
 	protected void importCodeAlso(String codeAlso) {
-		// TODO Auto-generated method stub
+		Collection<String> vals = getTerms(codeAlso, "CODE_ALSO");
+		vals.addAll(exclsThatAreCodingNotes);
 		
+		for (String val : vals) {
+			RDFResource codeAlsoTerm = cm.createTerm(cm.getTermCodingNoteClass());
+			cm.fillTerm(codeAlsoTerm, null, val, "en");
+			ichiLinSpec.addPropertyValue(cm.getCodingNoteProperty(), codeAlsoTerm);
+			//System.out.println("CODE-ALSO: " + cm.getTitleLabel(cls) + ": " + val);
+		}
 	}
 	
 	protected void importInclusionNotes(String inclNotes) {
-		// TODO Auto-generated method stub
-		
+		//does nothing on purpose
 	}
 
 	private void importIcfMap(String icfMap) {
@@ -169,12 +183,11 @@ public class ICHIClassImporter {
 	}
 	
 	protected void importPublicId() {
-		// TODO Auto-generated method stub
-		//TT - need more info from WHO
+		//TODO - TT: need more info from WHO
 	}
 	
 	protected void importICHILin() {
-		ICHIUtil.addICHILin(getCm(), getCls(), true, false);
+		ichiLinSpec = ICHIUtil.addICHILin(getCm(), getCls(), true, false);
 	}
 	
 	protected RDFResource createTerm(RDFSNamedClass termCls, String label, String lang) {

@@ -32,6 +32,8 @@ public class ICHIUtil {
 	public static final String LIN_VIEW = "http://who.int/icd#LinearizationView";
 	public static final String FOUNDATION_LIN_VIEW = "http://who.int/icd#FoundationComponent";
 	
+	public static final String OMIT_CODE = "omit code";
+	
 	//Atm stands for: Action-Target-Means
 	
 	//good for extension codes as well
@@ -216,12 +218,16 @@ public class ICHIUtil {
 		return ichiLinView;
 	}
 	
-	public static void addICHILin(ICDContentModel cm, RDFSNamedClass cls, boolean included, boolean grouping) {
+	public static RDFResource addICHILin(ICDContentModel cm, RDFSNamedClass cls, boolean included, boolean grouping) {
 		RDFResource linSpec = cm.getLinearizationSpecificationClass().createInstance((IcdIdGenerator.getNextUniqueId(cm.getOwlModel())));
-        linSpec.setPropertyValue(cm.getLinearizationViewProperty(), ICHIUtil.getICHILinearizationView(cm.getOwlModel()));
+      
+		linSpec.setPropertyValue(cm.getLinearizationViewProperty(), ICHIUtil.getICHILinearizationView(cm.getOwlModel()));
         linSpec.setPropertyValue(cm.getIsIncludedInLinearizationProperty(), included);
         linSpec.setPropertyValue(cm.getIsGroupingProperty(), grouping);
+      
         cls.addPropertyValue(cm.getLinearizationProperty(), linSpec);
+       
+        return linSpec;
 	}
 	
 	public static void initATMCodes2ClsesMaps(ICDContentModel cm) {

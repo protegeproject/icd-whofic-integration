@@ -24,19 +24,30 @@ public class InterventionClassImporter extends ICHIClassImporter {
 		importICDCode(ichiCode);
 		importTitle(title);
 		importDefinition(definition);
-		importIndexTerms(indexTerms);
-		importExclusion(exclusion);
-		importCodeAlso(codeAlso);
-		importInclusionNotes(inclNotes);
 		
-		importPublicId(); //TODO - need more info
+		//only import index terms, if there are no include notes
+		//the rest are already handled in the google spreadsheet
+		if (inclNotes == null || inclNotes.length() == 0) {
+			importIndexTerms(indexTerms);
+		}
+		
+		importExclusion(exclusion);
+		
+		//include notes are not imported here, but by a different script that reads from a spreadsheet
+		//importInclusionNotes(inclNotes);
+		
+		//importPublicId(); //TODO - need more info
 		
 		importICHILin();
+		
+		//this needs to come after import exclusions, and after import ICHI lin
+		importCodeAlso(codeAlso);
 		
 		addSuperCls(superCls);
 		addPostcoordSpecs();
 		importLogicalDef(ichiCode);
 	}
+
 
 	
 	private void addPostcoordSpecs() {
