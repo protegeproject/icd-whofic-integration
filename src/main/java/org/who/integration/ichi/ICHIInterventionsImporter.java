@@ -8,12 +8,13 @@ import edu.stanford.smi.protegex.owl.model.OWLModel;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
 //TODO: +++ import linearizations -- will do with script
-//TODO: import code also
-//TODO: import include_notes
+//TODO: +++ import code also
+//TODO: +++ import include_notes
 //TODO: +++ add logical defs
 //TODO: +++ add postcoordination
-//TODO: for exclusions with "omit code", import them as coding notes
+//TODO: +++ for exclusions with "omit code", import them as coding notes
 //TODO: improve error reporting
+//TODO: import public id maybe
 public class ICHIInterventionsImporter extends ICHIImporter {
 	
 	private static transient Logger log = Logger.getLogger(ICHIInterventionsImporter.class);
