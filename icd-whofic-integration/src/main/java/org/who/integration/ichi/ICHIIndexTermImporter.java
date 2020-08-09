@@ -230,11 +230,16 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 	}
 
 	/**
-	 * Adatped from {@link ICHIUtil.getSupercls}
+	 * Creates a class with the title <code>title</code>, and adds it as
+	 * a subclass of <code>topCls</code>.
+	 * <b>Note:</b>This method was adapted from {@link ICHIUtil.getSupercls}, 
+	 * and closely follows the logic from there.
+	 * <b>Important!</b> In addition to creating the class, it also adds 
+	 * the newly created class as a subclass inclusion to the superclass.
 	 * @param cm
-	 * @param topCls
-	 * @param title
-	 * @return
+	 * @param topCls the superclass under which the new class should be created
+	 * @param title the title of the class
+	 * @return the newly create class
 	 */
 	public static RDFSNamedClass getOrCreateCls(ICDContentModel cm, RDFSNamedClass topCls, String title) {
 		//title = title.replaceAll("^\\d+ \\- ", "");
@@ -258,7 +263,11 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 			ICHIUtil.addPostcoordinationSpecToIchiCls(cm, supercls);
 			
 			cm.addChildToIndex(topCls, supercls, true);
-			
+
+			RDFResource subclsInclTerm = cm.createSubclassBaseInclusionTerm();
+			subclsInclTerm.setPropertyValue(cm.getReferencedCategoryProperty(), supercls);
+			cm.addSubclassInclusionTermToClass(topCls, subclsInclTerm);
+
 			ICHIUtil.addToCode2ClsMap(title, supercls);
 		}
 		
