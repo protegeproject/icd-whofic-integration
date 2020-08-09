@@ -16,6 +16,8 @@ import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
 public class ICHIIndexTermImporter extends ICHIImporter {
 	
+	private static final String UGLY_HIDDEN_CHARACTER = "Â";
+
 	private static transient Logger log = Logger.getLogger(ICHIIndexTermImporter.class);
 	
 	private String lastIchiCode = null;
@@ -176,7 +178,7 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 					else {
 						//Create subclass of index
 						superCls = indTerm2ClassMap.get(lastIndexTerm);
-						cls = getOrCreateCls(cm, superCls, inclNote);
+						cls = getOrCreateCls(cm, superCls, finalIndexTerm);
 					}
 				}
 			}
@@ -191,6 +193,11 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 	}
 
 	private void updateTitle(String ichiCode, String origTitle, String title) {
+		if (title.contains(UGLY_HIDDEN_CHARACTER)) { 
+			log.warn("Ugly hidden character found in title: " + title);
+			title = title.replaceAll(UGLY_HIDDEN_CHARACTER, "");
+		}
+		
 		RDFSNamedClass cls = ICHIUtil.getIntervention(ichiCode);
 		if (cls == null) {
 			log.warn("Couldn't retrive class for ICHI code: " + ichiCode);
@@ -212,9 +219,13 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 	}
 
 	private void addSynonymToClass(String synonym, RDFSNamedClass cls) {
+		if (synonym.contains(UGLY_HIDDEN_CHARACTER)) { 
+			log.warn("Ugly hidden character found in synonym: " + synonym);
+			synonym = synonym.replaceAll(UGLY_HIDDEN_CHARACTER, "");
+		}
 		RDFResource synonymTerm = cm.createSynonymTerm();
 		synonymTerm.setPropertyValue(cm.getLabelProperty(), synonym);
-		cls.setPropertyValue(cm.getSynonymProperty(), synonymTerm);
+		cls.addPropertyValue(cm.getSynonymProperty(), synonymTerm);
 
 	}
 
@@ -227,6 +238,10 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 	 */
 	public static RDFSNamedClass getOrCreateCls(ICDContentModel cm, RDFSNamedClass topCls, String title) {
 		//title = title.replaceAll("^\\d+ \\- ", "");
+		if (title.contains(UGLY_HIDDEN_CHARACTER)) { 
+			log.warn("Ugly hidden character found in title: " + title);
+			title = title.replaceAll(UGLY_HIDDEN_CHARACTER, "");
+		}
 		
 		RDFSNamedClass supercls = ICHIUtil.getCls(title);
 		
