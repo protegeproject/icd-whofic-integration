@@ -8,6 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.smi.protege.model.Project;
@@ -60,6 +61,9 @@ public class ICHIImporter {
 		this.owlModel = owlModel;
 		this.cm = new ICDContentModel(owlModel);
 		this.topCls = topCls;
+		
+		String log4jConfPath="log4j.properties";
+	    PropertyConfigurator.configure(log4jConfPath);
 		
 		RDFResource ichiLinView = ICHIUtil.getICHILinearizationView(owlModel);
 		if (ichiLinView == null) {
