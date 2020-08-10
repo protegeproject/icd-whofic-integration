@@ -69,6 +69,7 @@ public class ICHITermsExporter {
 					+ "(a) title + inclusion [TI], or "
 					+ "(b) index + inclusion [II], or"
 					+ "(c) both [TII], "
+					+ "(d) title + index, only for classes that don't have include notes; no expansion [TOI]"
 					+ "default: TII");
 			System.exit(1);
 		}
@@ -130,18 +131,38 @@ public class ICHITermsExporter {
 		
 		List<String> inclusionList = getTerms(ichiCode, inclusions, "INCL NOTES");
 		
+		/*
 		if (inclusionList.size() == 0) {
 			return;
 		}
+		*/
 		
 		if (expandIndexTerms.equalsIgnoreCase("TI")) {
 			processExpandedTitle(ichiCode, title, inclusions, inclusionList);
+		} if (expandIndexTerms.equalsIgnoreCase("TOI")) {
+			if (inclusionList.size() > 0) { //we already exported these before
+				return;
+			}
+			List<String> indexTermsList = getTerms(ichiCode, indexTerms, "INDEX TERMS");
+			processTitleAndIndex(ichiCode, title, indexTerms, indexTermsList);
 		} else {
 			List<String> indexTermsList = getTerms(ichiCode, makeReplacements(indexTerms), "INDEX TERMS");
 			processExpandedIndex(ichiCode, title, indexTermsList, inclusionList, indexTerms, inclNotes,
 					expandIndexTerms.equalsIgnoreCase("TII"));
 		}
 		
+	}
+
+
+	private void processTitleAndIndex(String ichiCode, String title, String indexTerms, List<String> indexTermsList) throws IOException {
+		if (indexTermsList.size() == 0) {
+			return;
+		}
+		
+		writeTitleWithIndexLine(ichiCode, title, "", indexTerms, "");
+		for (String indexTerm : indexTermsList) {
+			writeTitleWithIndexLine("", "", indexTerm, "", term2warn.get(indexTerm));
+		}
 	}
 
 
@@ -218,6 +239,18 @@ public class ICHITermsExporter {
 		outputWriter.newLine();
 	}
 
+	private void writeTitleWithIndexLine(String ichiCode, String title, String indexTerm, String indexTerms, String warning) throws IOException {
+		outputWriter.write(
+				ichiCode + COL_SEPARATOR + 
+				title + COL_SEPARATOR +
+				indexTerm + COL_SEPARATOR +
+				COL_SEPARATOR + //for the action column
+				indexTerms + COL_SEPARATOR +
+				warning + COL_SEPARATOR
+				);
+		outputWriter.newLine();
+	}
+	
 
 	protected List<String> getTerms(String ichiCode, String fullText, String errorType) {
 		List<String> terms = new ArrayList<String>();
