@@ -51,7 +51,7 @@ private static transient Logger log = Logger.getLogger(FixSurveyClasses.class);
 		
 		//TODO: check class that disappeared, doing housework quickly
 		
-		//fixWhodasSurveyClses();
+		fixWhodasSurveyClses();
 		fixBmdsSurveyClses();
 		
 		log.info("Saving..");
@@ -97,6 +97,7 @@ private static transient Logger log = Logger.getLogger(FixSurveyClasses.class);
 			} else {
 				fixTitle(subcls, BMDS_POSTFIX);
 				deletePublicId(subcls);
+				removeRetiredSupercls(subcls, null);
 				
 				//remove parent from WHODAS
 				for (RDFSNamedClass parent : KBUtil.getNamedSuperclasses(subcls, false)) {
@@ -174,7 +175,7 @@ private static transient Logger log = Logger.getLogger(FixSurveyClasses.class);
 		Collection<RDFSNamedClass> superclses = KBUtil.getNamedSuperclasses(cls, false);
 		
 		for (RDFSNamedClass supercls : superclses) {
-			if (supercls.hasSuperclass(badTopCls)) { //keep it
+			if (badTopCls != null && supercls.hasSuperclass(badTopCls)) { //keep it
 				System.out.println("xxx Supercls: " + cm.getTitleLabel(supercls) + "for cls: " + cm.getTitleLabel(cls) + " in the other survey top cls");
 			} else {
 				if (supercls.hasSuperclass(gfdRetiredCls)) { //in retired, but not BMDS
