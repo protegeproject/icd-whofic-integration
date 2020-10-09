@@ -52,7 +52,7 @@
     </target>
 
 
-	 <target name="set_icf_groupings" depends="checkProtegeLibsAndReport">
+	<target name="set_icf_groupings" depends="checkProtegeLibsAndReport">
 		        <java 
 				fork="true" 
 		        	dir="." 
@@ -62,6 +62,30 @@
 		        	<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
 		        	<arg value="${icd.pprj.file}"/>
 		        </java>
-		 </target>
+	</target>
+	
+	<target name="gfd2icf" depends="checkProtegeLibsAndReport">
+		        <java 
+				fork="true" 
+		        	dir="." 
+		            	classname="org.who.integration.icf.GFD2ICF"
+	                        maxmemory="${heap.size.max}">
+			      	<classpath refid = "project.classpath"/>
+		        	<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
+		        	<arg value="${icd.pprj.file}"/>
+		        </java>
+	</target>
+	
+	<target name="fix_survey_classes" depends="checkProtegeLibsAndReport">
+		        <java 
+				fork="true" 
+		        	dir="." 
+		            	classname="org.who.integration.icf.FixSurveyClasses"
+	                        maxmemory="${heap.size.max}">
+			      	<classpath refid = "project.classpath"/>
+		        	<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
+		        	<arg value="${icd.pprj.file}"/>
+		        </java>
+	</target>
 	
 </project>
