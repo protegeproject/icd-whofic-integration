@@ -98,7 +98,10 @@ public class SetICFGrouping {
 			if (linSpec == null) {
 				log.warn("Could not find ICF linearization specification for " + cls);
 			} else {
-				linSpec.setPropertyValue(cm.getIsGroupingProperty(), true);
+				Boolean val = (Boolean) linSpec.getPropertyValue(cm.getIsGroupingProperty());
+				if (val == null || val == false) {
+					linSpec.setPropertyValue(cm.getIsGroupingProperty(), true);
+				}
 			}
 		}
 		
