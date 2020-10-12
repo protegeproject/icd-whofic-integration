@@ -1,10 +1,11 @@
 <?xml version = "1.0" encoding = "utf-8"?>
-<project name = "Export ICD to OWL file">    
+<project name = "ICF import">    
    <property file="export.properties"/>  
    <property name = "owl.path"         value = "edu.stanford.smi.protegex.owl"/>   
    <property name = "owl.plugin.path"  value = "${protege.home}/plugins/${owl.path}"/>
    <property name = "icd.path"         value = "${protege.home}/plugins/edu.stanford.bmir.icd.misc"/>
    <property name = "lib"             location = "./lib"/>
+   <property name = "log4j.config.file" value = "log4j.properties" />
 
    <!-- 
      #  ********** Finding Protege Libraries. *************
@@ -32,9 +33,10 @@
       </condition>
       <path id = "project.classpath">    
         <pathelement location = "${protege.lib}"/>
-        <pathelement location = "${protege.home}/driver.jar"/>        
+        <pathelement location = "${protege.home}/driver.jar"/>
+      	<pathelement location = "${log4j.config.file}"/>
         <fileset dir="${owl.plugin.path}"/>
-      	<fileset dir="${icd.path}"/>      	
+      	<fileset dir="${icd.path}"/>
       	<fileset dir="./lib" />
       </path>
 
