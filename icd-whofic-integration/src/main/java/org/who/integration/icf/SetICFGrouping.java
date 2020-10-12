@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.who.integration.util.KBUtil;
 
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
@@ -32,6 +33,9 @@ public class SetICFGrouping {
 		if (args.length < 1) {
 			log.error("Needs 1 argument: Path to pprj file");
 		}
+		
+		String log4jConfPath="log4j.properties";
+	    PropertyConfigurator.configure(log4jConfPath);
 		
 		Project prj = Project.loadProjectFromFile(args[0], new ArrayList());
 		owlModel = (OWLModel) prj.getKnowledgeBase();
