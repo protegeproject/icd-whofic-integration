@@ -90,4 +90,16 @@
 		        </java>
 	</target>
 	
+	<target name="remove_lin_parents" depends="checkProtegeLibsAndReport">
+		        <java 
+				fork="true" 
+		        	dir="." 
+		            	classname="org.who.integration.icf.RemoveGFDLinParents"
+	                        maxmemory="${heap.size.max}">
+			      	<classpath refid = "project.classpath"/>
+		        	<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
+		        	<arg value="${icd.pprj.file}"/>
+		        </java>
+	</target>
+	
 </project>
