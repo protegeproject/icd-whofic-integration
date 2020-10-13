@@ -12,6 +12,7 @@ import org.who.integration.util.KBUtil;
 import edu.stanford.bmir.whofic.IcdIdGenerator;
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.smi.protege.model.Project;
+import edu.stanford.smi.protege.util.Log;
 import edu.stanford.smi.protegex.owl.model.OWLModel;
 import edu.stanford.smi.protegex.owl.model.RDFIndividual;
 import edu.stanford.smi.protegex.owl.model.RDFProperty;
@@ -134,6 +135,8 @@ public class GFD2ICF {
 			if (icfCls == null) { //no mapping to ICF; move it under ICF parent, remove old GFD parent
 				log.warn("Found GFD child: " + gfdCls.getBrowserText() + " with no ICF mapping, keeping GFP parent: " + 
 							gfdParent.getBrowserText() + ". Would be ICF parent: " + icfParent.getBrowserText());
+				Log.getLogger().warning("Found GFD child: " + gfdCls.getBrowserText() + " with no ICF mapping, keeping GFP parent: " + 
+						gfdParent.getBrowserText() + ". Would be ICF parent: " + icfParent.getBrowserText());
 				//do nothing - keep the old GFD parent, which should become the survey parent
 				//gfdCls.addSuperclass(icfParent);
 				//gfdCls.removeSuperclass(gfdParent);
@@ -222,6 +225,7 @@ public class GFD2ICF {
 		gfdCls.setPropertyValue(cm.getPublicIdProperty(), "WAS: " + publicId);
 		
 		log.info("PUBLIC ID SWAP:\t" + publicId + "\t" + icfCls.getName() + "\t" + gfdCls.getName());
+		Log.getLogger().info("PUBLIC ID SWAP:\t" + publicId + "\t" + icfCls.getName() + "\t" + gfdCls.getName());
 	}
 
 
