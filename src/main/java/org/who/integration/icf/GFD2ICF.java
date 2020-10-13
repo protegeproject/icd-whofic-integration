@@ -132,8 +132,11 @@ public class GFD2ICF {
 			RDFSNamedClass icfCls = gfd2icfcls.get(gfdCls);
 			
 			if (icfCls == null) { //no mapping to ICF; move it under ICF parent, remove old GFD parent
-				gfdCls.addSuperclass(icfParent);
-				gfdCls.removeSuperclass(gfdParent);
+				log.warn("Found GFD child: " + gfdCls.getBrowserText() + " with no ICF mapping, keeping GFP parent: " + 
+							gfdParent.getBrowserText() + ". Would be ICF parent: " + icfParent.getBrowserText());
+				//do nothing - keep the old GFD parent, which should become the survey parent
+				//gfdCls.addSuperclass(icfParent);
+				//gfdCls.removeSuperclass(gfdParent);
 			} else {
 				replaceCls(gfdCls, icfCls);
 			}
