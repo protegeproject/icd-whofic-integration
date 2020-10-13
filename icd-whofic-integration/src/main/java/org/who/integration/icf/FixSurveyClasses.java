@@ -53,7 +53,7 @@ private static transient Logger log = Logger.getLogger(FixSurveyClasses.class);
 		bmdsTopCls = owlModel.getRDFSNamedClass(BMDS_TOP_CLS);
 		gfdRetiredCls = owlModel.getRDFSNamedClass(GFD_RETIRED_CLS);
 		
-		//TODO: check class that disappeared, doing housework quickly
+		//TODO: check class that disappeared, Sensation of pain [BMDS]
 		
 		fixWhodasSurveyClses();
 		fixBmdsSurveyClses();
@@ -85,29 +85,34 @@ private static transient Logger log = Logger.getLogger(FixSurveyClasses.class);
 		
 		Collection<RDFSNamedClass> subclses = KBUtil.getNamedSubclasses(bmdsTopCls, true);
 		
-		for (RDFSNamedClass subcls : subclses) {
-			if (subcls.hasSuperclass(whodasTopCls)) { //create a new class by cloning the old one
-				System.out.println("Class in BDMS and also in WHODAS: " + cm.getTitleLabel(subcls));
-				RDFSNamedClass newBdmsCls = cloneCls(subcls); //create the new class, parented only under BDMS;
+		for (RDFSNamedClass bmdsCls : subclses) {
+			if (bmdsCls.hasSuperclass(whodasTopCls)) { //create a new class by cloning the old one
+				System.out.println("Class in BDMS and also in WHODAS: " + cm.getTitleLabel(bmdsCls));
+				RDFSNamedClass newBdmsCls = cloneCls(bmdsCls); //create the new class, parented only under BDMS;
 				
 				//remove the BDMS parent of WHODAS cls
-				for (RDFSNamedClass parent : KBUtil.getNamedSuperclasses(subcls, false)) {
+				for (RDFSNamedClass parent : KBUtil.getNamedSuperclasses(bmdsCls, false)) {
 					if (parent.hasSuperclass(bmdsTopCls)) {
-						System.out.println("- Remove from " + cm.getTitleLabel(subcls) + " BDMS parent: " + cm.getTitleLabel(parent));
-						subcls.removeSuperclass(parent);
+						System.out.println("- Remove from " + cm.getTitleLabel(bmdsCls) + " BDMS parent: " + cm.getTitleLabel(parent));
+						bmdsCls.removeSuperclass(parent);
 					}
 				}
 
 			} else {
-				fixTitle(subcls, BMDS_POSTFIX);
-				deletePublicId(subcls);
-				removeRetiredSupercls(subcls, null);
+				fixTitle(bmdsCls, BMDS_POSTFIX);
+				deletePublicId(bmdsCls);
+				
+				//remove "to be retired" GFD top class, if it is a direct superclass of this BMDS cls
+				Collection<RDFSNamedClass> dirSuperclses =  KBUtil.getNamedSuperclasses(bmdsCls, false);
+				if (dirSuperclses.contains(gfdRetiredCls)) {
+					bmdsCls.removeSuperclass(gfdRetiredCls);
+				}
 				
 				//remove parent from WHODAS
-				for (RDFSNamedClass parent : KBUtil.getNamedSuperclasses(subcls, false)) {
+				for (RDFSNamedClass parent : dirSuperclses) {
 					if (parent.hasSuperclass(whodasTopCls)) {
-						System.out.println("-- Remove from " + cm.getTitleLabel(subcls) + " WHODAS parent: " + cm.getTitleLabel(parent));
-						subcls.removeSuperclass(parent);
+						System.out.println("-- Remove from " + cm.getTitleLabel(bmdsCls) + " WHODAS parent: " + cm.getTitleLabel(parent));
+						bmdsCls.removeSuperclass(parent);
 					}
 				}
 			}
@@ -179,7 +184,7 @@ private static transient Logger log = Logger.getLogger(FixSurveyClasses.class);
 		Collection<RDFSNamedClass> superclses = KBUtil.getNamedSuperclasses(cls, false);
 		
 		for (RDFSNamedClass supercls : superclses) {
-			if (badTopCls != null && supercls.hasSuperclass(badTopCls)) { //keep it
+			if (supercls.hasSuperclass(badTopCls)) { //keep it
 				System.out.println("xxx Supercls: " + cm.getTitleLabel(supercls) + "for cls: " + cm.getTitleLabel(cls) + " in the other survey top cls");
 			} else {
 				if (supercls.hasSuperclass(gfdRetiredCls)) { //in retired, but not BMDS
