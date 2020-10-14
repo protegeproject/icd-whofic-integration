@@ -11,6 +11,7 @@ import edu.stanford.bmir.whofic.IcdIdGenerator;
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.smi.protege.model.Project;
 import edu.stanford.smi.protegex.owl.model.OWLModel;
+import edu.stanford.smi.protegex.owl.model.OWLNamedClass;
 import edu.stanford.smi.protegex.owl.model.RDFResource;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
@@ -129,7 +130,7 @@ private static transient Logger log = Logger.getLogger(FixSurveyClasses.class);
 			}
 		}
 		
-		RDFSNamedClass newCls = owlModel.createRDFSNamedClass(IcdIdGenerator.getNextUniqueId(owlModel));
+		OWLNamedClass newCls = owlModel.createOWLNamedClass(IcdIdGenerator.getNextUniqueId(owlModel));
 		for (RDFSNamedClass type : (Collection<RDFSNamedClass>) parents.iterator().next().getRDFTypes()) {
 			newCls.addRDFType(type);
 		}
