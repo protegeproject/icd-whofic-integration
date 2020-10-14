@@ -2,7 +2,9 @@ package org.who.integration.ichi;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.log4j.Level;
@@ -92,7 +94,7 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 		//String actFlagComment = getString(data, 7);
 		
 		String origTitle = getString(data, 23); //col X
-		//String origExpIndexTerm = getString(data, 24); //col Y
+		String origExpIndexTerm = getString(data, 24); //col Y
 		
 		if ( isEmptyString(action)
 				&& (!isEmptyString(indexTerm) || !isEmptyString(inclNote))) {
@@ -118,8 +120,18 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 			return;
 		}
 		
-		if (DELETE.equals(action) || REVIEW.equals(action)) {
+		if (REVIEW.equals(action)) {
 			return;
+		}
+
+		if (DELETE.equals(action) || INCLUDE.equals(action) || SYNONYM.equals(action)) {
+			if (!isEmptyString(indexTerm)) {
+				//deleteIndexTermIfExists(ichiCode, indexTerm, action);
+				deleteIndexTermIfExists(ichiCode, origExpIndexTerm, action);
+			}
+			if (DELETE.equals(action)) {
+				return;
+			}
 		}
 		
 		RDFSNamedClass cls = ICHIUtil.getIntervention(ichiCode);
@@ -218,10 +230,64 @@ public class ICHIIndexTermImporter extends ICHIImporter {
 		titleTerm.setPropertyValue(cm.getLabelProperty(), title);
 	}
 
+	private void deleteIndexTermIfExists(String ichiCode, String indexTerm, String action) {
+		if (indexTerm.contains(UGLY_HIDDEN_CHARACTER)) { 
+			log.warn("Ugly hidden character found in index term: " + indexTerm);
+			indexTerm = indexTerm.replaceAll(UGLY_HIDDEN_CHARACTER, " ");
+		}
+		
+		RDFSNamedClass cls = ICHIUtil.getIntervention(ichiCode);
+		if (cls == null) {
+			log.warn("Couldn't retrive class for ICHI code: " + ichiCode);
+			return;
+		}
+		ArrayList<RDFResource> partialMatchTerms = new ArrayList<>();
+		ArrayList<String> partialMatchLabels = new ArrayList<>();
+		
+		Collection<RDFResource> baseIndexTerms = cm.getTerms(cls, cm.getBaseIndexProperty());
+		RDFResource indexTermToDelete = null;
+		for (Iterator<RDFResource> it = baseIndexTerms.iterator(); it.hasNext();) {
+			RDFResource baseIndexTerm = (RDFResource) it.next();
+			String baseIndexTermLabel = (String) baseIndexTerm.getPropertyValue(cm.getLabelProperty());
+			if (baseIndexTermLabel.equals(indexTerm)) {
+				indexTermToDelete = baseIndexTerm;
+			}
+			else if (baseIndexTermLabel.toLowerCase().endsWith(indexTerm.toLowerCase())) {
+				partialMatchTerms.add(baseIndexTerm);
+				partialMatchLabels.add(baseIndexTermLabel);
+			}
+		}
+		if (indexTermToDelete != null) {
+			indexTermToDelete.delete();
+		}
+		else {
+			if (partialMatchTerms.size() == 1) {
+				indexTermToDelete = partialMatchTerms.get(0);
+				partialMatchTerms = null;
+				indexTermToDelete.delete();
+			}
+			log.warn(String.format("Could not find index term \"%s\" to delete, for intervention %s, action: %s. Possible matches: %d\t%s\t%s", 
+					indexTerm, ichiCode, action, partialMatchLabels.size(), partialMatchLabels, 
+					(partialMatchLabels.size() == 1 ? "Deleted" : "")));
+		}
+		
+//		String titleTermLabel = (String) titleTerm.getPropertyValue(cm.getLabelProperty());
+//		if (titleTermLabel == null || ! titleTermLabel.equals(origTitle) ) {
+//			log.warn(String.format("Old title of intervention %s does not match original title in spreadsheet. "
+//					+ "Old title: %s. Expected title: %s. New title set: %s.", 
+//					ichiCode, titleTermLabel, origTitle, title));
+//		}
+//		else if (titleTermLabel.equals(title)) {
+//			log.info(String.format("Title of intervention %s is already set to %s", ichiCode, title));
+//		}
+//		
+//		titleTerm.setPropertyValue(cm.getLabelProperty(), title);
+	}
+
 	private void addSynonymToClass(String synonym, RDFSNamedClass cls) {
 		if (synonym.contains(UGLY_HIDDEN_CHARACTER)) { 
 			log.warn("Ugly hidden character found in synonym: " + synonym);
-			synonym = synonym.replaceAll(UGLY_HIDDEN_CHARACTER, "");
+			synonym = synonym.replaceAll(UGLY_HIDDEN_CHARACTER, " ");
 		}
 		RDFResource synonymTerm = cm.createSynonymTerm();
 		synonymTerm.setPropertyValue(cm.getLabelProperty(), synonym);
