@@ -76,7 +76,7 @@ public class ImportICFDefinitions {
 		
 		String existingDef = code2def.get(icfClsName);
 		if (existingDef != null) {
-			def = existingDef + "<br />" + def; //TODO: \n or <br>?
+			def = existingDef + "\n" + def; //TODO: \n or <br>?
 		}
 		
 		code2def.put(icfClsName, def);
