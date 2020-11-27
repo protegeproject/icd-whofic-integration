@@ -43,7 +43,7 @@ public class ImportICFDefinitions {
 		addDefs();
 		
 		log.info("Saving..");
-		prj.save(new ArrayList<>());
+		//prj.save(new ArrayList<>());
 	}
 	
 	private static void fillMap(String inputCSV) throws IOException {
