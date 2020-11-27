@@ -1,0 +1,864 @@
+http://who.int/icf#B	Body functions are the physiological functions of body systems (including psychological functions).
+http://who.int/icf#B	Impairments are problems in body function or structure as a significant deviation or loss.
+http://who.int/icf#B	Broad ranges of percentages are provided for those cases in which calibrated assessment instruments or other standards are available to quantify the impairment in body function. For example, when "no impairment" or "complete impairment" in body function is coded, this scaling may have margin of error of up to 5%. "Moderate impairment" is generally up to half of the scale of total impairment. The percentages are to be calibrated in different domains with reference to population standards as percentiles. For this quantification to be used in a uniform manner, assessment procedures need to be developed through research.
+http://who.int/icf#B	For a further explanation of coding conventions in ICF, refer to Annex 2.
+http://who.int/icf#S	Body structures are anatomical parts of the body such as organs, limbs and their components.
+http://who.int/icf#S	Impairments are problems in body function or structure as a significant deviation or loss.
+http://who.int/icf#S	First qualifier
+http://who.int/icf#S	Generic qualifier with the negative scale, used to indicate the extent or an impairment:
+http://who.int/icf#D	Activity is the execution of a task or action by an individual.
+http://who.int/icf#D	Participation is involvement in a life situation.
+http://who.int/icf#D	Activity limitations are difficulties an individual may have in executing activities.
+http://who.int/icf#D	Participation restrictions are problems an individual may experience in involvement in life situations.
+http://who.int/icf#D	The domains for the Activities and Participation component are given in a single list that covers the full range of life areas (from basic learning and watching to composite areas such as social tasks). This component can be used to dedefinition activities (a) or participation (p) or both.
+http://who.int/icf#D	The two qualifiers for the Activities and Participation component are the performance qualifier and the capacity qualifier. The performance qualifier describes what an individual does in his or her current environment. Because the current environment brings in a societal context, performance as recorded by this qualifier can also be understood as "involvement in a life situation" or "the lived experience" of people in the actual context in which they live. This context includes the environmental factors - all aspects of the physical, social and attitudinal world, which can be coded using the Environmental Factors component.
+http://who.int/icf#D	The capacity qualifier describes an individual's ability to execute a task or an action. This qualifier identifies the highest probable level of functioning that a person may reach in a given domain at a given moment. Capacity is measured in a uniform or standard environment, and thus reflects the environmentally adjusted ability of the individual. The Environmental Factors component can be used to describe the features of this uniform or standard environment.
+http://who.int/icf#D	Both capacity and performance qualifiers can be used with and without assistive devices or personal assistance, and in accordance with the following scale:
+http://who.int/icf#E	Environmental Factors make up the physical, social and attitudinal environment in which people live and conduct their lives.
+http://who.int/icf#E	Environmental Factors is a component of Part 2 (Contextual factors) of the classification. These factors must be considered for each component of functioning and coded accordingly (see Annex 2).
+http://who.int/icf#E	Environmental factors are to be coded from the perspective of the person whose situation is being described. For example, kerb cuts without textured paving may be coded as a facilitator for a wheelchair user but as a barrier for a blind person.
+http://who.int/icf#E	The first qualifier indicates the extent to which a factor is a facilitator or a barrier. There are several reasons why an environmental factor may be a facilitator or a barrier, and to what extent. For facilitators, the coder should keep in mind issues such as the accessibility of a resource, and whether access is dependable or variable, of good or poor quality and so on. In the case of barriers, it might be relevant how often a factor hinders the person, whether the hindrance is great or small, or avoidable or not. It should also be kept in mind that an environmental factor can be a barrier either because of its presence (for example, negative attitudes towards people with disabilities) or its absence (for example, the unavailability of a needed service). The effects that environmental factors have on the lives of people with health conditions are varied and complex, and it is hoped that future research will lead to better understanding of this interaction and, possibly, show the usefulness of a second qualifier for these factors.
+http://who.int/icf#E	In some instances, a diverse collection of environmental factors is summarized with a single term, such as poverty, development, rural or urban setting or social capital. These summary terms are not themselves found in the classification. Rather, the coder should separate the constituent factors and code these. Once again, further research is required to determine whether there are clear and consistent sets of environmental factors that make up each of these summary terms.
+http://who.int/icf#E	First qualifier
+http://who.int/icf#E	The following is the negative and positive scale for the extent to which an environmental factor acts as a barrier or a facilitator. A point or separator alone dedefinitions a barrier, and the + sign dedefinitions a facilitator, as indicated below:
+http://who.int/icf#b1	This chapter is about the functions of the brain: both global mental functions, such as consciousness, energy and drive, and specific mental functions, such as memory, language and calculation mental functions.
+http://who.int/icf#b2	This chapter is about the functions of the senses, seeing, hearing, tasting and so on, as well as the sensation of pain.
+http://who.int/icf#b3	This chapter is about the functions of producing sounds and speech.
+http://who.int/icf#b4	This chapter is about the functions involved in the cardiovascular system (functions of the heart and blood vessels), the haematological and immunological systems (functions of blood production and immunity), and the respiratory system (functions of respiration and exercise tolerance).
+http://who.int/icf#b5	This chapter is about the functions of ingestion, digestion and elimination, as well as functions involved in metabolism and the endocrine glands.
+http://who.int/icf#b6	This chapter is about the functions of urination and the reproductive functions, including sexual and procreative functions.
+http://who.int/icf#b7	This chapter is about the functions of movement and mobility, including functions of joints, bones, reflexes and muscles.
+http://who.int/icf#b8	This chapter is about the functions of skin, nails and hair.
+http://who.int/icf#d1	This chapter is about learning, applying the knowledge that is learned, thinking, solving problems, and making decisions.
+http://who.int/icf#d2	This chapter is about general aspects of carrying out single or multiple tasks, organizing routines and handling stress. These items can be used in conjunction with more specific tasks or actions to identify the underlying features of the execution of tasks under different circumstances.
+http://who.int/icf#d3	This chapter is about general and specific features of communicating by language, signs and symbols, including receiving and producing messages, carrying on conversations, and using communication devices and techniques.
+http://who.int/icf#d4	This chapter is about moving by changing body position or location or by transferring from one place to another, by carrying, moving or manipulating objects, by walking, running or climbing, and by using various forms of transportation.
+http://who.int/icf#d5	This chapter is about caring for oneself, washing and drying oneself, caring for one's body and body parts, dressing, eating and drinking, and looking after one's health.
+http://who.int/icf#d6	This chapter is about carrying out domestic and everyday actions and tasks. Areas of domestic life include, caring for one's belongings and space, acquiring food, clothing and other necessities, household cleaning and repairing, caring for personal and other household objects, and assisting others.
+http://who.int/icf#d7	This chapter is about carrying out the actions and tasks required for basic and complex interactions with people (strangers, friends, relatives, family members and lovers) in a contextually and socially appropriate manner.
+http://who.int/icf#d8	This chapter is about carrying out the tasks and actions required to engage in education, work and employment and to conduct economic transactions.
+http://who.int/icf#d9	This chapter is about the actions and tasks required to engage in organized social life outside the family, in community, social and civic areas of life.
+http://who.int/icf#e1	This chapter is about the natural or human-made products or systems of products, equipment and technology in an individual's immediate environment that are gathered, created, produced or manufactured. The ISO 9999 classification of technical aids defines these as "any product, instrument, equipment or technical system used by a disabled person, especially produced or generally available, preventing, compensating, monitoring, relieving or neutralizing" disability. It is recognized that any product or technology can be assistive. (See ISO 9999: Technical aids for disabled persons -Classification (second version); ISO/TC 173/SC 2; ISO/DIS 9999 (rev.).) For the purposes of this classification of environmental factors, however, assistive products and technology are defined more narrowly as any product, instrument, equipment or technology adapted or specially designed for improving the functioning of a disabled person.
+http://who.int/icf#e2	This chapter is about animate and inanimate elements of the natural or physical environment, and components of that environment that have been modified by people, as well as characteristics of human populations within that environment.
+http://who.int/icf#e3	This chapter is about people or animals that provide practical physical or emotional support, nurturing, protection, assistance and relationships to other persons, in their home, place of work, school or at play or in other aspects of their daily activities. The chapter does not encompass the attitudes of the person or people that are providing the support. The environmental factor being described is not the person or animal, but the amount of physical and emotional support the person or animal provides.
+http://who.int/icf#e4	This chapter is about the attitudes that are the observable consequences of customs, practices, ideologies, values, norms, factual beliefs and religious beliefs. These attitudes influence individual behaviour and social life at all levels, from interpersonal relationships, community associations to political, economic and legal structures; for example, individual or societal attitudes about a person's trustworthiness and value as a human being may motivate positive, honorific practices or negative and discriminatory practices (e.g. stigmatizating, stereotyping and marganilizing or neglect of the person). The attitudes classified are those of people external to the person whose situation is being described. They are not those of the person themselves. The individual attitudes are categorized according to the kinds of relationships listed in Environmental Factors Chapter 3. Values and beliefs are not coded separately from attitudes as they are assumed to be the driving forces behind the attitudes.
+http://who.int/icf#e5	This chapter is about:
+http://who.int/icf#e5	1. Services that provide benefits, structured programmes and operations, in various sectors of society, designed to meet the needs of individuals. (Included in services are the people who provide them.) Services may be public, private or voluntary, and may be established at a local, community, regional, state, provincial, national or international level by individuals, associations, organizations, agencies or governments. The goods provided by these services may be general or adapted and specially designed.
+http://who.int/icf#e5	2. Systems that are administrative control and organizational mechanisms, and are established by governments at the local, regional, national, and international levels, or by other recognized authorities. These systems are designed to organize, control and monitor services that provide benefits, structured programmes and operations in various sectors of society.
+http://who.int/icf#e5	3. Policies constituted by rules, regulations, conventions and standards established by governments at the local, regional, national, and international levels, or by other recognized authorities. Policies govern and regulate the systems that organize, control and monitor services, structured programmes and operations in various sectors of society.
+http://who.int/icf#b310	Functions of the production of various sounds by the passage of air through the larynx.
+http://who.int/icf#b320	Functions of the production of speech sounds.
+http://who.int/icf#b330	Functions of the production of flow and tempo of speech.
+http://who.int/icf#b340	Functions of the production of other manners of vocalization.
+http://who.int/icf#d210	Carrying out simple or complex and coordinated actions related to the mental and physical components of a single task, such as initiating a task, organizing time, space and materials for a task, pacing task performance, and carrying out, completing, and sustaining a task.
+http://who.int/icf#d220	Carrying out simple or complex and coordinated actions as components of multiple, integrated and complex tasks in sequence or simultaneously.
+http://who.int/icf#d230	Carrying out simple or complex and coordinated actions in order to plan, manage and complete the requirements of day-to-day procedures or duties, such as budgeting time and making plans for separate activities throughout the day.
+http://who.int/icf#d240	Carrying out simple or complex and coordinated actions to manage and control the psychological demands required to carry out tasks demanding significant responsibilities and involving stress, distraction, or crises, such as driving a vehicle during heavy traffic or taking care of many children.
+http://who.int/icf#d510	Washing and drying one's whole body, or body parts, using water and appropriate cleaning and drying materials or methods, such as bathing, showering, washing hands and feet, face and hair, and drying with a towel.
+http://who.int/icf#d520	Looking after those parts of the body, such as skin, face, teeth, scalp, nails and genitals, that require more than washing and drying.
+http://who.int/icf#d530	Planning and carrying out the elimination of human waste (menstruation, urination and defecation), and clean oneself afterwards.
+http://who.int/icf#d540	Carrying out the coordinated actions and tasks of putting on and taking off clothes and footwear in sequence and in keeping with climatic and social conditions, such as by putting on, adjusting and removing shirts, skirts, blouses, pants, undergarments, saris, kimono, tights, hats, gloves, coats, shoes, boots, sandals and slippers.
+http://who.int/icf#d550	Carrying out the coordinated tasks and actions of eating food that has been served, bringing it to the mouth and consuming it in culturally acceptable ways, cutting or breaking food into pieces, opening containers and packets, using eating implements, having meals, feasting or dining.
+http://who.int/icf#d560	Taking hold of a drink, bringing it to the mouth, and consuming the drink in culturally acceptable ways, mixing, stirring and pouring liquids for drinking, opening bottles and cans, drinking through a straw or drinking running water such as from a tap or a spring; feeding from the breast.
+http://who.int/icf#d570	Ensuring physical comfort, health and physical and mental well-being, such as by maintaining a balanced diet, and an appropriate level of physical activity, keeping warm or cool, avoiding harms to health, following safe sex practices, including such as using condoms, getting immunizations and regular physical examinations.
+http://who.int/icf#d910	Engaging in aspects of community social life, such as engaging in charitable organizations, services clubs or professional social organizations.
+http://who.int/icf#d920	Engaging in any form of play, recreational or leisure activity, such as informal or organized play and sports, programmes of physical fitness, relaxation, amusement or diversion, going to art galleries, museums, cinemas or theatres; engaging in crafts or hobbies, reading for enjoyment, playing musical instruments; sightseeings, tourism and travelling for pleasure.
+http://who.int/icf#d930	Engaging in religious or spiritual activities, organizations and practices for self-fulfilment, finding meaning, religious or spiritual value and establishing connection with a divine power, such as is involved in attending a church, temple, mosque or synagogue, praying or chanting for a religious purpose, and spiritual contemplation.
+http://who.int/icf#d940	Enjoying all nationally and internationally recognized rights that are accorded to people by virtue of their humanity alone, such as human rights as recognized by the United Nations Universal Declaration of Human Rights (1948), the United Nations Convention on the Rights of the Child (1989), the United Nations Standard Rules for the Equalization of Opportunities for Persons with Disabilities (1993), and the United Nations Convention on the Rights of Persons with Disabilities (2006); the right to self-determination or autonomy; and the right to control over one's destiny.
+http://who.int/icf#d950	Engaging in the social, political, governmental life of a citizen, having legal status as a citizen and enjoying the rights, protections, privileges and duties associated with that role, such as the right to vote and run for political office, to form political associations, enjoying the rights and freedoms associated with citizenship (e.g. the rights of freedom of speech, association, religion, protections against unreasonable search and seizure, the right to counsel, to a trial and other legal rights and protections against discrimination); having legal standing as a citizen.
+http://who.int/icf#e110	Any natural or human-made object or substance gathered, processed or manufactured for ingestion.
+http://who.int/icf#e115	Equipment, products and technologies used by people in daily activities, including those adapted or specially designed, located in, on or near the person using them.
+http://who.int/icf#e120	Equipment, products and technologies used by people in activities of moving inside and outside buildings, including those adapted or specially designed, located in, on or near the person using them.
+http://who.int/icf#e125	Equipment, products and technologies used by people in activities of sending and receiving information, including those adapted or specially designed, located in, on or near the person using them.
+http://who.int/icf#e130	Equipment, products, methods and technology used for acquisition of knowledge, expertise or skill, including those adapted or specially designed.
+http://who.int/icf#e135	Equipment, products and technology used for employment to facilitate work activities.
+http://who.int/icf#e140	Equipment, products and technology used for the conduct and enhancement of cultural, recreational and sporting activities, including those adapted or specially designed.
+http://who.int/icf#e145	Products and technology, unique or mass-produced, that are given or take on a symbolic meaning in the context of the practice of religion or spirituality, including those adapted or specially designed.
+http://who.int/icf#e150	Products and technology that constitute an individual's indoor and outdoor human-made environment that is planned, designed and constructed for public use, including those adapted or specially designed.
+http://who.int/icf#e155	Product and technology that constitute an individual's indoor and outdoor human-made environment that is planned, designed and constructed,(e.g. home, dwelling) for private use, including those adapted or specially designed.
+http://who.int/icf#e160	Products and technology of land areas, as they affect an individual's outdoor environment through the implementation of land use policies, design, planning and development of space, including those adapted or specially designed.
+http://who.int/icf#e165	Products or objects of economic exchange such as money, goods, property and other valuables that an individual owns or of which he or she has rights of use.
+http://who.int/icf#e210	Features of landforms and bodies of water.
+http://who.int/icf#e215	Groups of people living in a given environment who share the same pattern of environmental adaptation.
+http://who.int/icf#e220	Plants and animals.
+http://who.int/icf#e225	Meteorological features and events, such as the weather.
+http://who.int/icf#e230	Geographic and atmospheric changes that cause disruption in an individual's physical environment, occurring regularly or irregularly, such as earthquakes and severe or violent weather conditions, e.g. tornadoes, hurricanes, typhoons, floods, forest fires and ice-storms.
+http://who.int/icf#e235	Alterations or disturbances in the natural environment, caused by humans, that may result in the disruption of people's day-to-day lives, including events or conditions linked to conflict and wars, such as the displacement of people, destruction of social infrastructure, homes and lands, environmental disasters and land, water or air pollution (e.g. toxic spills).
+http://who.int/icf#e240	Electromagnetic radiation by which things are made visible by either sunlight or artificial lighting (e.g. candles, oil paraffin lamps and electricity), and which may provide useful or distracting information about the world.
+http://who.int/icf#e245	Natural, regular or predictable temporal change.
+http://who.int/icf#e250	A phenomenon that is or may be heard, such as banging, ringing, thumping, whistling, yelling or buzzing, in any volume, timbre or tone, and that may provide useful or distracting information about the world.
+http://who.int/icf#e255	Regular or irregular to and fro motion of an object or an individual caused by a physical perturbance, either inside or outside, such as shaking, quivering, quick jerky movements of things, buildings or people caused by handling or working with small or large tools or equipment.
+http://who.int/icf#e260	Characteristics of the atmosphere (outside buildings) or enclosed areas of air (inside buildings), and which may provide useful or distracting information about the world.
+http://who.int/icf#e310	Individuals related by birth, marriage or other relationship recognized by the culture as immediate family, such as spouses, partners, parents, siblings, children, foster parents, adoptive parents and grandparents.
+http://who.int/icf#e315	Individuals related through family or marriage or other relationships recognized by the culture as extended family, such as aunts, uncles, nephews and nieces.
+http://who.int/icf#e320	Individuals who are close and ongoing participants in relationships characterized by trust and mutual support.
+http://who.int/icf#e325	Individuals who are familiar to each other as acquaintances, peers, colleagues, neighbours, and community members, in situations of work, school, recreation, or other aspects of life, and who share demographic features such as age, gender, religious creed or ethnicity or pursue common interests.
+http://who.int/icf#e330	Individuals who have decision-making responsibilities for others and who have socially defined influence or power based on their social, economic, cultural or religious roles in society, such as teachers, employers, supervisors, religious leaders, substitute decision-makers, guardians or trustees.
+http://who.int/icf#e335	Individuals whose day-to-day life is influenced by people in positions of authority in work, school or other settings, such as students, workers, and members of a religious group.
+http://who.int/icf#e340	Individuals who provide services to support individuals in their daily activities and maintenance of performance at work, education or other life situation, provided either through public or private funds, or else on a voluntary basis, such as providers of support for home-making and maintenance, personal assistants, transport assistant, paid help, nannies and others who function as primary caregivers.
+http://who.int/icf#e345	Individuals who are unfamiliar and unrelated, or those who have not yet established a relationship or association, including persons unknown to the individual but who are sharing a life situation with them, such as substitute teachers, co-workers or care providers.
+http://who.int/icf#e350	Animals that provide physical, emotional, or psychological support, such as pets (dogs, cats, birds, fish, etc.) and animals for personal mobility and transportation.
+http://who.int/icf#e355	All service providers working within the context of the health system, such as doctors, nurses, physiotherapists, occupational therapists, speech therapists, audiologists, orthotist-prosthetists, medical social workers.
+http://who.int/icf#e360	All service providers working outside of the health system,including social workers, lawyers, teachers, architects and designers.
+http://who.int/icf#e410	General or specific opinions and beliefs of immediate family members about the person or about other matters (e.g. social, political and economic issues), that influence individual behaviour and actions.
+http://who.int/icf#e415	General or specific opinions and beliefs of extended family members about the person or about other matters, (e.g. social, political and economic issues), that influence individual behaviour and actions.
+http://who.int/icf#e420	General or specific opinions and beliefs of friends about the person or about other matters, (e.g. social, political and economic issues), that influence individual behaviour and actions.
+http://who.int/icf#e425	General or specific opinions and beliefs of acquaintances, peers, colleagues, neighbours and community members about the person or about other matters, (e.g. social, political and economic issues), that influence individual behaviour and actions.
+http://who.int/icf#e430	General or specific opinions and beliefs of people in positions of authority about the person or about other matters, (e.g. social, political and economic issues), that influence individual behaviour and actions.
+http://who.int/icf#e435	General or specific opinions and beliefs of people in subordinate positions about the person or about other matters, (e.g. social, political and economic issues), that influence individual behaviour and actions.
+http://who.int/icf#e440	General or specific opinions and beliefs of personal care providers and personal assistants about the person or about other matters, (e.g. social, political and economic issues), that influence individual behaviour and actions.
+http://who.int/icf#e445	General or specific opinions and beliefs of strangers about the person or about other matters, (e.g. social, political and economic issues), that influence individual behaviour and actions.
+http://who.int/icf#e450	General or specific opinions and beliefs of health professionals about the person or about other matters, (e.g. social, political and economic issues), that influence individual behaviour and actions.
+http://who.int/icf#e455	General or specific opinions and beliefs of health-related professionals about the person or about other matters, (e.g. social, political and economic issues), that influence individual behaviour and actions.
+http://who.int/icf#e460	General or specific opinions and beliefs generally held by people of a culture, society, sub-cultural or other social group about other individuals or about other social, political and economic issues, that influence group or individual behaviour and actions.
+http://who.int/icf#e465	Customs, practices, rules and abstract systems of values and normative beliefs (e.g.ideologies, normative world views and moral philosophies) that arise within social contexts and that affect or create societal and individual practices and behaviours, such as social norms of moral and religious behaviour or etiquette; religious doctrine and resulting norms and practices; norms governing rituals or social gatherings.
+http://who.int/icf#e510	Services, systems and policies that govern and provide for the production of objects and products consumed or used by people.
+http://who.int/icf#e515	Services, systems and policies for the design and construction of buildings, public and private.
+http://who.int/icf#e520	Services, systems and policies for the planning, design, development and maintenance of public lands, (e.g. parks, forests, shorelines, wetlands) and private lands in the rural, suburban and urban context.
+http://who.int/icf#e525	Services, systems and policies for the provision of shelters, dwellings or lodging for people.
+http://who.int/icf#e530	Services, systems and policies for publicly provided utilities, such as water, fuel, electricity, sanitation, public transportation and essential services.
+http://who.int/icf#e535	Services, systems and policies for the transmission and exchange of information.
+http://who.int/icf#e540	Services, systems and policies for enabling people or goods to move or be moved from one location to another.
+http://who.int/icf#e545	Services, systems and policies aimed at safeguarding people and property.
+http://who.int/icf#e550	Services, systems and policies concerning the legislation and other law of a country.
+http://who.int/icf#e555	Services, systems and policies relating to groups of people who have joined together in the pursuit of common, non-commercial interests, often with an associated membership structure.
+http://who.int/icf#e560	Services, systems and policies for the provision of mass communication through radio, television, newspapers and internet.
+http://who.int/icf#e565	Services, systems and policies related to the overall system of production, distribution, consumption and use of goods and services.
+http://who.int/icf#e570	Services, systems and policies aimed at providing income support to people who, because of age, poverty, unemployment, health condition or disability, require public assistance that is funded either by general tax revenues or contributory schemes.
+http://who.int/icf#e575	Services, systems and policies aimed at providing support to those requiring assistance in areas such as shopping, housework, transport, child care, self-care and care of others, in order to function more fully in society.
+http://who.int/icf#e580	Services, systems and policies for preventing and treating health problems, providing medical rehabilitation and promoting a healthy lifestyle.
+http://who.int/icf#e585	Services, systems and policies for the acquisition, maintenance and improvement of knowledge, expertise and vocational or artistic skills. See UNESCO's International Standard Classification of Education [ISCED-1997].
+http://who.int/icf#e590	Services, systems and policies related to finding suitable work for persons who are unemployed or looking for different work, or to support individuals already employed who are seeking promotion.
+http://who.int/icf#e595	Services, systems and policies related to voting, elections and governance of countries, regions and communities, as well as international organizations.
+http://who.int/icf#b110	General mental functions of the state of awareness and alertness, including the clarity and continuity of the wakeful state.
+http://who.int/icf#b114	General mental functions of knowing and ascertaining one's relation to time to place, to self, to others, to objects, and to space.
+http://who.int/icf#b117	General mental functions, required to understand and constructively integrate the various mental functions including all cognitive functions and their development over the life span.
+http://who.int/icf#b122	General mental functions, as they develop over the life span, required to understand and constructively integrate the mental functions that lead to the formation of the personal skills needed to establish reciprocal social interactions, in terms of both meaning and purpose.
+http://who.int/icf#b126	General mental functions of constitutional disposition of the individual to react in a particular way to situations, including the set of mental characteristics that makes the individual distinct from others.
+http://who.int/icf#b130	General mental functions of physiological and psychological mechanisms that cause the individual to move towards satisfy specific needs and general goals in a persistent manner.
+http://who.int/icf#b134	General mental functions of periodic, reversible and selective physical and mental disengagement from one's immediate environment accompanied by characteristic physiological changes.
+http://who.int/icf#b140	Specific mental functions of focusing on an external stimulus or internal experience for the required period of time.
+http://who.int/icf#b144	Specific mental functions of registering and storing information and retrieving it as needed.
+http://who.int/icf#b147	Specific mental functions of control over both motor and psychological events at the body level.
+http://who.int/icf#b152	Specific mental functions related to the feeling and affective components of the processes of the mind.
+http://who.int/icf#b156	Specific mental functions of recognizing and interpreting sensory stimuli.
+http://who.int/icf#b160	Specific mental functions related to the ideational component of the mind.
+http://who.int/icf#b164	Specific mental functions especially dependent on the frontal lobes of the brain, including complex goal-directed behaviours such as decision-making, abstract thinking, planning and carrying out plans, mental flexibility, and deciding which behaviours are appropriate under what circumstances; often called executive functions.
+http://who.int/icf#b167	Specific mental functions of recognizing and using signs, symbols and other components of a language.
+http://who.int/icf#b172	Specific mental functions of determination, approximation and manipulation of mathematical symbols and processes.
+http://who.int/icf#b176	Specific mental functions of sequencing and co-ordinating complex, purposeful movements.
+http://who.int/icf#b180	Specific mental functions related to the awareness of one´s identity, one´s body, one´s position in the reality of one´s environment and of time.
+http://who.int/icf#b210	Sensory functions relating to sensing the presence of light and sensing the form, size, shape and colour of the visual stimuli.
+http://who.int/icf#b215	Functions of structures in and around the eye that facilitate seeing functions.
+http://who.int/icf#b220	Sensations of tired, dry and itching eye and related feelings.
+http://who.int/icf#b230	Sensory functions relating to sensing the presence of sounds and discriminating the location, pitch, loudness and quality of sounds.
+http://who.int/icf#b235	Sensory functions of the inner ear related to position, balance and movement.
+http://who.int/icf#b240	Sensations of dizziness, falling, tinnitus and vertigo.
+http://who.int/icf#b250	Sensory functions of sensing qualities of bitterness, sweetness, sourness and saltiness.
+http://who.int/icf#b255	Sensory functions of sensing odours and smells.
+http://who.int/icf#b260	Sensory functions of sensing the relative position of body parts.
+http://who.int/icf#b265	Sensory functions of sensing surfaces and their texture or quality.
+http://who.int/icf#b270	Sensory functions of sensing temperature, vibration, pressure and noxious stimulus.
+http://who.int/icf#b280	Sensation of unpleasant feeling indicating potential or actual damage to some body structure.
+http://who.int/icf#b3100	Functions of the production of sound made through coordination of the larynx and surrounding muscles with the respiratory system.
+http://who.int/icf#b3101	Functions of the production of characteristics of voice including pitch, resonance and other features.
+http://who.int/icf#b3300	Functions of the production of smooth, uninterrupted flow of speech.
+http://who.int/icf#b3301	Functions of the modulated, tempo and stress patterns in speech.
+http://who.int/icf#b3302	Functions of the rate of speech production.
+http://who.int/icf#b3303	Functions of modulation of pitch patterns in speech.
+http://who.int/icf#b3400	Functions of production of musical vocal sounds.
+http://who.int/icf#b3401	Functions of production of a variety of vocalizations.
+http://who.int/icf#b410	Functions of pumping the blood in adequate or required amounts and pressure throughout the body.
+http://who.int/icf#b415	Functions of transporting blood throughout the body.
+http://who.int/icf#b420	Functions of maintaining the pressure of blood within the arteries.
+http://who.int/icf#b430	Functions of blood production, oxygen and metabolite carriage, and clotting.
+http://who.int/icf#b435	Functions of the body related to protection against foreign substances, including infections, by specific and non-specific immune responses.
+http://who.int/icf#b440	Functions of inhaling air into the lungs, the exchange of gases between air and blood, and exhaling air.
+http://who.int/icf#b445	Functions of the muscles involved in breathing.
+http://who.int/icf#b450	Additional functions related to breathing, such as producing and transporting secretion, coughing, sneezing and yawning.
+http://who.int/icf#b455	Functions related to respiratory and cardiovascular capacity as required for enduring physical exertion.
+http://who.int/icf#b460	Sensations such as missing a heart beat, palpitation and shortness of breath.
+http://who.int/icf#b510	Functions related to taking in and manipulating solids or liquids through the mouth into the body.
+http://who.int/icf#b515	Functions of transporting food through the gastrointestinal tract, breakdown of food and absorption of nutrients.
+http://who.int/icf#b520	Functions by which nutrients are converted into components of the living body.
+http://who.int/icf#b525	Functions of elimination of wastes and undigested food as faeces and related functions.
+http://who.int/icf#b530	Functions of maintaining appropriate body weight, including weight gain during the developmental period.
+http://who.int/icf#b535	Sensations arising from eating, drinking and related digestive functions.
+http://who.int/icf#b540	Functions of regulation of essential components of the body such as carbohydrates, proteins and fats, the conversion of one to another, and their breakdown into energy.
+http://who.int/icf#b545	Functions of the regulation of water, minerals and electrolytes in the body.
+http://who.int/icf#b550	Functions of the regulation of body temperature.
+http://who.int/icf#b555	Functions of production and regulation of hormonal levels in the body, including cyclical changes.
+http://who.int/icf#b610	Functions of filtration and collection of the urine.
+http://who.int/icf#b620	Functions of discharge of urine from the urinary bladder.
+http://who.int/icf#b630	Sensations arising from voiding and related urinary functions.
+http://who.int/icf#b640	Mental and physical functions related to the sexual act, including the arousal, preparatory, orgasmic and resolution stages.
+http://who.int/icf#b650	Functions associated with the menstrual cycle, including regularity of menstruation and discharge of menstrual fluids.
+http://who.int/icf#b660	Functions associated with fertility, pregnancy, childbirth and lactation.
+http://who.int/icf#b670	Sensations associated with sexual intercourse, menstruation, and related genital or reproductive functions.
+http://who.int/icf#b710	Functions of the range and ease of movement of a joint.
+http://who.int/icf#b715	Functions of the maintenance of structural integrity of the joints.
+http://who.int/icf#b720	Functions of the range and ease of movement of the scapula, pelvis, carpal and tarsal bones.
+http://who.int/icf#b730	Functions related to the force generated by the contraction of a muscle or muscle groups.
+http://who.int/icf#b735	Functions related to the tension present in the resting muscles and the resistance offered when trying to move the muscles passively.
+http://who.int/icf#b740	Functions related to sustaining muscle contraction for the required period of time.
+http://who.int/icf#b750	Functions of involuntary contraction of muscles automatically induced by specific stimuli.
+http://who.int/icf#b755	Functions of involuntary contractions of large muscles or the whole body induced by body position, balance and threatening stimuli.
+http://who.int/icf#b760	Functions associated with control over and coordination of voluntary movements.
+http://who.int/icf#b761	Functions associated with frequency, fluency and complexity of total and individual body-part movements such as infant spontaneous movements and patterns of movement.
+http://who.int/icf#b765	Functions of unintentional, non- or semi-purposive involuntary contractions of a muscle or group of muscles.
+http://who.int/icf#b770	Functions of movement patterns associated with walking, running or other whole body movements.
+http://who.int/icf#b780	Sensations associated with the muscles or muscle groups of the body and their movement.
+http://who.int/icf#b810	Functions of the skin for protecting the body from physical, chemical and biological threats.
+http://who.int/icf#b820	Functions of the skin for repairing breaks and other damage to the skin.
+http://who.int/icf#b830	Functions of the skin other than protection and repair, such as cooling and sweat secretion.
+http://who.int/icf#b840	Sensations related to the skin such as itching, burning sensation and tingling.
+http://who.int/icf#b850	Functions of the hair, such as protection, coloration and appearance.
+http://who.int/icf#b860	Functions of the nails, such as protection, scratching and appearance.
+http://who.int/icf#d110	Using the sense of seeing intentionally to experience visual stimuli, such as visually tracking an object, watching a sporting event, people, or children playing.
+http://who.int/icf#d115	Using the sense of hearing intentionally to experience auditory stimuli, such as listening to a radio, to the human voice, to music, to a lecture, or to a story told.
+http://who.int/icf#d120	Using the body's other basic senses intentionally to experience stimuli, such as touching and feeling textures, tasting sweets or smelling flowers.
+http://who.int/icf#d130	Imitating or mimicking as a basic component of learning, such as copying a facial expression, a gesture, a sound or the letters of an alphabet.
+http://who.int/icf#d131	Learning through simple actions on a single object, two or more objects, symbolic and pretend play, such as in hitting an object, banging blocks and playing with dolls or cars.
+http://who.int/icf#d132	Developing the competence to represent persons, objects, events, feelings through words, symbols, phrases and sentences.
+http://who.int/icf#d133	Developing the competence to represent persons, objects, events, feelings through words, symbols, phrases and sentences, such as in an additional language or signing.
+http://who.int/icf#d135	Repeating a sequence of events or symbols as a basic component of learning, such as counting by tens or practising the recitation of a rhyme with gestures or cords on a musical instrument.
+http://who.int/icf#d137	Developing competence to understand and use basic and complex concepts related to characteristics, properties and features defining things, persons or events.
+http://who.int/icf#d138	Obtaining facts about persons, things and events, such as asking why, what, where and how, asking for names.
+http://who.int/icf#d140	Developing the competence to read written material (including Braille and other symbols) with fluency and accuracy, such as recognizing characters and alphabet letters, sounding out written words with correct pronunciation, and understanding written words and phrases.
+http://who.int/icf#d145	Developing the competence to produce symbols that represent sounds, words or phrases in order to convey meaning (including Braille writing, and other symbols), such as spelling and effectively using correct grammar.
+http://who.int/icf#d150	Developing the competence to manipulate numbers and perform simple and complex mathematical operations, such as using mathematical signs for addition and subtraction and applying the correct mathematical operation to a problem.
+http://who.int/icf#d155	Developing basic and complex competencies in integrated sets of actions or tasks so as to initiate and follow through with the acquisition of a skill, such as manipulating tools or toys or playing games.
+http://who.int/icf#d160	Intentionally focusing on specific stimuli, such as by filtering out distracting noises.
+http://who.int/icf#d163	Formulating and manipulating ideas, concepts, and images, whether goal-oriented or not, either alone or with others, such as creating fiction, proving a theorem, playing with ideas, brainstorming, meditating, pondering, speculating, or reflecting.
+http://who.int/icf#d166	Performing activities involved in the comprehension and interpretation of written language (e.g. books, instructions or newspapers in text or Braille), for the purpose of obtaining general knowledge or specific information.
+http://who.int/icf#d170	Using or producing symbols or language to convey information, such as producing a written record of events or ideas or drafting a letter.
+http://who.int/icf#d172	Performing computations by applying mathematical principles to solve problems that are described in words and producing or displaying the results, such as computing the sum of three numbers or finding the result of dividing one number by another.
+http://who.int/icf#d175	Finding solutions to questions or situations by identifying and analysing issues, developing options and solutions, evaluating potential effects of solutions, and executing a chosen solution, such as in resolving a dispute between two people.
+http://who.int/icf#d177	Making a choice among options, implementing the choice, and evaluating the effects of the choice, such as selecting and purchasing a specific item, or deciding to undertake and undertaking one task from among several tasks that need to be done.
+http://who.int/icf#d2100	Preparing, initiating and arranging the time and space required for a simple task; executing a simple task with a single major component, such as reading a book, writing a letter, or making one's bed.
+http://who.int/icf#d2101	Preparing, initiating and arranging the time and space for a single complex task; executing a complex task with more than one component, which may be carried out in sequence or simultaneously, such as arranging the furniture in one's home or completing an assignment for school.
+http://who.int/icf#d2102	Preparing, initiating and arranging the time and space for a simple or complex task; managing and executing a task on one's own and without the assistance of others.
+http://who.int/icf#d2103	Preparing, initiating and arranging the time and space for a single task, simple or complex; managing and executing a task with people who are involved in some or all steps of the task.
+http://who.int/icf#d2200	Preparing, initiating and arranging the time and space needed for several tasks, and managing and executing several tasks, together or sequentially.
+http://who.int/icf#d2201	Completing several tasks, together or sequentially.
+http://who.int/icf#d2202	Preparing, initiating and arranging the time and space for multiple tasks, and managing and executing several tasks together or sequentially, on one's own and without the assistance of others.
+http://who.int/icf#d2203	Preparing, initiating and arranging the time and space for multiple tasks, and managing and executing several tasks together or sequentially with others who are involved in some or all steps of the multiple tasks.
+http://who.int/icf#d2301	Carrying out simple or complex and coordinated actions in order to plan and manage the requirements of day-to-day procedures or duties.
+http://who.int/icf#d2302	Carrying out simple or complex and coordinated actions in order to complete the requirements of usual day-to-day procedures or duties, such as getting dressed, eating breakfast, leaving for school or work and returning home at the end of the day.
+http://who.int/icf#d2303	Carrying out actions and behaviours to arrange the requirements in energy and time day-to-day procedures or duties.
+http://who.int/icf#d2304	Interrupting and shifting tasks and actions in response to new requirements or making a transition from a usual pattern of activities to a new set of activities as a means of fulfilling daily tasks.
+http://who.int/icf#d2400	Carrying out simple or complex and coordinated actions to manage the duties of task performance and to assess the requirements of these duties.
+http://who.int/icf#d2401	Carrying out simple or complex and coordinated actions to cope with pressure, emergencies or stress associated with task performance.
+http://who.int/icf#d2402	Carrying out simple or complex and coordinated actions to cope with decisive turning points in a situation or times of acute danger or difficulty.
+http://who.int/icf#d310	Comprehending literal and implied meanings of messages in spoken language, such as understanding that a statement asserts a fact or is an idiomatic expression.
+http://who.int/icf#d315	Comprehending the literal and implied meanings of messages conveyed by gestures, symbols and drawings, such as realizing that a child is tired when she rubs her eyes or that a warning bell means that there is a fire.
+http://who.int/icf#d320	Receiving and comprehending messages in formal sign language with literal and implied meaning.
+http://who.int/icf#d325	Comprehending the literal and implied meanings of messages that are conveyed through written language (including Braille), such as following political events in the daily newspaper or understanding the intent of religious scripture.
+http://who.int/icf#d330	Producing words, phrases and longer passages in spoken messages with literal and implied meaning, such as expressing a fact or telling a story in oral language.
+http://who.int/icf#d331	Vocalising when aware of another person in the proximal environment, such as making a sound when the mother is close; babbling; babbling in turn-taking activities. Vocalising in response to speech through imitating speech-sounds in a turn taking procedure.
+http://who.int/icf#d332	Producing tones in a sequence resulting in a melody to convey messages.
+http://who.int/icf#d335	Using gestures, symbols and drawings to convey messages, such as shaking one's head to indicate disagreement or drawing a picture or diagram to convey a fact or complex idea.
+http://who.int/icf#d340	Conveying, with formal sign language, literal and implied meaning.
+http://who.int/icf#d345	Producing the literal and implied meanings of messages that are conveyed through written language, such as writing a letter to a friend.
+http://who.int/icf#d350	Starting, sustaining and ending an interchange of thoughts and ideas, carried out by means of spoken, written, signed or other forms of language, with one or more people one knows or who are strangers, in formal or casual settings.
+http://who.int/icf#d355	Starting, sustaining and ending an examination of a matter, with arguments for or against, or debate carried out by means of spoken, written, sign or other forms of language, with one or more people one knows or who are strangers, in formal or casual settings.
+http://who.int/icf#d360	Using devices, techniques and other means for the purposes of communicating, such as calling a friend on the telephone.
+http://who.int/icf#d410	Getting into and out of a body position and moving from one location to another, such as getting up out of a chair to lie down on a bed, and getting into and out of positions of sitting, standing, kneeling or squatting.
+http://who.int/icf#d415	Staying in the same body position as required, such as remaining seated or remaining standing for carrying out a task, in play, work or school.
+http://who.int/icf#d420	Moving from one surface to another, such as sliding along a bench or moving from a bed to a chair, without changing body position.
+http://who.int/icf#d430	Raising up an object or taking something from one place to another, such as when lifting a cup or toy or carrying a box, or a child from one room to another.
+http://who.int/icf#d435	Performing coordinated actions aimed at moving an object by using the legs and feet, such as kicking a ball or pushing pedals on a bicycle.
+http://who.int/icf#d440	Performing the coordinated actions of handling objects, picking up, manipulating and releasing them using one's hand, fingers and thumb, such as required to lift coins off a table or turn a dial or knob.
+http://who.int/icf#d445	Performing the coordinated actions required to move objects or to manipulate them by using hands and arms, such as when turning door handles or throwing or catching an object.
+http://who.int/icf#d446	Performing the coordinated actions to move or manipulate objects using one's foot and toes.
+http://who.int/icf#d450	Moving along a surface on foot, step by step, so that one foot is always on the ground, such as when strolling, sauntering, walking forwards, backwards, or sideways.
+http://who.int/icf#d451	Moving upwards and downwards so that at least one foot is always on the ground such as ascending and descending stairs or curbs.
+http://who.int/icf#d455	Moving the whole body from one place to another by means other than walking, such as climbing over a rock or running down a street, skipping, scampering, jumping, somersaulting or running around obstacles.
+http://who.int/icf#d460	Walking and moving around in various places and situations, such as walking between rooms in a house, within a building, or down the street of a town.
+http://who.int/icf#d465	Moving the whole body from place to place, on any surface or space, by using specific devices designed to facilitate moving or create other ways of moving around, such as with skates, skis, or scuba equipment, or moving down the street in a self-propelled wheelchair or a walker.
+http://who.int/icf#d470	Using transportation to move around as a passenger, such as being driven in a car, bus, rickshaw, jitney, pram or stroller, wheelchair, animal-powered vehicle, private or public taxi, train, tram, subway, boat or aircraft and using humans for transportation.
+http://who.int/icf#d475	Being in control of and moving a vehicle or the animal that draws it, travelling under one's own direction or having at one's disposal any form of transportation appropriate for age, such as a car , bicycle, boat or animal powered vehicles.
+http://who.int/icf#d480	Travelling on the back of an animal, such as a horse, ox, camel or elephant.
+http://who.int/icf#d5100	Applying water, soap and other substances to body parts, such as hands, face, feet, hair or nails, in order to clean them.
+http://who.int/icf#d5101	Applying water, soap and other substances to the whole body in order to clean oneself, such as taking a bath or shower.
+http://who.int/icf#d5102	Using a towel or other means for drying some part or parts of one's body, or the whole body, such as after washing.
+http://who.int/icf#d5200	Looking after the texture and hydration of one's skin, such as by removing calluses or corns and using moisturizing lotions or cosmetics.
+http://who.int/icf#d5201	Looking after dental hygiene, such as by brushing teeth, flossing, and taking care of a dental prosthesis or orthosis.
+http://who.int/icf#d5202	Looking after the hair on the head and face, such as by combing, styling, shaving, or trimming.
+http://who.int/icf#d5203	Cleaning, trimming or polishing the nails of the fingers.
+http://who.int/icf#d5204	Cleaning, trimming or polishing the nails of the toes.
+http://who.int/icf#d5205	Cleaning the nose, looking after nasal hygiene.
+http://who.int/icf#d5300	Coordinating and managing urination, such as by indicating need, getting into the proper position, choosing and getting to an appropriate place for urination, manipulating clothing before and after urination, and cleaning oneself after urination.
+http://who.int/icf#d5301	Coordinating and managing defecation such as by indicating need, getting into the proper position, choosing and getting to an appropriate place for defecation, manipulating clothing before and after defecation, and cleaning oneself after defecation.
+http://who.int/icf#d5302	Coordinating, planning and caring for menstruation, such as by anticipating menstruation and using sanitary towels and napkins.
+http://who.int/icf#d5400	Carrying out the coordinated tasks of putting clothes on various parts of the body, such as putting clothes on over the head, over the arms and shoulders, and on the lower and upper halves of the body; putting on gloves and headgear.
+http://who.int/icf#d5401	Carrying out the coordinated tasks of taking clothes off various parts of the body, such as pulling clothes off and over the head, off the arms and shoulders, and off the lower and upper halves of the body; taking off gloves and headgear.
+http://who.int/icf#d5402	Carrying out the coordinated tasks of putting on socks, stockings and footwear.
+http://who.int/icf#d5403	Carrying out the coordinated tasks of taking off socks, stockings and footwear.
+http://who.int/icf#d5404	Following implicit or explicit dress codes and conventions of one's society or culture and dressing in keeping with climatic conditions.
+http://who.int/icf#d5700	Caring for oneself by being aware that one needs to ensure, and ensuring, that one's body is in a comfortable position, that one is not feeling too hot, cold or wet, and that one has adequate lighting.
+http://who.int/icf#d5701	Caring for oneself by being aware of the need and by selecting and consuming nutritious foods and maintaining physical fitness.
+http://who.int/icf#d5702	Caring for oneself by being aware of the need and doing what is required to look after one's health, both to respond to risks to health and to prevent ill-health, such as by seeking assistance (professional and non professional); following medical and other health advice; and managing risks to health such as injuries, communicable diseases, drug-taking and sexual transmitted diseases.
+http://who.int/icf#d610	Buying, renting, furnishing and arranging a room, house, apartment or other dwelling.
+http://who.int/icf#d620	Selecting, procuring and transporting all goods and services required for daily living, such as selecting, procuring, transporting and storing food, drink, clothing, cleaning materials, fuel, household items, utensils, cooking ware, play and recreational materials, domestic appliances and tools; procuring utilities and other household services, and picking up and delivering paper mail or packages.
+http://who.int/icf#d630	Planning, organizing, cooking and serving simple and complex meals for oneself and others, such as by making a menu, selecting edible food and drink, getting together ingredients for preparing meals,cooking with heat and preparing cold foods and drinks, and serving the food.
+http://who.int/icf#d640	Managing a household by cleaning the house, washing clothes, using household appliances, storing food and disposing of garbage, such as by sweeping, mopping, washing counters, walls and other surfaces; collecting and disposing of household garbage; tidying rooms, closets and drawers; collecting, washing, drying, folding and ironing clothes; cleaning footwear; using brooms, brushes and vacuum cleaners; using washing machines, dryers and irons.
+http://who.int/icf#d650	Maintaining and repairing household and other personal objects, including play material, house and contents, clothes, play and recreational materials, vehicles and assistive devices, and caring for plants and animals, such as painting or wallpapering rooms, fixing furniture, repairing plumbing, ensuring the proper working order of vehicles, watering plants, grooming and feeding pets and domestic animals and taking care of entrances, walkways and driveways.
+http://who.int/icf#d660	Assisting household members and others with their learning, communicating, self-care, movement, within the house or outside; being concerned about the well-being of household members and others.
+http://who.int/icf#d710	Interacting with people in a contextually and socially appropriate manner, such as by showing consideration and esteem when appropriate, or responding to the feelings of others.
+http://who.int/icf#d720	Maintaining and managing interactions with other people, in a contextually and socially appropriate manner, such as by regulating emotions and impulses, controlling verbal and physical aggression, acting independently in social interactions, and acting in accordance with social rules and conventions, when for example playing, studying or working with others.
+http://who.int/icf#d730	Engaging in temporary contacts and links with strangers for specific purposes, such as asking for directions or making a purchase.
+http://who.int/icf#d730	Engaging in temporary contacts and links with strangers for specific purposes, such as when asking for information, directions or making a purchase.
+http://who.int/icf#d740	Creating and maintaining specific relationships in formal settings, such as with teachers, employers, professionals or service providers.
+http://who.int/icf#d750	Entering into relationships with others, such as casual relationships with people living in the same community or residence, or with co-workers, students, playmates, people with similar backgrounds or professions.
+http://who.int/icf#d760	Creating and maintaining kinship relationships, such as those with members of the nuclear family, extended family, foster and adopted family and step-relationships, more distant relationships such as second cousins, or legal guardians.
+http://who.int/icf#d770	Creating and maintaining close or romantic relationships between individuals, such as husband and wife, lovers or sexual partners.
+http://who.int/icf#d810	Learning at home or in some other non-institutional setting, such as learning crafts and other skills from parents or family members, or home schooling.
+http://who.int/icf#d815	Learning at an initial level of organized instruction, designed primarily to introduce a child to the school-type environment and prepare it for compulsory education, such as by acquiring skills in a day-care or similar setting as preparation for advancement to school.
+http://who.int/icf#d820	Gaining admission to school, education, engaging in all school-related responsibilities and privileges, and learning the course material, subjects and other curriculum requirements in a primary or secondary education programme, including attending school regularly, working cooperatively with other students, taking directions from teachers, organizing, studying and completing assigned tasks and projects, and advancing to other stages of education.
+http://who.int/icf#d825	Engaging in all activities of a vocational programme and learning the curriculum material for preparation for employment in a trade, job or profession.
+http://who.int/icf#d830	Engaging in the activities of advanced educational programmes in universities, colleges and professional schools and learning all aspects of the curriculum required for degrees, diplomas, certificates and other accreditations, such as completing a university bachelor's or master's course of study, medical school or other professional school.
+http://who.int/icf#d835	Engaging in aspects of life of education institutions, such as university and school related associations, including: clubs, sports, related civic bodies (e.g. school council), and other institutionally-organized initiatives that are not part of the academic curriculum.
+http://who.int/icf#d840	Engaging in programmes related to preparation for employment, such as performing the tasks required of an apprenticeship, internship, articling and in-service training.
+http://who.int/icf#d845	Seeking, finding and choosing employment, being hired and accepting employment, maintaining and advancing through a job, trade, occupation or profession, and leaving a job in an appropriate manner.
+http://who.int/icf#d850	Engaging in all aspects of work, as an occupation, trade, profession or other form of employment, for payment, as an employee, full or part time, or self-employed, such as seeking employment and getting a job, doing the required tasks of the job, attending work on time as required, supervising other workers or being supervised, and performing required tasks alone or in groups.
+http://who.int/icf#d855	Engaging in all aspects of work in which pay is not provided, full-time or part-time, including organized work activities, doing the required tasks of the job, attending work on time as required, supervising other workers or being supervised, and performing required tasks alone or in groups, such as volunteer work, charity work, working for a community or religious group without remuneration, working around the home without remuneration.
+http://who.int/icf#d860	Engaging in any form of simple economic transaction, such as using money to purchase food or bartering, exchanging goods or services; or saving money.
+http://who.int/icf#d865	Engaging in any form of complex economic transaction that involves the exchange of capital or property, and the creation of profit or economic value, such as buying a business, factory, or equipment, maintaining a bank account, or trading in commodities.
+http://who.int/icf#d870	Having command over economic resources, from private or public sources, in order to ensure economical security for present and future needs.
+http://who.int/icf#d9100	Engaging in social or community associations organized by people with common interests, such as local social clubs or ethics groups.
+http://who.int/icf#d9101	Engaging in professional or other exclusive social groups, such as associations of lawyers, physicians, or academics.
+http://who.int/icf#d9102	Engaging in non-religious rites or social ceremonies, such as marriages, funerals or initiation ceremonies.
+http://who.int/icf#d9200	Engaging in games with rules or unstructured or unorganized games and spontaneous recreation, such as playing chess or cards or children's play.
+http://who.int/icf#d9201	Engaging in competitive and informal or formally organized games or athletic events, performed alone or in a group, such as bowling, gymnastics or soccer.
+http://who.int/icf#d9202	Engaging in, or appreciating, fine arts or cultural events, such as going to the theatre, cinema, museum or art gallery, or acting in a play, reading, being read to, dancing, singing or playing a musical instrument for enjoyment.
+http://who.int/icf#d9203	Engaging in handicrafts, such as pottery or knitting.
+http://who.int/icf#d9204	Engaging in pastimes such as stamp collecting, coins or antiques.
+http://who.int/icf#d9205	Engaging in informal or casual gatherings with others, such as visiting friends or relatives or meeting informally in public places.
+http://who.int/icf#d9300	Engaging in organized religious ceremonies, activities and events.
+http://who.int/icf#d9301	Engaging in spiritual activities or events, outside of a organized religion.
+http://who.int/icf#e1100	Any natural or human-made object or substance gathered, processed or manufactured to be consumed, such as raw, processed and prepared food and liquids of different consistencies (including breast milk), herbs and minerals (vitamin and other supplements).
+http://who.int/icf#e1101	Any natural or human-made object or substance gathered, processed or manufactured for medicinal purposes, such as allopathic and naturopathic medication.
+http://who.int/icf#e1102	Water suitable and safe for personal consumption.
+http://who.int/icf#e1150	Equipment, products and technologies used by people in daily activities, such as clothes, textiles, furniture, appliances, cleaning products and tools, not adapted or specially designed.
+http://who.int/icf#e1151	Adapted or specially designed equipment, products and technologies that assist people in daily living, such as prosthetic and orthotic devices, neural prostheses (e.g. functional stimulation devices that control bowels, bladder, breathing and heart rate), and environmental control units aimed at facilitating individuals' control over their indoor setting (scanners, remote control systems, voice-controlled systems, timer switches).
+http://who.int/icf#e1200	Equipment, products and technologies used by people in activities of moving inside and outside buildings, such as motorized and non-motorized vehicles used for the transportation of people over ground, water and air (e.g. buses, cars, vans, other motor-powered vehicles and animal-powered transporters), not adapted or specially designed.
+http://who.int/icf#e1201	Adapted or specially designed equipment, products and technologies that assist people to move inside and outside buildings, such as walking devices (such as canes or crutches), special cars and vans, adaptations to vehicles, wheelchairs, scooters and transfer devices.
+http://who.int/icf#e1250	Equipment, products and technologies used by people in activities of sending and receiving information, such as optical and auditory devices, audio recorders and receivers, television and video equipment, telephone devices, sound transmission systems and face-to-face communication devices, not adapted or specially designed.
+http://who.int/icf#e1251	Adapted or specially designed equipment, products and technologies that assist people to send and receive information, such as specialized vision devices, drawing or handwriting devices, signalling systems and special computer software and hardware, cochlear implants, hearing aids, FM auditory trainers, voice prostheses, communication boards, glasses and contact lenses.
+http://who.int/icf#e1300	Equipment, products, methods and technology used for acquisition of knowledge, expertise or skill at any level, such as books, manuals, educational toys, computer hardware or software, not adapted or specially designed.
+http://who.int/icf#e1301	Adapted and specially designed equipment, products, processes, methods and technology used for acquisition of knowledge, expertise or skill, such as specialized computer technology.
+http://who.int/icf#e1350	Equipment, products and technology used for employment to facilitate work activities, not adapted or specially designed.
+http://who.int/icf#e1351	Adapted or specially designed equipment, products and technology used for employment to facilitate work activities, such as adjustable table, desks and filing cabinets; remote control entry and exit of office doors; computer hardware, software, accessories and environmental control units aimed at facilitating an individual's conduct of work-related tasks and aimed at control of the work environment (e.g. scanners, remote control systems, voice controlled systems, timer switches).
+http://who.int/icf#e1400	Equipment, products and technology used for the conduct and enhancement of cultural, recreational and sporting activities, not adapted or specially designed.
+http://who.int/icf#e1401	Adapted or specially designed equipment, products and technology used for the conduct and enhancement of cultural, recreational and sporting activities, such as modified mobility devices for sports, adaptations for musical and other artistic performance.
+http://who.int/icf#e1450	Products and technology, unique or mass-produced, that are given or take on a symbolic meaning in the context of the practice of religion or spirituality, such as spirit houses, maypoles, headdress, masks, crucifixes, menorahs and prayer mats, not adapted or specially designed.
+http://who.int/icf#e1451	Adapted or specially designed products and technology that are given, or take on a symbolic meaning in the context of the practice of religion or spirituality, such as Braille religious books, Braille tarot cards, and special protection for wheelchair wheels when entering temples.
+http://who.int/icf#e1500	Products and technology of entry and exit from the human-made environment that is planned, designed and constructed for public use, such as design, building and construction of entries and exits to buildings for public use (e.g. child care settings, schools, workplaces, shops and theatres), public buildings, portable and stationary ramps, power-assisted doors, lever door handles and level door thresholds.
+http://who.int/icf#e1501	Products and technology of indoor facilities in design, building and construction for public use, such as washroom facilities, telephones, audio loops, lifts or elevators, escalators, thermostats (for temperature regulation) and dispersed accessible seating in auditoriums or stadiums.
+http://who.int/icf#e1502	Indoor and outdoor products and technology in design, building and construction for public use to assist people to find their way inside and immediately outside buildings and locate the places they want to go to, such as signage, in Braille or writing, size of corridors, floor surfaces, accessible kiosks and other forms of directories.
+http://who.int/icf#e1503	Indoor and outdoor products and technology for public use to assure safety, such as guardrails for beds and emergency signals.
+http://who.int/icf#e1550	Products and technology of entry and exit from the human-made environment that is planned, designed and constructed for private use, such as entries and exits to private homes, portable and stationary ramps, power-assisted doors, lever door handles and level door thresholds.
+http://who.int/icf#e1551	Products and technology related to design, building and construction inside buildings for private use, such as washroom facilities, telephones, audio loops, kitchen cabinets, appliances and electronic controls in private homes.
+http://who.int/icf#e1552	Indoor and outdoor products and technology in design, building and construction of path routing for private use, to assist people to find their way inside and immediately outside buildings and locate the places they want to go to, such as signage, in Braille or writing, size of corridors and floor surfaces.
+http://who.int/icf#e1553	Indoor and outdoor products and technology for private use (e.g. home, dwelling)to assure safety such as guardrails, emergency signals, and secure storage of hazardous objects (e.g. weapons) or materials (e.g. solvents, insecticides).
+http://who.int/icf#e1600	Products and technology in rural land areas, as they affect an individual's outdoor environment through the implementation of rural land use policies, design, planning and development of space, such as farm lands, pathways and signposting.
+http://who.int/icf#e1601	Products and technology in suburban land areas, as they affect an individual's outdoor environment through the implementation of suburban land use policies, design, planning and development of space, such as curb cuts, pathways, signposting and street lighting.
+http://who.int/icf#e1602	Products and technology in urban land areas as they affect an individuals s outdoor environment through the implementation of urban land use policies, design, planning and development of space, such as curb cuts, ramps, signposting and street lighting.
+http://who.int/icf#e1603	Products and technology in land areas making up parks, conservation and wildlife areas, as they affect an individual's outdoor environment through the implementation of land use policies and design, planning and development of space, such as park signage and wildlife trails.
+http://who.int/icf#e1650	Products, such as money and other financial instruments, which serve as a medium of exchange for labour, capital goods and services.
+http://who.int/icf#e1651	Products or objects, such as houses and land, clothing, food and technical goods, which serve as a medium of exchange for labour, capital goods and services.
+http://who.int/icf#e1652	Products, such as intellectual property, knowledge and skills, which serve as a medium of exchange for labour, capital goods and services.
+http://who.int/icf#e2100	Features of land forms, such as mountains, hills, valleys and plains.
+http://who.int/icf#e2101	Features of bodies of water, such as lakes, dams, rivers and streams.
+http://who.int/icf#e2150	Changes occurring within groups of people, such as the composition and variation in the total number of individuals in an area caused by birth, death, ageing of a population and migration.
+http://who.int/icf#e2151	Number of people per unit of land area, including features such as high and low density.
+http://who.int/icf#e2200	Any of various photosynthetic, eukaryotic, multicellular organisms of the kingdom Plantae characteristically producing embryos, containing chloroplasts, having cellulose cell walls, and lacking the power of locomotion, such as trees, flowers, shrubs and vines.
+http://who.int/icf#e2201	Multicellular organisms of the kingdom Animalia, differing from plants in certain typical characteristics such as capacity for locomotion, non-photosynthetic metabolism, pronounced response to stimuli, restricted growth, and fixed bodily structure, such as wild or farm animals, reptiles, birds, fish and mammals.
+http://who.int/icf#e2250	Degree of heat or cold, such as high and low temperature, normal or extreme temperature.
+http://who.int/icf#e2251	Level of moisture in the air, such as high or low humidity.
+http://who.int/icf#e2252	Pressure of the surrounding air, such as pressure related to height above sea level or meteorological conditions.
+http://who.int/icf#e2253	Falling of moisture, such as rain, dew, snow, sleet and hail.
+http://who.int/icf#e2254	Air in more or less rapid natural motion, such as a breeze, gale or gust.
+http://who.int/icf#e2255	Natural, regular and predictable changes from one season to the next, such as summer, autumn, winter and spring.
+http://who.int/icf#e2400	Level or amount of energy being emitted by either a natural (e.g. sun) or an artificial source of light.
+http://who.int/icf#e2401	The nature of the light being provided and related colour contrasts created in the visual surroundings, and which may provide useful information about the world (e.g. visual information on the presence of stairs or a door) or distractions (e.g. too many visual images).
+http://who.int/icf#e2450	Natural, regular and predictable changes from day through to night and back to day, such as day, night, dawn and dusk.
+http://who.int/icf#e2451	Natural, regular and predictable changes of the moon's position in relation to the earth.
+http://who.int/icf#e2500	Level or volume of auditory phenomenon determined by the amount of energy being generated, where high energy levels are perceived as loud sounds and low energy levels as soft sounds.
+http://who.int/icf#e2501	Nature of a sound as determined by wavelength and wave pattern of the sound and perceived as the timbre and tone, such as harshness or melodiousness, and which may provide useful of the world (e.g. sound of dog barking versus a cat miaowing) or distractions (e.g. background noises).
+http://who.int/icf#e2600	Nature of the air inside buildings or enclosed areas, as determined by odour, smoke, humidity, air conditioning (controlled air quality) or uncontrolled air quality, and which may provide useful information about the world (e.g. smell of leaking gas) or distractions (e.g. overpowering smell of perfume).
+http://who.int/icf#e2601	Nature of the air outside buildings or enclosed areas, as determined by odour, smoke, humidity, ozone levels, and other features of the atmosphere, and which may provide useful information about the world (e.g. smell of rain) or distractions (e.g. toxic smells).
+http://who.int/icf#e5100	Services and programmes for the collection, creation, production and manufacturing of consumer goods and products, such as for products and technology used for mobility, communication, education, transportation, employment and housework, including those who provide these services.
+http://who.int/icf#e5101	Administrative control and monitoring mechanisms, such as regional, national or international organizations that set standards (e.g. International Organization for Standardization) and consumer bodies, that govern the collection, creation, production and manufacturing of consumer goods and products.
+http://who.int/icf#e5102	Legislation, regulations and standards for the collection, creation, production and manufacturing of consumer goods and products, such as which standards to adopt.
+http://who.int/icf#e5150	Services and programmes for design, construction and maintenance of residential, commercial, industrial and public buildings, such as house-building, the operationalization of design principles, building codes, regulations and standards, including those who provide these services.
+http://who.int/icf#e5151	Administrative control and monitoring mechanisms that govern the planning, design, construction and maintenance of residential, commercial, industrial and public buildings, such as for implementing and monitoring building codes, construction standards, and fire and life safety standards.
+http://who.int/icf#e5152	Legislation, regulations and standards that govern the planning, design, construction and maintenance of residential, commercial, industrial and public buildings, such as policies on building codes, construction standards, and fire and life safety standards.
+http://who.int/icf#e5200	Services and programmes aimed at planning, creating and maintaining urban, suburban, rural, recreational, conservation and environmental space, meeting and commercial open spaces (plazas, open- air markets) and pedestrian and vehicular transportation routes for intended uses, including those who provide these services.
+http://who.int/icf#e5201	Administrative control and monitoring mechanisms, such as for the implementation of local, regional or national planning acts, design codes, heritage or conservation policies and environmental planning policy, that govern the planning, design, development and maintenance of open space, including rural, suburban and urban land, parks, conservation areas and wildlife reserves.
+http://who.int/icf#e5202	Legislation, regulations and standards that govern the planning, design, development and maintenance of open space, including rural land, suburban land, urban land, parks, conservation areas and wildlife reserves, such as local, regional or national planning acts, design codes, heritage or conservation policies, and environmental planning policies.
+http://who.int/icf#e5250	Services and programmes aimed at locating, providing and maintaining houses or shelters for persons to live in, such as estate agencies, housing organizations, shelters for homeless people, including those who provide these services.
+http://who.int/icf#e5251	Administrative control and monitoring mechanisms that govern housing or sheltering of people, such as systems for implementing and monitoring housing policies.
+http://who.int/icf#e5252	Legislation, regulations and standards that govern housing or sheltering of people, such as legislation and policies for determination of eligibility for housing or shelter, policies concerning government involvement in developing and maintaining housing, and policies concerning how and where housing is developed.
+http://who.int/icf#e5300	Services and programmes supplying the population as a whole with essential energy (e.g. fuel and electricity), sanitation, water and other essential services (e.g. emergency repair services) for residential and commercial consumers, including those who provide these services.
+http://who.int/icf#e5301	Administrative control and monitoring mechanisms that govern the provision of utilities services, such as health and safety boards and consumer councils.
+http://who.int/icf#e5302	Legislation, regulations and standards that govern the provision of utilities services, such as health and safety standards governing delivery and supply of water and fuel, sanitation practices in communities, and policies for other essential services and supply during shortages or natural disasters.
+http://who.int/icf#e5350	Services and programmes aimed at transmitting information by a variety of methods such as telephone, fax, surface and air mail, electronic mail and other computer-based systems (e.g. telephone relay, teletype, teletext, and internet services), including those who provide these services.
+http://who.int/icf#e5351	Administrative control and monitoring mechanisms, such as telecommunication regulation authorities and other such bodies, that govern the transmission of information by a variety of methods, including telephone, fax, surface and air mail, electronic mail and computer-based systems.
+http://who.int/icf#e5352	Legislation, regulations and standards that govern the transmission of information by a variety of methods including telephone, fax, post office, electronic mail and computer-based systems, such as eligibility for access to communication services, requirements for a postal address, and standards for provision of telecommunications.
+http://who.int/icf#e5400	Services and programmes aimed at moving persons or goods by road, paths, rail, air or water, by public or private transport, including those who provide these services.
+http://who.int/icf#e5401	Administrative control and monitoring mechanisms that govern the moving of persons or goods by road, paths, rail, air or water, such as systems for determining eligibility for operating vehicles and, implementation and monitoring of health and safety standards related to use of different types of transportation.
+http://who.int/icf#e5402	Legislation, regulations and standards that govern the moving of persons or goods by road, paths, rail, air or water, such as transportation planning acts and policies, policies for the provision and access to public transportation.
+http://who.int/icf#e5450	Services and programmes organized by the community and aimed at safeguarding people and property, such as fire, police, emergency and ambulance services, including those who provide these services.
+http://who.int/icf#e5451	Administrative control and monitoring mechanisms that govern the safeguarding of people and property, such as systems by which provision of police, fire, emergency and ambulance services are organized.
+http://who.int/icf#e5452	Legislation, regulations and standards that govern the safeguarding of people and property, such as policies governing provision of police, fire, emergency and ambulance services.
+http://who.int/icf#e5500	Services and programmes aimed at providing the authority of the state as defined in law, such as courts, tribunals and other agencies for hearing and settling civil litigation and criminal trials, attorney representation, services of notaries, mediation, arbitration and correctional or penal facilities, including those who provide these services.
+http://who.int/icf#e5501	Administrative control and monitoring mechanisms that govern the administration of justice, such as systems for implementing and monitoring formal rules (e.g. laws, regulations, customary law, religious law, international laws and conventions).
+http://who.int/icf#e5502	Legislation, regulations and standards, such as laws, customary law, religious law, international laws and conventions, that govern the administration of justice.
+http://who.int/icf#e5550	Services and programmes provided by people who have joined together in the pursuit of common, non-commercial interests with people who have the same interests, where the provision of such services may be tied to membership, such as associations and organizations providing recreation and leisure, sporting, cultural, religious and mutual aid services.
+http://who.int/icf#e5551	Administrative control and monitoring mechanisms that govern the relationships and activities of people coming together with common noncommercial interests and the establishment and conduct of associations and organizations such as mutual aid organizations, recreational and leisure organizations, cultural and religious associations and not-for profit organizations.
+http://who.int/icf#e5552	Legislation, regulations and standards that govern the relationships and activities of people coming together with common noncommercial interests, such as policies that govern the establishment and conduct of associations and organizations, including mutual aid organizations, recreational and leisure organizations, cultural and religious associations and not-for-profit organizations.
+http://who.int/icf#e5600	Services and programmes aimed at providing mass communication, such as radio, television, closed captioning services, press reporting services, newspapers, Braille services and computer-based mass communication (world wide web, internet), including those who provide these services.
+http://who.int/icf#e5601	Administrative control and monitoring mechanisms that govern the provision of news and information to the general public, such as standards that govern the content, distribution, dissemination, access to and methods of communicating via radio, television, press reporting services, newspapers and computer-based mass communication (world wide web, internet).
+http://who.int/icf#e5602	Legislation, regulations and standards that govern the provision of news and information to the general public, such as policies that govern the content, distribution, dissemination, access to and methods of communicating via radio, television, press reporting services, newspapers and computer-based mass communication (world wide web, internet).
+http://who.int/icf#e5650	Services and programmes aimed at the overall production, distribution, consumption and use of goods and services, such as the private commercial sector (e.g. businesses, corporations, private for-profit ventures), the public sector (e.g. public, commercial services such as cooperatives and corporations), financial organizations (e.g. banks and insurance services), including those who provide these services.
+http://who.int/icf#e5651	Administrative control and monitoring mechanisms that govern the production, distribution, consumption and use of goods and services, such as systems for implementing and monitoring economic policies.
+http://who.int/icf#e5652	Legislation, regulations and standards that govern the production, distribution, consumption and use of goods and services, such as economic doctrines adopted and implemented by governments.
+http://who.int/icf#e5700	Services and programmes aimed at providing income support to people who, because of age, poverty, unemployment, health condition or disability, require public assistance that is funded either by general tax revenues or contributory schemes, such as services for determining eligibility, delivering or distributing assistance payments for the following types of programmes: social assistance programmes (e.g. non-contributory welfare, poverty or other needs-based compensation), social insurance programmes (e.g. contributory accident or unemployment insurance), and disability and related pension schemes (e.g. income replacement), including those who provide these services.
+http://who.int/icf#e5701	Administrative control and monitoring mechanisms that govern the programmes and schemes that provide income support to people who, because of age, poverty, unemployment, health condition or disability, require public assistance, such as systems for the implementation of rules and regulations governing the eligibility for social assistance, welfare, unemployment insurance payments, pensions and disability benefits.
+http://who.int/icf#e5702	Legislation, regulations and standards that govern the programmes and schemes that provide income support to people who, because of age, poverty, unemployment, health condition or disability, require public assistance, such as legislation and regulations governing the eligibility for social assistance, welfare, unemployment insurance payments, disability and related pensions and disability benefits.
+http://who.int/icf#e5750	Services and programmes aimed at providing social support to people who, because of age, poverty, unemployment, health condition or disability, require public assistance in the areas of shopping, housework, transport, self-care and care of others, in order to function more fully in society.
+http://who.int/icf#e5751	Administrative control and monitoring mechanisms that govern the programmes and schemes that provide social support to people who, because of age, poverty, unemployment, health condition or disability, require such support, including systems for the implementation of rules and regulations governing eligibility for social support services and the provision of these services.
+http://who.int/icf#e5752	Legislation, regulations and standards that govern the programme and schemes that provide social support to people who, because of age, poverty, unemployment, health condition or disability, require such support, including legislation and regulations governing eligibility for social support.
+http://who.int/icf#e5800	Services and programmes at a local, community, regional, state or national level, aimed at delivering interventions to individuals for their physical, psychological and social wellbeing, such as health promotion and disease prevention services, primary care services, acute care, rehabilitation and long-term care services; services that are publicly or privately funded, delivered on a short-term, long-term, periodic or onetime basis, in a variety of service settings such as community, home-based, school and work settings, general hospitals, specialty hospitals, clinics, and residential and non-residential care facilities, including those who provide these services.
+http://who.int/icf#e5801	Administrative control and monitoring mechanisms that govern the range of services provided to individuals for their physical, psychological and social well-being, in a variety of settings including community, home-based, school and work settings, general hospitals, specialty hospitals, clinics, and residential and non-residential care facilities, such as systems for implementing regulations and standards that determine eligibility for services, provision of devices, assistive technology or other adapted equipment, and legislation such as health acts that govern features of a health system such as accessibility, universality, portability, public funding and comprehensiveness.
+http://who.int/icf#e5802	Legislation, regulations and standards that govern the range of services provided to individuals for their physical, psychological and social well-being, in a variety of settings including community, home-based, school and work settings, general hospitals, specialty hospitals, clinics, and residential and non-residential care facilities, such as policies and standards that determine eligibility for services, provision of devices, assistive technology or other adapted equipment, and legislation such as health acts that govern features of a health system such as accessibility, universality, portability, public funding and comprehensiveness.
+http://who.int/icf#e5850	Services and programmes concerned with education and the acquisition, maintenance and improvement of knowledge, expertise and vocational or artistic skills, such as those provided for different levels of education (e.g. preschool, primary school, secondary school, post-secondary institutions, professional programmes, training and skills programmes, apprenticeships and continuing education), including those who provide these services.
+http://who.int/icf#e5851	Administrative control and monitoring mechanisms that govern the delivery of general education programmes, such as systems for the implementation of policies and standards that determine eligibility for public or private education and special needs-based programmes; local, regional or national boards of education or other authoritative bodies that govern features of the education systems, including curricula, size of classes, numbers of schools in a region, fees and subsidies, special meal programmes and after-school care services.
+http://who.int/icf#e5852	Legislation, regulations and standards that govern the delivery of general education programme, such as policies and standards that determine eligibility for public or private education and special needs-based programmes, and dictate the structure of local, regional or national boards of education or other authoritative bodies that govern features of the education system, including curricula, size of classes, numbers of schools in a region, fees and subsidies, special meal programmes and after-school care services.
+http://who.int/icf#e5900	Services and programmes provided by local, regional or national governments, or private organizations to find suitable work for persons who are unemployed or looking for different work, or to support individuals already employed, such as services of employment search and preparation, reemployment, job placement, outplacement, vocational follow-up, occupational health and safety services, and work environment services (e.g. ergonomics, human resources and personnel management services, labour relations services, professional association services), including those who provide these services.
+http://who.int/icf#e5901	Administrative control and monitoring mechanisms that govern the distribution of occupations and other forms of remunerative work in the economy, such as systems for implementing policies and standards for employment creation, employment security, designated and competitive employment, labour standards and law, and trade unions.
+http://who.int/icf#e5902	Legislation, regulations and standards that govern the distribution of occupations and other forms of remunerative work in the economy, such as standards and policies for employment creation, employment security, designated and competitive employment, labour standards and law, and trade unions.
+http://who.int/icf#e5950	Services and structures such as local, regional and national governments, international organizations and the people who are elected or nominated to positions within these structures, such as the United Nations, European Union, governments, regional authorities, local village authorities, traditional leaders.
+http://who.int/icf#e5951	Structures and related operations that organise political and economic power in a society, such as executive and legislative branches of government, and the constitutional or other legal sources from which they derive their authority, such as political organizational doctrine, constitutions, agencies of executive and legislative branches of government, the military.
+http://who.int/icf#e5952	Laws and policies formulated and enforced through political systems that govern the operation of the political system, such as policies governing election campaigns, registration of political parties, voting, and members in international political organizations, including treaties, constitutional and other law governing legislation and regulation.
+http://who.int/icf#b1100	Mental functions that when altered produce states such as clouding of consciousness, stupor or coma.
+http://who.int/icf#b1100	Mental functions that produce consciousness, and when altered produce states such as clouding of consciousness, stupor or coma.
+http://who.int/icf#b1101	Mental functions that produce sustained wakefulness, alertness and awareness and, when disrupted, may produce fugue, trance or other similar states.
+http://who.int/icf#b1102	Mental functions that when altered effect changes in the character of wakeful, alert and aware sentience, such as druginduced altered states or delirium.
+http://who.int/icf#b1102	Mental functions that produce wakefulness, alertness and awareness sentience, when altered effect changes in the character of the quality of consciousness.
+http://who.int/icf#b1140	Mental functions that produce awareness of time of the day, day of the week, date, month and year.
+http://who.int/icf#b1141	Mental functions that produce awareness of one's location, such as one´s immediate surroundings, one´s town or country.
+http://who.int/icf#b1142	Mental functions that produce awareness of one's own identity and of individuals in the immediate environment.
+http://who.int/icf#b1143	Mental functions that produce awareness of objects or features of objects.
+http://who.int/icf#b1144	Mental functions that produce awareness of one's body in relationship to the immediate physical space.
+http://who.int/icf#b1260	Mental functions that produce a personal disposition that is outgoing, sociable and demonstrative, as contrasted to being shy, restricted and inhibited.
+http://who.int/icf#b1261	Mental functions that produce a personal disposition that is cooperative, amicable, and accomodating, as contrasted to being unfriendly, oppositional and defiant.
+http://who.int/icf#b1262	Mental functions that produce a personal disposition such as in being hard-working, methodical and scrupulous, as contrasted to mental functions producing dispositions such as being lazy, unreliable and irresponsible.
+http://who.int/icf#b1263	Mental functions that produce a personal disposition that is even-tempered, calm and composed, as contrasted to being irritable, worried, erratic and moody.
+http://who.int/icf#b1264	Mental functions that produce a personal disposition that is curious, imaginative, inquisitive and experience-seeking, as contrasted to being stagnant, inattentive and emotionally inexpressive.
+http://who.int/icf#b1265	Mental functions that produce a personal disposition that is cheerful, buoyant and hopeful, as contrasted to being downhearted, gloomy and despairing.
+http://who.int/icf#b1266	Mental functions that produce a personal disposition that is self-assured, bold and assertive, as contrasted to being timid, insecure and self effacing.
+http://who.int/icf#b1267	Mental functions that produce a personal disposition that is dependable and principled, as contrasted to being deceitful and antisocial.
+http://who.int/icf#b1300	Mental functions that produce vigour and stamina.
+http://who.int/icf#b1301	Mental functions that produce the incentive to act; the conscious or unconscious driving force for action.
+http://who.int/icf#b1302	Mental functions that produce a natural longing or desire, especially the natural and recurring desire for food and drink.
+http://who.int/icf#b1303	Mental functions that produce the urge to consume substances, including substances that can be abused.
+http://who.int/icf#b1304	Mental functions that regulate and resist sudden intense urges to do something.
+http://who.int/icf#b1340	Mental functions involved in the time spent in the state of sleep in the diurnal cycle or circadian rhythm.
+http://who.int/icf#b1341	Mental functions that produce the transition between wakefulness and sleep.
+http://who.int/icf#b1342	Mental functions that sustain the state of being asleep.
+http://who.int/icf#b1343	Mental functions that produce the natural sleep leading to optimal physical and mental rest and relaxation.
+http://who.int/icf#b1344	Mental functions that produce rapid eye movement (REM) sleep (associated with dreaming) and non-rapid eye movement sleep (NREM) (characterized by the traditional concept of sleep as a time of decreased physiological and psychological activity).
+http://who.int/icf#b1400	Mental functions that produce concentration for the period of time required.
+http://who.int/icf#b1401	Mental functions that permit refocusing concentration from one stimulus to another.
+http://who.int/icf#b1402	Mental functions that permit focusing on two or more stimuli at the same time.
+http://who.int/icf#b1403	Mental functions that permit focusing on the same stimulus by two or more people, such as a child and a caregiver both focusing on a toy.
+http://who.int/icf#b1440	Mental functions that produce a temporary, disruptable memory store of around 30 seconds duration from which information is lost if not consolidated into long-term memory.
+http://who.int/icf#b1441	Mental functions that produce a memory system permitting the long-term storage of information from short-term memory and both autobiographical memory for past events and semantic memory for language and facts.
+http://who.int/icf#b1442	Specific mental functions of recalling information stored in long-term memory and bringing it into awareness.
+http://who.int/icf#b1443	Mental functions that compare and process information retrieved from both short-term and long-term memory.
+http://who.int/icf#b1470	Mental functions that regulate the speed of behaviour or response time that involves both motor and psychological components, such as in disruption of control producing psychomotor retardation (moving and speaking slowly; decrease in gesturing and spontaneity) or psychomotor excitement (excessive behavioural and cognitive activity, usually nonproductive and often in response to inner tension as in toe-tapping, hand-wringing, agitation, or restlessness).
+http://who.int/icf#b1471	Mental functions that produce nonverbal behaviour in the proper sequence and character of its subcomponents, such as hand and eye coordination, or gait.
+http://who.int/icf#b1520	Mental functions that produce congruence of feeling or affect with the situation, such as happiness at receiving good news.
+http://who.int/icf#b1521	Mental functions that control the experience and display of affect.
+http://who.int/icf#b1522	Mental functions that produce the spectrum of experience of arousal of affect or feelings such as love, hate, anxiousness, sorrow, joy, fear and anger.
+http://who.int/icf#b1560	Mental functions involved in discriminating sounds, tones, pitches and other acoustic stimuli.
+http://who.int/icf#b1561	Mental functions involved in discriminating shape, size, colour and other ocular stimuli.
+http://who.int/icf#b1562	Mental functions involved in distinguishing differences in smells.
+http://who.int/icf#b1563	Mental functions involved in distinguishing differences in tastes, such as sweet, sour, salty and bitter stimuli, detected by the tongue.
+http://who.int/icf#b1564	Mental functions involved in distinguishing differences in texture, such as rough or smooth stimuli, detected by touch.
+http://who.int/icf#b1565	Mental function involved in distinguishing by sight the relative position of objects in the environment or in relation to oneself.
+http://who.int/icf#b1600	Mental functions that govern speed of the thinking process.
+http://who.int/icf#b1601	Mental functions that organize the thinking process as to its coherence and logic.
+http://who.int/icf#b1602	Mental functions consisting of the ideas that are present in the thinking process and what is being conceptualized.
+http://who.int/icf#b1603	Mental functions that provide volitional control of thinking and are recognized as such by the person.
+http://who.int/icf#b1640	Mental functions of creating general ideas, qualities or characteristics out of, and distinct from, concrete realities, specific objects or actual instances.
+http://who.int/icf#b1641	Mental functions of coordinating parts into a whole, of systematizing; the mental function involved in developing a method of proceeding or acting.
+http://who.int/icf#b1642	Mental functions of ordering events in chronological sequence, allocating amounts of time to events and activities.
+http://who.int/icf#b1643	Mental functions of changing strategies, or shifting mental sets, especially as involved in problem-solving.
+http://who.int/icf#b1644	Mental functions of awareness and understanding of oneself and one's behaviour.
+http://who.int/icf#b1645	Mental functions involved in discriminating between and evaluating different options, such as those involved in forming an opinion.
+http://who.int/icf#b1646	Mental functions of identifying, analysing, and integrating incongruent or conflicting information into a solution.
+http://who.int/icf#b1670	Specific mental functions of decoding messages in spoken, written or other forms, such as sign language, to obtain their meaning.
+http://who.int/icf#b1671	Specific mental functions necessary to produce meaningful messages in spoken, written, signed or other forms of language.
+http://who.int/icf#b1672	Mental functions that organize semantic and symbolic meaning, grammatical structure and ideas for the production of messages in spoken, written or other forms of language.
+http://who.int/icf#b1720	Mental functions of computing with numbers, such as addition, subtraction, multiplication and division.
+http://who.int/icf#b1721	Mental functions of translating word problems into arithmetic procedures, translating mathematical formulas into arithmetic procedures, and other complex manipulations involving numbers.
+http://who.int/icf#b1800	Specific mental functions of being aware of one´s own identity and one´s position in the reality of one´s environment around oneself.
+http://who.int/icf#b1801	Specific mental functions related to the representation and awareness of one´s body.
+http://who.int/icf#b1802	Specific mental functions of the subjective experiences related to the length and passage of time.
+http://who.int/icf#b2100	Seeing functions of sensing form and contour, both binocular and monocular, for both distant and near vision.
+http://who.int/icf#b2101	Seeing functions related to the entire area that can be seen with fixation of gaze.
+http://who.int/icf#b2102	Seeing functions involving light sensitivity, colour vision, contrast sensitivity and the overall quality of the picture.
+http://who.int/icf#b2150	Functions of the muscles inside the eye, such as the iris, that adjust the shape and size of the pupil and lens of the eye.
+http://who.int/icf#b2151	Functions of the eyelid, such as the protective reflex.
+http://who.int/icf#b2152	Functions of the muscles that are used to look in different directions, to follow an object as it moves across the visual field, to produce saccadic jumps to catch up with a moving target, and to fix the eye.
+http://who.int/icf#b2153	Functions of the tear glands and ducts.
+http://who.int/icf#b2300	Sensory functions relating to sensing the presence of sounds.
+http://who.int/icf#b2301	Sensory functions relating to sensing the presence of sound involving the differentiation of ground and binaural synthesis, separation and blending.
+http://who.int/icf#b2302	Sensory functions relating to determining the location of the source of sound.
+http://who.int/icf#b2303	Sensory functions relating to determining whether the sound is coming from right or the left side.
+http://who.int/icf#b2304	Sensory functions relating to determining spoken language and distinguishing it from other sounds.
+http://who.int/icf#b2350	Sensory functions of the inner ear related to determining the position of the body.
+http://who.int/icf#b2351	Sensory functions of the inner ear related to determining the balance of the body.
+http://who.int/icf#b2352	Sensory functions of the inner ear related to determining movement of the body, including its direction and speed.
+http://who.int/icf#b2400	Sensation of low-pitched rushing, hissing or ringing in the ear.
+http://who.int/icf#b2401	Sensation of motion involving either oneself or one's environment; sensation of rotating, swaying or tilting.
+http://who.int/icf#b2402	Sensation of losing one's grip and falling.
+http://who.int/icf#b2403	Sensation of wanting to vomit that arises from dizziness or vertigo.
+http://who.int/icf#b2404	Sensation of itching or other similar sensations in the ear.
+http://who.int/icf#b2405	Sensation of pressure in the ear.
+http://who.int/icf#b2700	Sensory functions of sensing cold and heat.
+http://who.int/icf#b2701	Sensory functions of sensing shaking or oscillation.
+http://who.int/icf#b2702	Sensory functions of sensing pressure against or on the skin.
+http://who.int/icf#b2703	Sensory functions of sensing painful or uncomfortable sensations.
+http://who.int/icf#b2800	Sensation of unpleasant feeling indicating potential or actual damage to some body structure felt all over, or throughout the body.
+http://who.int/icf#b2801	Sensation of unpleasant feeling indicating potential or actual damage to some body structure felt in a specific part, or parts, of the body.
+http://who.int/icf#b2802	Unpleasant sensation indicating potential or actual damage to some body structure located in several body parts.
+http://who.int/icf#b2803	Unpleasant sensation indicating potential or actual damage to some body structure located in areas of skin served by the same nerve root.
+http://who.int/icf#b2804	Unpleasant sensation indicating potential or actual damage to some body structure located in areas of skin in different body parts not served by the same nerve root.
+http://who.int/icf#b4100	Functions related to the number of times the heart contracts every minute.
+http://who.int/icf#b4101	Functions related to the regularity of the beating of the heart.
+http://who.int/icf#b4102	Functions related to the amount of blood pumped by the ventricular muscles during every beat.
+http://who.int/icf#b4103	Functions related to the volume of blood available to the heart muscle.
+http://who.int/icf#b4150	Functions related to blood flow in the arteries.
+http://who.int/icf#b4151	Functions related to blood flow in the capillaries.
+http://who.int/icf#b4152	Functions related to blood flow in the veins, and the functions of valves of veins.
+http://who.int/icf#b4200	Functions related to a rise in systolic or diastolic blood pressure above normal for the age.
+http://who.int/icf#b4201	Functions related to a fall in systolic or diastolic blood pressure below normal for the age.
+http://who.int/icf#b4202	Functions related to maintaining an appropriate blood pressure in response to changes in the body.
+http://who.int/icf#b4300	Functions related to the production of blood and all its constituents.
+http://who.int/icf#b4301	Functions related to the blood's capacity to carry oxygen throughout the body.
+http://who.int/icf#b4302	Functions related to the blood's capacity to carry metabolites throughout the body.
+http://who.int/icf#b4303	Functions related to the coagulation of blood, such as at a site of injury.
+http://who.int/icf#b4350	Functions of the body's response of sensitization to foreign substances, including infections.
+http://who.int/icf#b4351	Functions of the body's response of increased sensitization to foreign substances, such as in sensitivities to different antigens.
+http://who.int/icf#b4352	Functions related to vascular channels that transport lymph.
+http://who.int/icf#b4353	Functions related to glands along the course of lymphatic vessels.
+http://who.int/icf#b4400	Functions related to the number of breaths taken per minute.
+http://who.int/icf#b4401	Functions related to the periodicity and regularity of breathing.
+http://who.int/icf#b4402	Functions related to the volume of expansion of the lungs during breathing.
+http://who.int/icf#b4450	Functions of the thoracic muscles involved in breathing.
+http://who.int/icf#b4451	Functions of the diaphragm as involved in breathing.
+http://who.int/icf#b4452	Functions of the additional muscles involved in breathing.
+http://who.int/icf#b4550	Functions related to the general level of tolerance of physical exercise or stamina.
+http://who.int/icf#b4551	Functions related to the extent to which a person can exercise without getting out of breath.
+http://who.int/icf#b4552	Functions related to susceptibility to fatigue, at any level of exertion.
+http://who.int/icf#b5100	Functions of drawing food or liquids into the mouth by a suction force produced by movements of the cheeks, lips and tongue.
+http://who.int/icf#b5101	Functions of cutting into, piercing or tearing off food with the front teeth.
+http://who.int/icf#b5102	Functions of crushing, grinding and masticating food with the back teeth (e.g. molars).
+http://who.int/icf#b5103	Functions of moving food around the mouth with the teeth and tongue.
+http://who.int/icf#b5104	Function of the production of saliva within the mouth.
+http://who.int/icf#b5105	Functions of clearing substances, such as food, drink and saliva through the oral cavity, pharynx and oesophagus into the stomach at an appropriate rate and speed.
+http://who.int/icf#b5106	Functions of moving substances such as food, liquid, medications, objects intentionally or unintentionally swallowed in the reverse direction to ingestion, such as in regurgitation and vomiting.
+http://who.int/icf#b5150	Peristalsis and related functions that mechanically move food through stomach and intestines.
+http://who.int/icf#b5151	Functions of mechanically reducing food to smaller particles in the gastrointestinal tract.
+http://who.int/icf#b5152	Functions of passing food and drink nutrients into the blood stream from along the intestines.
+http://who.int/icf#b5153	Functions of accepting suitable food and drink for digestion and rejecting what is unsuitable.
+http://who.int/icf#b5250	Functions of the elimination of waste from the rectum, including the functions of contraction of the abdominal muscles in doing so.
+http://who.int/icf#b5251	Consistency of faeces such as hard, firm, soft or watery.
+http://who.int/icf#b5252	Functions involved in the frequency of defecation.
+http://who.int/icf#b5253	Functions involved in voluntary control over the elimination function.
+http://who.int/icf#b5254	Functions involved in the expulsion of excessive amounts of air or gases from the intestines.
+http://who.int/icf#b5350	Sensation of needing to vomit.
+http://who.int/icf#b5351	Sensation of distension of the stomach or abdomen.
+http://who.int/icf#b5352	Sensation of spasmodic or painful muscular contractions of the smooth muscles of the gastrointestinal tract.
+http://who.int/icf#b5400	Functions involved in oxygen consumption of the body at specified conditions of rest and temperature.
+http://who.int/icf#b5401	Functions involved in the process by which carbohydrates in the diet are stored and broken down into glucose and subsequently into carbon dioxide and water.
+http://who.int/icf#b5402	Functions involved in the process by which proteins in the diet are converted to amino acids and broken down further in the body.
+http://who.int/icf#b5403	Functions involved in the process by which fat in the diet is stored and broken down in the body.
+http://who.int/icf#b5450	Functions involved in maintaining the level or amount of water in the body.
+http://who.int/icf#b5451	Functions involved in maintaining an equilibrium between intake, storage, utilization and excretion of minerals in the body.
+http://who.int/icf#b5452	Functions involved in maintaining an equilibrium between intake, storage, utilization and excretion of electrolytes in the body.
+http://who.int/icf#b5500	Functions involved in regulating the core temperature of the body.
+http://who.int/icf#b5501	Functions involved in maintaining optimal body temperature as environmental temperature changes.
+http://who.int/icf#b5550	Functions associated with the onset of puberty and manifestations of primary and secondary sexual characteristics.
+http://who.int/icf#b6100	Functions of filtration of urine by the kidneys.
+http://who.int/icf#b6101	Functions of collection and storage of urine by the ureters and bladder.
+http://who.int/icf#b6200	Functions of voiding the urinary bladder.
+http://who.int/icf#b6201	Functions involved in the number of times urination occurs.
+http://who.int/icf#b6202	Functions of control over urination.
+http://who.int/icf#b6400	Functions of sexual interest and excitement.
+http://who.int/icf#b6401	Functions of engaging in sexual intercourse.
+http://who.int/icf#b6402	Functions of reaching orgasm.
+http://who.int/icf#b6403	Functions of satisfaction after orgasm and accompanying relaxation.
+http://who.int/icf#b6500	Functions involved in the regularity of the menstrual cycle.
+http://who.int/icf#b6501	Functions relating to the length of time between two menstrual cycles.
+http://who.int/icf#b6502	Functions involved in the quantity of menstrual flow.
+http://who.int/icf#b6503	Functions related to the onset of the first menstruation (menarche).
+http://who.int/icf#b6504	Functions related to the temporary or permanent cessation of the menstruation.
+http://who.int/icf#b6600	Functions related to the ability to produce gametes for procreation.
+http://who.int/icf#b6601	Functions involved in becoming pregnant and being pregnant.
+http://who.int/icf#b6602	Functions involved during childbirth.
+http://who.int/icf#b6603	Functions involved in the production of milk and making it available to the child.
+http://who.int/icf#b6700	Sensations associated with sexual arousal, preparation, intercourse, orgasm and resolution.
+http://who.int/icf#b6701	Sensations involved with menstruation, including pre- and post-menstrual phases.
+http://who.int/icf#b6702	Sensations associated with the cessation of menstrual cycle.
+http://who.int/icf#b6703	Functions associated with arousal of the genitals.
+http://who.int/icf#b7100	Functions of the range and ease of movement of one joint.
+http://who.int/icf#b7101	Functions of the range and ease of movement of more than one joint.
+http://who.int/icf#b7102	Functions of the range and ease of movement of joints throughout the body.
+http://who.int/icf#b7150	Functions of the maintenance of structural integrity of one joint.
+http://who.int/icf#b7151	Functions of the maintenance of structural integrity of more than one joint.
+http://who.int/icf#b7152	Functions of the maintenance of structural integrity of joints throughout the body.
+http://who.int/icf#b7200	Functions of the range and ease of movement of the scapula.
+http://who.int/icf#b7201	Functions of the range and ease of movement of the pelvis.
+http://who.int/icf#b7202	Functions of the range and ease of movement of the carpal bones.
+http://who.int/icf#b7203	Functions of the range and ease of movement of the tarsal bones.
+http://who.int/icf#b7300	Functions related to the force generated by the contraction of specific and isolated muscles and muscle groups.
+http://who.int/icf#b7301	Functions related to the force generated by the contraction of the muscles and muscle groups of one arm or leg.
+http://who.int/icf#b7302	Functions related to the force generated by the contraction of the muscles and muscle groups found on the left or right side of the body.
+http://who.int/icf#b7303	Functions related to the force generated by the contraction of the muscles and muscle groups found in the lower half of the body.
+http://who.int/icf#b7304	Functions related to the force generated by the contraction of muscles and muscle groups of all four limbs.
+http://who.int/icf#b7305	Functions related to the force generated by the contraction of muscles and muscle groups in the trunk.
+http://who.int/icf#b7306	Functions related to the force generated by the contraction of all muscles and muscle groups of the body.
+http://who.int/icf#b7350	Functions related to the tension present in the resting isolated muscles and muscle groups and the resistance offered when trying to move those muscles passively.
+http://who.int/icf#b7351	Functions related to the tension present in the resting muscles and muscle groups in one arm or leg and the resistance offered when trying to move those muscles passively.
+http://who.int/icf#b7352	Functions related to the tension present in the resting muscles and muscle groups of the right or left side of the body and the resistance offered when trying to move those muscles passively.
+http://who.int/icf#b7353	Functions related to the tension present in the resting muscles and muscle groups in the lower half of the body and the resistance offered when trying to move those muscles passively.
+http://who.int/icf#b7354	Functions related to the tension present in the resting muscles and muscle groups in all four limbs and the resistance offered when trying to move those muscles passively.
+http://who.int/icf#b7355	Functions related to the tension present in the resting muscles and muscle groups of the trunk and the resistance offered when trying to move those muscles passively.
+http://who.int/icf#b7356	Functions related to the tension present in the resting muscles and muscle groups of the whole body and the resistance offered when trying to move those muscles passively.
+http://who.int/icf#b7400	Functions related to sustaining muscle contraction of isolated muscles for the required period of time.
+http://who.int/icf#b7401	Functions related to sustaining muscle contraction of isolated muscle groups for the required period of time.
+http://who.int/icf#b7402	Functions related to sustaining muscle contraction of all muscles of the body for the required period of time.
+http://who.int/icf#b7500	Functions of involuntary contractions of muscles automatically induced by stretching.
+http://who.int/icf#b7501	Functions of involuntary contractions of muscles automatically induced by painful or other noxious stimuli.
+http://who.int/icf#b7502	Functions of involuntary contractions of muscles automatically induced by external stimuli other than noxious stimuli.
+http://who.int/icf#b7600	Functions associated with control over and coordination of simple or isolated voluntary movements.
+http://who.int/icf#b7601	Functions associated with control over and coordination of complex voluntary movements.
+http://who.int/icf#b7602	Functions associated with coordination of simple and complex voluntary movements, performing movements in an orderly combination.
+http://who.int/icf#b7603	Functions associated with control over and coordination of voluntary movements by placing weight either on the arms (elbows or hands) or on the legs (knees or feet).
+http://who.int/icf#b7610	Repertoire and quality of age-specific general spontaneous movements such as "writhing" movements and "fidgety" movements in early life.
+http://who.int/icf#b7611	Repertoire and quality of other spontaneous movements normally present in the first postnatal months, such as arm and leg movements toward midline, finger movements and kicking.
+http://who.int/icf#b7650	Functions of unintentional, non- or semi-purposive involuntary contractions of a muscle or group of muscles, such as those involved in part of a psychological dysfunction.
+http://who.int/icf#b7651	Functions of alternating contraction and relaxation of a group of muscles around a joint, resulting in shakiness.
+http://who.int/icf#b7652	Functions of repetitive, quasi-purposive, involuntary contractions of a group of muscles.
+http://who.int/icf#b7653	Functions of spontaneous, non-purposive movements such as repetively rocking to and fro and nodding the head or wiggling.
+http://who.int/icf#b7800	Sensation of tightness or stiffness of muscles.
+http://who.int/icf#b7801	Sensation of involuntary contraction of a muscle or a group of muscles.
+http://who.int/icf#d1200	Exploring objects using mouth or lips.
+http://who.int/icf#d1201	Exploring objects using hands, fingers or other limbs or body parts.
+http://who.int/icf#d1202	Exploring objects by bringing them to the nose or the nose to objects.
+http://who.int/icf#d1203	Exploring the taste of food or liquid by biting, chewing, sucking.
+http://who.int/icf#d1310	Simple actions with a single object or toy by manipulating, banging, moving, dropping, etc.
+http://who.int/icf#d1311	Simple actions relating two or more objects, toys or other materials without regard for the specific features of the objects, toys or materials.
+http://who.int/icf#d1312	Actions relating two or more objects, toys or materials with regard to specific features, e.g., lid on box, cup on saucer.
+http://who.int/icf#d1313	Relating to objects, toys or materials symbolically, such as feeding or dressing a doll or using a simulated environment.
+http://who.int/icf#d1320	Learning words or meaningful symbols such as graphic or manual signs or symbols.
+http://who.int/icf#d1321	Learning to combine words into phrases.
+http://who.int/icf#d1322	Learning to produce appropriately constructed sentences or set of sentences.
+http://who.int/icf#d1370	Learning to use such concepts as size, form, quantity, length, same, opposite.
+http://who.int/icf#d1371	Learning to use such concepts as classification, grouping, reversibility, seriation.
+http://who.int/icf#d1400	Learning basic actions of deciphering symbols such as figures and icons, characters, alphabet letters and words.
+http://who.int/icf#d1401	Learning basic actions of sounding out characters, alfphabet letters symbols and words with correct pronunciation.
+http://who.int/icf#d1402	Learning basic actions to grasp the meaning of written words and texts.
+http://who.int/icf#d1450	Learning basic actions of writing down symbols or alphabet letters, such as holding a pencil, chalk or brush, writing a character or a symbol on a of piece paper, using a brailler, keyboard or peripheral device( mouse).
+http://who.int/icf#d1451	Learning basic actions to transpose a sound (morpheme) into a symbol or a character (grapheme).
+http://who.int/icf#d1452	Learning basic actions to transpose spoken words or ideas into written words or phrases.
+http://who.int/icf#d1500	Learning elementary skills of numeracy such as counting, ordering and grouping.
+http://who.int/icf#d1501	Learning to recognize and use numbers.
+http://who.int/icf#d1502	Learning to recognize symbols related to and use operations of addition, subtraction, multiplication and division.
+http://who.int/icf#d1550	Learning elementary, purposeful actions, such as learning to use simple tools, such as pencils or eating utensils.
+http://who.int/icf#d1551	Learning integrated sets of actions so as to follow rules, and to sequence and coordinate one's movements, such as learning to play games (e.g. football or chess) and to use a building tool.
+http://who.int/icf#d1600	Intentionally attending to features of other persons such as their face, touch or voice.
+http://who.int/icf#d1601	Intentionally attending to some element of the environment such as changes in the quality quantity or intensity of physical or social stimuli.
+http://who.int/icf#d1700	Applying words which convey appropriate meaning, employing conventional sentence structure.
+http://who.int/icf#d1701	Applying standard spelling, punctuation and proper case forms etc.
+http://who.int/icf#d1702	Applying words and sentences to convey complex meaning and abstract ideas.
+http://who.int/icf#d1720	Perform simple numeric operations such as counting, grouping, ordering and arithmetic calculations.
+http://who.int/icf#d1721	Applying mathematical procedures and methods such as algebra, calculus and geometry to solve problems.
+http://who.int/icf#d1750	Finding solutions to a simple problem involving a single issue or question, by identifying and analysing the issue, developing solutions, evaluating the potential effects of the solutions and executing a chosen solution.
+http://who.int/icf#d1751	Finding solutions to a complex problem involving multiple and interrelated issues, or several related problems, by identifying and analysing the issue, developing solutions, evaluating the potential effects of the solutions and executing a chosen solution.
+http://who.int/icf#d3101	Comprehending the literal meaning conveyed by simple spoken messages.
+http://who.int/icf#d3102	Comprehending the literal and implied meaning conveyed by complex spoken messages.
+http://who.int/icf#d3150	Comprehending the meaning conveyed by facial expressions, hand movements or signs, body postures, and other forms of body language.
+http://who.int/icf#d3151	Comprehending the meaning represented by public signs and symbols, such as traffic signs, warning symbols, musical or scientific notations, and icons.
+http://who.int/icf#d3152	Comprehending the meaning represented by drawings (e.g. line drawings, graphic designs, paintings, three-dimensional representations, pictograms), graphs, charts and photographs, such as understanding that an upward line on a height chart indicates that a child is growing.
+http://who.int/icf#d3350	Conveying messages by intentional movements of the body, such as facial gestures (e.g. smiling, frowning, wincing), by arm and hand movements, and by postures (e.g. embracing to indicate affection or pointing to receive attention or an object).
+http://who.int/icf#d3351	Conveying meaning by using signs and symbols (e.g. icons, Bliss board, scientific symbols) and symbolic notation systems, such as using musical notation to convey a melody.
+http://who.int/icf#d3352	Conveying meaning by drawing, painting, sketching, and making diagrams, pictures or photographs, such as drawing a map to give someone directions to a location.
+http://who.int/icf#d3500	Beginning an interchange, such as initiating turn-taking activity through eye-contact or other means, that leads to communication or dialogue, such as by introducing oneself, expressing customary greetings, or by introducing a topic or asking questions.
+http://who.int/icf#d3501	Continuing an interchange by taking turns in vocalising, speaking or signing, by adding ideas, introducing a new topic or retrieving a topic that has been previously mentioned.
+http://who.int/icf#d3502	Finishing a dialogue or interchange with customary termination statements or expressions and by bringing closure to the topic under discussion.
+http://who.int/icf#d3503	Initiating, maintaining, shaping and terminating a dialogue or interchange with one person, such as in discussing the weather with a friend.
+http://who.int/icf#d3504	Initiating, maintaining, shaping and terminating a dialogue or interchange with more than one individual, such as in starting and participating in a group interchange.
+http://who.int/icf#d3550	Initiating, maintaining, shaping or terminating an argument or debate with one person.
+http://who.int/icf#d3551	Initiating, maintaining, shaping or terminating an argument or debate with more than one individual.
+http://who.int/icf#d3600	Using telephones, computers and other electronic devices as a means of telecommunication.
+http://who.int/icf#d3601	Using machines for writing, such as typewriters, computers and Braille writers, as a means of communication.
+http://who.int/icf#d3602	Performing actions and tasks involved in techniques for communicating, such as reading lips.
+http://who.int/icf#d4100	Getting into and out of a lying down position or changing body position, from horizontal to any other position, such as standing up or sitting down.
+http://who.int/icf#d4101	Getting into and out of the seated or crouched posture on one's haunches with knees closely drawn up or sitting on one's heels, such as may be necessary in toilets that are at floor level, or changing body position from squatting to any other position, such as standing up.
+http://who.int/icf#d4102	Getting into and out of a position where the body is supported by the knees with legs bent, such as during prayers, or changing body position from kneeling to any other position, such as standing up.
+http://who.int/icf#d4103	Getting into and out of a seated position and changing body position from sitting down to any other position, such as standing up or lying down.
+http://who.int/icf#d4104	Getting into and out of a standing position or changing body position from standing to any other position, such as lying down or sitting down.
+http://who.int/icf#d4105	Tilting the back downwards or to the side, at the torso, such as in bowing or reaching down for an object.
+http://who.int/icf#d4106	Adjusting or moving the weight of the body from one position to another while sitting, standing or lying, such as moving from one foot to another while standing.
+http://who.int/icf#d4107	Moving the body from one position to another while lying such as turning from side to side or from stomach to back.
+http://who.int/icf#d4150	Staying in a lying position for some time as required, such as remaining in a prone position in a bed.
+http://who.int/icf#d4151	Staying in a squatting position such as when sitting on the floor without a seat.
+http://who.int/icf#d4152	Staying in a kneeling position where the body is supported by the knees with legs bent for some time such as during prayers in church.
+http://who.int/icf#d4153	Staying in a seated position, on a seat or the floor, for some time such as when sitting at a desk or table.
+http://who.int/icf#d4154	Staying in a standing position for some time such as when standing in a queue.
+http://who.int/icf#d4155	Controlling the position of the head and supporting its weight for a determined period of time.
+http://who.int/icf#d4200	Moving from a sitting position on one seat to another seat on the same or a different level, such as moving from a chair to a bed.
+http://who.int/icf#d4201	Moving from one lying position to another on the same or a different level, such as moving from one bed to another.
+http://who.int/icf#d4300	Raising up an object in order to move it from a lower to a higher level, such as when lifting a glass from the table.
+http://who.int/icf#d4301	Taking or transporting an object from one place to another using the hands, such as when carrying a drinking glass or a suitcase.
+http://who.int/icf#d4302	Taking or transporting an object from one place to another using the arms and hands, such as when carrying a pet or a child or other large object.
+http://who.int/icf#d4303	Taking or transporting an object from one place to another using the shoulders, hip or back, or some combination of these, such as when carrying a large parcel or school-bag.
+http://who.int/icf#d4304	Taking or transporting an object from one place to another using the head, such when as carrying a container of water on the head.
+http://who.int/icf#d4305	Using hands, arms or other parts of the body to place an object down on a surface or place, such as when lowering a container of water to the ground.
+http://who.int/icf#d4350	Using the legs and feet to exert a force on an object to move it away, such as pushing a chair away with a foot.
+http://who.int/icf#d4351	Using the legs and feet to propel something away, such as kicking a ball.
+http://who.int/icf#d4400	Lifting or taking up a small object with hands and fingers, such as when picking up a pencil.
+http://who.int/icf#d4401	Using one or both hands to seize and hold something, such as when grasping a tool or a door knob.
+http://who.int/icf#d4402	Using fingers and hands to exert control over, direct or guide something, such as when handling coins or other small objects, such as scissors, shoe laces, pencils, chop sticks, knives and forks.
+http://who.int/icf#d4403	Using fingers and hands to let go or set free something so that it falls or changes position, such as when dropping an item of clothing or a piece of food for a pet.
+http://who.int/icf#d4450	Using fingers, hands and arms to bring an object towards oneself, or to move it from place to place, such as when pulling on a string or pulling a door closed.
+http://who.int/icf#d4451	Using fingers, hands and arms to move something from oneself, or to move it from place to place, such as when pushing a toy or an animal away.
+http://who.int/icf#d4452	Using the hands and arms to extend outwards and touch and grasp something, such as when reaching across a table or desk for a book.
+http://who.int/icf#d4453	Using fingers, hands or arms to rotate, turn or bend an object, as is required to open a jar or use tools such as toothbrush or screwdriver.
+http://who.int/icf#d4454	Using fingers, hands and arms to lift something and propel it with some force through the air, such as when tossing a ball.
+http://who.int/icf#d4455	Using fingers, hands and arms to grasp a moving object in order to bring it to a stop and hold it, such as when catching a ball.
+http://who.int/icf#d4500	Walking for less than a kilometre, such as walking around rooms or hallways, within a building or for short distances outside.
+http://who.int/icf#d4501	Walking for more than a kilometre, such as across a village or town, between villages or across open areas.
+http://who.int/icf#d4502	Walking on sloping, uneven, or moving surfaces, such as on grass, gravel or ice and snow, or walking aboard a ship, train or other vehicle.
+http://who.int/icf#d4503	Walking in ways required to avoid moving and immobile objects, people, animals, and vehicles, such as walking around a marketplace or shop, around or through traffic or other crowded areas.
+http://who.int/icf#d4550	Moving the whole body in a prone position from one place to another on hands, or hands and arms, and knees.
+http://who.int/icf#d4551	Moving the whole body upwards or downwards, over surfaces or objects, such as climbing steps, rocks, ladders or stairs, curbs or other objects.
+http://who.int/icf#d4552	Moving with quick steps so that both feet may be simultaneously off the ground.
+http://who.int/icf#d4553	Moving up off the ground by bending and extending the legs, such as jumping on one foot, hopping, skipping and jumping or diving into water.
+http://who.int/icf#d4554	Propelling the whole body through water by means of limb and body movements without taking support from the ground underneath.
+http://who.int/icf#d4600	Walking and moving around in one's home, within a room, between rooms, and around the whole residence or living area.
+http://who.int/icf#d4601	Walking and moving around within buildings other than one's residence, such as moving around other people's homes, other private buildings, community and public buildings and enclosed areas.
+http://who.int/icf#d4602	Walking and moving around close to or far from one's home and other buildings, without the use of transportation, public or private, such as walking for short or long distances around a town or village.
+http://who.int/icf#d4700	Being transported as a passenger by a mode of transportation powered by one or more people, such as riding in a pram or stroller, wheelchair propelled by another, rickshaw or rowboat.
+http://who.int/icf#d4701	Being transported as a passenger by private motorized vehicle over land, sea or air, such as by car, taxi or privately owned aircraft or boat.
+http://who.int/icf#d4702	Being transported as a passenger by a motorized vehicle over land, sea or air designed for public transportation, such as being a passenger on a bus, train, subway or aircraft.
+http://who.int/icf#d4703	Being transported by another person, such as being crried in he arms, in a sheet, in a backpack or a transportation device.
+http://who.int/icf#d4750	Driving a human-powered vehicle, such as a bicycle, tricycle, or rowboat.
+http://who.int/icf#d4751	Driving a vehicle with a motor, such as an automobile, motorcycle, motorboat or aircraft.
+http://who.int/icf#d4752	Driving a vehicle powered by an animal, such as a horse-drawn cart or carriage.
+http://who.int/icf#d6100	Acquiring ownership of a house, apartment or other dwelling.
+http://who.int/icf#d6101	Acquiring the use of a house, apartment or other dwelling belonging to another in exchange for payment.
+http://who.int/icf#d6102	Equipping and arranging a living space with furniture, fixtures and other fittings and decorating rooms, arranging ones own space, room.
+http://who.int/icf#d6200	Obtaining, in exchange for money, goods and services required for daily living (including instructing and supervising an intermediate to do the shopping), such as selecting food, drink, cleaning materials, household items, play and recreational materials or clothing in a shop or market; comparing quality and price of the items required, negotiating and paying for selected goods or services and transporting goods.
+http://who.int/icf#d6201	Obtaining, without exchange of money, goods and services required for daily living (including instructing and supervising an intermediate to gather daily necessities), such as by harvesting vegetable and fruits, getting water and fuel and picking up and delivering paper mail or packages.
+http://who.int/icf#d6300	Planning, organizing, cooking and serving meals with small number of ingredients that require easy methods of preparation and serving, such as making a snack or small meal, and transforming food ingredients by cutting and stirring, boiling and heating food such as rice or potatoes.
+http://who.int/icf#d6301	Planning, organizing, cooking and serving meals with large number of ingredients that require complex methods of preparation and serving, such as planning a meal with serveral dishes, and transforming food ingredients by combined actions of peeling, slicing, mixing, kneading, stirring, presenting and serving food in a manner appropriate to the occasion and culture.
+http://who.int/icf#d6400	Washing clothes and garments by hand and hanging them out to dry in the air.
+http://who.int/icf#d6401	Cleaning up after cooking, such as by washing dishes, pans, pots and cooking utensils, and cleaning tables and floors around cooking and eating area.
+http://who.int/icf#d6402	Cleaning the living areas of the household, such as by tidying and dusting, sweeping, swabbing, mopping floors, cleaning windows and walls, cleaning bathrooms and toilets, cleaning household furnishings.
+http://who.int/icf#d6403	Using all kinds of household appliances, such as washing machines, driers, irons, vacuum cleaners, dishwashers.
+http://who.int/icf#d6404	Storing food, drinks, clothes and other household goods required for daily living; preparing food for conservation by canning, salting or refrigerating, keeping food fresh and out of the reach of animals.
+http://who.int/icf#d6405	Disposing of household garbage such as by collecting trash and rubbish around the house, preparing garbage for disposal, using garbage disposal appliances; burning garbage.
+http://who.int/icf#d6500	Making and repairing clothes, such as by sewing, producing or mending clothes; reattaching buttons and fasteners; ironing clothes, fixing and polishing footwear.
+http://who.int/icf#d6501	Repairing and taking care of dwelling, its exterior, interior and contents, such as by painting, repairing fixtures and furniture, and using required tools for repair work.
+http://who.int/icf#d6502	Repairing and taking care of all domestic appliances for cooking, cleaning and repairing, such as by oiling and repairing tools and maintaining the washing machine.
+http://who.int/icf#d6503	Repairing and taking care of motorized and non-motorized vehicles for personal use, including bicycles, carts, automobiles and boats.
+http://who.int/icf#d6504	Repairing and taking care of assistive devices such as prostheses, orthoses and specialized tools and aids for housekeeping and personal care; maintaining and repairing aids for personal mobility such as canes, walkers, wheelchairs and scooters; and maintaining communication and recreational aids.
+http://who.int/icf#d6505	Taking care of plants inside and outside the house, such as by planting, watering and fertilizing plants; gardening and growing foods for personal use.
+http://who.int/icf#d6506	Taking care of domestic animals and pets, such as by feeding, cleaning, grooming and exercising pets; watching over the health of animals or pets; planning for the care of animals or pets in one's absence.
+http://who.int/icf#d6507	Taking care of domestic pathways such as walkways and driveways or entrances to houses (covered or uncovered) for example removing snow, leaves, rubble or sand from enrances as well as spreading sand or other material.
+http://who.int/icf#d6600	Assisting household members and others in performing self-care, including helping others with eating, bathing and dressing; taking care of children or members of the household who are sick or have difficulties with basic self-care; helping others with their toileting.
+http://who.int/icf#d6601	Assisting household members and others in movements and in moving outside the home, such as in the neighbourhood or city, to or from school, place of employment or other destination.
+http://who.int/icf#d6602	Assisting household members and others with their communication, such as by helping with speaking, writing or readings.
+http://who.int/icf#d6603	Assisting household members and others with their interpersonal interactions, such as by helping them to initiate, maintain or terminate relationships.
+http://who.int/icf#d6604	Assisting household members and others with their nutrition, such as by helping them to prepare and eat meals.
+http://who.int/icf#d6605	Assisting household members and others with formal and informal health care, such as by ensuring that a child gets regular medical check-ups, or that an elderly relative takes required medication.
+http://who.int/icf#d7100	Showing and responding to consideration and esteem, in a contextually and socially appropriate manner.
+http://who.int/icf#d7101	Showing and responding to satisfaction and gratitude, in a contextually and socially appropriate manner.
+http://who.int/icf#d7102	Showing and responding to understanding and acceptance of behaviour, in a contextually and socially appropriate manner.
+http://who.int/icf#d7103	Providing and responding to implicit and explicit differences of opinion or disagreement, in a contextually and socially appropriate manner.
+http://who.int/icf#d7104	Giving and reacting appropriately to signs and hints that occur in social interactions.
+http://who.int/icf#d7105	Making and responding to bodily contact with others, in a contextually and socially appropriate manner.
+http://who.int/icf#d7106	Showing differential responses to individuals, such as by reaching out for the familiar person and differentiating them from strangers and reacting in an appropriate manner.
+http://who.int/icf#d7200	Beginning and maintaining interactions with others for a short or long period of time, in a contextually and socially appropriate manner, such as by introducing oneself, finding and establishing friendships and professional relationships, starting a relationship that may become permanent, romantic or intimate.
+http://who.int/icf#d7201	Bringing interactions to a close in a contextually and socially appropriate manner, such as by ending temporary relationships at the end of a visit, ending long-term relationships with friends when moving to a new town or ending relationships with work colleagues, professional colleagues and service providers, and ending romantic or intimate relationships.
+http://who.int/icf#d7202	Regulating emotions and impulses, verbal aggression and physical aggression in interactions with others, in a contextually and socially appropriate manner.
+http://who.int/icf#d7203	Acting independently in social interactions and complying with social conventions governing one's role, position or other social status in interactions with others.
+http://who.int/icf#d7204	Being aware of and maintaining a distance between oneself and others that is contextually, socially and culturally appropriate.
+http://who.int/icf#d7400	Creating and maintaining formal relations with people in positions of power of a higher rank or prestige relative to one's own position, such as an employer.
+http://who.int/icf#d7401	Creating and maintaining formal relations with people in positions of lower rank or prestige relative to one's own social position, such as an employee or servant.
+http://who.int/icf#d7402	Creating and maintaining formal relations with people in the same position of authority, rank or prestige relative to one's own social position.
+http://who.int/icf#d7500	Creating and maintaining friendship relationships that are characterized by mutual esteem an common interests.
+http://who.int/icf#d7501	Creating and maintaining informal relationships with people who live in nearby dwellings or living areas.
+http://who.int/icf#d7502	Creating and maintaining informal relationships with people whom one knows but who are not close friends.
+http://who.int/icf#d7503	Creating and maintaining informal relationships with people who are co-inhabitants of a house or other dwelling, privately or publicly run, for any purpose.
+http://who.int/icf#d7504	Creating and maintaining informal relationships with people who share the same age, interest or other common feature.
+http://who.int/icf#d7600	Becomming and being a parent, both natural and adoptive, such as by having a child and relating to it as a parent or creating and maintaining a parental relationships with an adoptive child, and providing physical, intellectual and emotional nurture to one's natural or adoptive child.
+http://who.int/icf#d7601	Creating and maintaining relationships with one's parent, such as a young child obeying his or her parents or an adult child taking care of his or her elderly parents.
+http://who.int/icf#d7602	Creating and maintaining a brotherly or sisterly relationship with a person who shares one or both parents by birth, adoption or marriage.
+http://who.int/icf#d7603	Creating and maintaining a family relationship with members of one's extended family, such as with cousins, aunts and uncles and grandparents.
+http://who.int/icf#d7700	Creating and maintaining a relationship based on emotional and physical attraction, potentially leading to long-term intimate relationships.
+http://who.int/icf#d7701	Creating and maintaining an intimate relationship of a legal nature with another person, such as in a legal marriage, including becoming and being a legally maried wife or husband or an unmarried spouse.
+http://who.int/icf#d7702	Creating and maintaining a relationship of a sexual nature, with a spouse or other partner.
+http://who.int/icf#d8450	Locating and choosing a job, in a trade, profession or other form of employment, and performing the required tasks to get hired, such as showing up at the place of employment or participating in a job interview.
+http://who.int/icf#d8451	Performing job-related tasks to keep an occupation, trade, profession or other form of employment, and obtaining promotion and other advancements in employment.
+http://who.int/icf#d8452	Leaving or quitting a job in the appropriate manner.
+http://who.int/icf#d8500	Engaging in remunerative work sought or generated by the individual, or contracted from others without a formal employment relationship, such as migratory agricultural work, working as a free-lance writer or consultant, short-term contract work, working as an artist or crafts person, owning and running a shop or other business.
+http://who.int/icf#d8501	Engaging in all aspects of work for payment on a part-time basis, as an employee, such as seeking employment and getting a job, doing the tasks required of the job, attending work on time as required, supervising other workers or being supervised, and performing required tasks alone or in groups.
+http://who.int/icf#d8502	Engaging in all aspects of work for payment on a full-time basis, as an employee, such as seeking employment and getting a job, doing the required tasks of the job, attending work on time as required, supervising other workers or being supervised, and performing required tasks alone or in groups.
+http://who.int/icf#d8700	Having command over personal or private economic resources, in order to ensure economical security for present and future needs.
+http://who.int/icf#d8701	Having command over public economic resources, in order to ensure economical security for present and future needs.
+http://who.int/icf#b11420	Mental functions that produce awareness of one's own identity.
+http://who.int/icf#b11421	Mental functions that produce awareness of the identity of other individuals in one's immediate environment.
+http://who.int/icf#b16700	Mental functions of decoding spoken messages to obtain their meaning.
+http://who.int/icf#b16701	Mental functions of decoding written messages to obtain their meaning.
+http://who.int/icf#b16702	Mental functions of decoding messages in languages that use signs made by hands and other movements, in order to obtain their meaning.
+http://who.int/icf#b16703	Mental functions of decoding messages in body gestures made by hands and other movements, in order to obtain their meaning.
+http://who.int/icf#b16710	Mental functions necessary to produce meaningful spoken messages.
+http://who.int/icf#b16711	Mental functions necessary to produce meaningful written messages.
+http://who.int/icf#b16712	Mental functions to produce meaningful messages in languages that use signs made by hands and other movements.
+http://who.int/icf#b16713	Mental functions necessary to produce messages using gestures made by hands and other movements.
+http://who.int/icf#b21000	Seeing functions of sensing size, form and contour using both eyes for objects distant from the eye.
+http://who.int/icf#b21001	Seeing functions of sensing size, form and contour using either right or left eye alone, for objects distant from the eye.
+http://who.int/icf#b21002	Seeing functions of sensing size, form and contour, using both eyes, for objects close to the eye.
+http://who.int/icf#b21003	Seeing functions of sensing size, form and contour, using either right or left eye alone, for objects close to the eye.
+http://who.int/icf#b21020	Seeing functions of sensing a minimum amount of light (light minimum), and the minimum difference in intensity (light difference).
+http://who.int/icf#b21021	Seeing functions of differentiating and matching colours.
+http://who.int/icf#b21022	Seeing functions of separating figure from ground, involving the minimum amount of luminance required.
+http://who.int/icf#b21023	Seeing functions involving the quality of the picture.
+http://who.int/icf#b28010	Sensation of unpleasant feeling indicating potential or actual damage to some body structure felt in the head and neck.
+http://who.int/icf#b28011	Sensation of unpleasant feeling indicating potential or actual damage to some body structure felt in the chest.
+http://who.int/icf#b28012	Sensation of unpleasant feeling indicating potential or actual damage to some body structure felt in the stomach or abdomen.
+http://who.int/icf#b28013	Sensation of unpleasant feeling indicating potential or actual damage to some body structure felt in the back.
+http://who.int/icf#b28014	Sensation of unpleasant feeling indicating potential or actual damage to some body structure felt in either one or both upper limbs, including hands.
+http://who.int/icf#b28015	Sensation of unpleasant feeling indicating potential or actual damage to some body structure felt in either one or both lower limbs, including feet.
+http://who.int/icf#b28016	Sensation of unpleasant feeling indicating potential or actual damage to some body structure felt in one or more joints, including small and big joints.
+http://who.int/icf#b43500	Functions of the body's response of sensitization to a specific foreign substance.
+http://who.int/icf#b43501	Functions of the body's general response of sensitization to foreign substances, including infections.
+http://who.int/icf#b45040	Functions of producing mucus of upper and lower airways.
+http://who.int/icf#b45041	Functions of transportation of mucus of upper and lower airways.
+http://who.int/icf#b51050	Function of clearing substances through the oral cavity at an appropriate rate and speed.
+http://who.int/icf#b51051	Function of clearing substances through the pharynx at an appropriate rate and speed.
+http://who.int/icf#b51052	Function of clearing substances through the oesophagus at an appropriate rate and speed.
+http://who.int/icf#b54500	Functions involved in keeping water in the body.
+http://who.int/icf#b54501	Functions involved in maintaining the optimal amount of water in the body.
+http://who.int/icf#b55500	Functions associated with development body and pubic hair.
+http://who.int/icf#b55501	Functions associated with breast and nipple development.
+http://who.int/icf#b55502	Functions associated with development of penis, testes and scrotum.
