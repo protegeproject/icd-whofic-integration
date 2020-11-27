@@ -9,7 +9,6 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.who.integration.ichi.ICHIImporter;
 
 import edu.stanford.bmir.whofic.icd.ICDContentModel;
 import edu.stanford.smi.protege.model.Project;
@@ -18,7 +17,7 @@ import edu.stanford.smi.protegex.owl.model.RDFResource;
 import edu.stanford.smi.protegex.owl.model.RDFSNamedClass;
 
 public class ImportICFDefinitions {
-	private static transient Logger log = Logger.getLogger(ICHIImporter.class);
+	private static transient Logger log = Logger.getLogger(ImportICFDefinitions.class);
 	
 	public static final String COL_SEPARATOR = "\t";
 	
