@@ -102,4 +102,17 @@
 		        </java>
 	</target>
 	
+	<target name="import_icf_defs" depends="checkProtegeLibsAndReport">
+		        <java 
+				fork="true" 
+		        	dir="." 
+		            	classname="org.who.integration.icf.ImportICFDefinitions"
+	                        maxmemory="${heap.size.max}">
+			      	<classpath refid = "project.classpath"/>
+		        	<jvmarg value="-agentlib:jdwp=transport=dt_socket,address=8100,server=y,suspend=n" />
+		        	<arg value="${icd.pprj.file}"/>
+		        	<arg value="${icf.def.file}" />
+		        </java>
+	</target>
+	
 </project>
